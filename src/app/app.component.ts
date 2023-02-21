@@ -15,7 +15,7 @@ export class AppComponent {
   onProductCreate(products: {prodName: string, prodPrice: string, prodComment: string}) {
     console.log(products);
 
-    this.http.post('192.168.0.101:3000/products', products)
+    this.http.post('http://localhost:3000/products', products)
       .subscribe((res) => {
         console.log(res);
       });
@@ -23,9 +23,18 @@ export class AppComponent {
 }
 
 
-// {
-//   "name": {
-//   "ru" : "My product 2"
-// },
-//   "price": "0,33"
+// private fetchProduct() {
+//   this.http.get('http://localhost:3000/products')
+//     .pipe(map((res) => {
+//       const products = [];
+//       for (const key in res) {
+//         if(res.hasOwnProperty(key)) {
+//           products.push({...res[key], id: key});
+//         }
+//       }
+//       return products;
+//     }))
+//     .subscribe((res) => {
+//       console.log(res);
+//     })
 // }
