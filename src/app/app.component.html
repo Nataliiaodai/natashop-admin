@@ -207,7 +207,6 @@
     </div>
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button class="btn btn-danger me-md-2" type="button">Delete</button>
       <button class="btn btn-secondary" type="button">Preview on Website</button>
       <button class="btn btn-secondary me-md-2" type="button">Duplicate</button>
       <button class="btn btn-secondary" type="button">Create new Product</button>
@@ -226,19 +225,19 @@
       <div class="col-md-5 border-block">
         <div class="mb-3">
           <label for="formGroupExampleInput6" class="form-label"><h6>Product Name</h6></label>
-          <input ngModel name="prodName" type="text" class="form-control" id="formGroupExampleInput6"
+          <input type="text" class="form-control" id="formGroupExampleInput6"
                  placeholder="Type name here...">
         </div>
 
         <div class="mb-3">
           <label for="formGroupExampleInput7" class="form-label">Product Price $</label>
-          <input ngModel name="prodPrice" type="text" class="form-control" id="formGroupExampleInput7"
+          <input ngModel name="price" type="text" class="form-control" id="formGroupExampleInput7"
                  placeholder="...">
         </div>
 
         <h6>Comments</h6>
         <div class="form-floating">
-          <textarea ngModel name="prodComment" class="form-control" placeholder="Leave a comment here"
+          <textarea ngModel name="note" class="form-control" placeholder="Leave a comment here"
                     id="floatingTextarea2" style="height: 100px"></textarea>
           <label for="floatingTextarea2">Type Comments here...</label>
         </div>
@@ -295,8 +294,14 @@
     <hr>
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button class="btn btn-success me-md-2" type="submit">Save</button>
+<!--      Send put request-->
+      <button class="btn btn-light me-md-2" type="submit">Save</button>
+<!--      Send post request-->
+      <button class="btn btn-success me-md-2" type="submit">Create</button>
+<!--      Delete form field-->
       <button class="btn btn-warning" type="reset">Reset</button>
+      <!--      Delete product by id-->
+      <button class="btn btn-danger" type="reset">Delete</button>
     </div>
 
   </form>
