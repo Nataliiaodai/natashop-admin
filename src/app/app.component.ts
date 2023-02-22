@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {map} from "rxjs";
+import {map, pipe} from "rxjs";
+import {Product} from "./model/product";
+
 
 
 @Component({
@@ -10,71 +12,60 @@ import {map} from "rxjs";
 })
 export class AppComponent  implements OnInit {
   title = 'natashop-admin';
+  productArray = [];
+  prod : Product = new Product();
 
   constructor(private http: HttpClient) {
   }
 
+
   ngOnInit() {
-    // this.fetchProduct();
+    this.fetchProduct();
   }
 
+  onProductCreate(form: any) {
+    let product: Product = form.value;
+    this.http.post('http://localhost:3000/products', product)
+      .subscribe((responseData) => {
+        console.log(responseData);
+        console.log(responseData["_id"]);
+        console.log(responseData["price"]);
+        console.log(responseData["note"]);
 
-    // this.fetchProduct()
+        this.prod.price = responseData["price"];
+        this.prod.note = responseData["note"];
+        this.prod._id = responseData["_id"];
+        console.log(this.prod);
 
-
-  onProductCreate(products: {price: string, note: string }) {
-    this.http.post('http://localhost:3000/products', products)
-      .subscribe((res) => {
-        console.log( res);
+        form.value.note = "some value";
       });
 
   }
 
 
-  private fetchProduct() {
-    this.http.get('http://localhost:3000/products/4720')
-      // .pipe(map((res) => {
-      //   const products = [];
-      //   for (const key in res) {
-      //     if (res.hasOwnProperty(key)) {
-      //       products.push({...res[key]});
-      //     }
-      //     products.push({...res});
-      //   }
-      //   return products;
-      // }))
-      .subscribe((res) => {
-        console.log(res);
-        // const keys = res.id.keys();
-        // this.id = keys.map(key =>
-        //   `${key}: ${res.headers.get(key)}`);
-      })
-  }
+  private fetchProduct () {
+    this.http
+      .get<{ [key: string]: Product }>(
+        'http://localhost:3000/products/4720'
+      )
+      .pipe(map (responseData => {
+        const productArray: Product [] = [];
+        for (const key in responseData) {
+          if (responseData. hasOwnProperty (key) ) {
+            productArray.push (responseData [key]);
+          }
+        }
 
-//   const myList = document.querySelector('ul');
-//   const myRequest = new Request('products.json');
-//
-//   fetch(myRequest)
-// .then((response) => response.json())
-// .then((data) => {
-//   for (const product of data.products) {
-//   const listItem = document.createElement('li');
-//   listItem.appendChild(
-//     document.createElement('strong')
-// ).textContent = product.Name;
-//   listItem.append(
-// ` can be found in ${
-//   product.Location
-// }. Cost: `
-// );
-// listItem.appendChild(
-// document.createElement('strong')
-// ).textContent = `£${product.Price}`;
-// myList.appendChild(listItem);
-// }
-// })
-// .catch(console.error);
+          return productArray;
+  })
+  )
+        .subscribe (responseData => {
+            console. log (responseData);
+          });
+
+}
 
 
 
 }
+
