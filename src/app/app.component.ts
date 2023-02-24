@@ -19,10 +19,12 @@ export class AppComponent  {
   onProductCreate() {
     this.http.post('http://localhost:3000/products', this.prod)
       .subscribe((responseData) => {
-        this.prod.price = responseData["price"];
-        this.prod.note = responseData["note"];
-        this.prod._id = responseData["_id"];
+        // this.prod.price = responseData["price"];
+        // this.prod.note = responseData["note"];
+        // this.prod._id = responseData["_id"];
+        this.prod = responseData;
         console.log(this.prod);
+
       });
   }
 
