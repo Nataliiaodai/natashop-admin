@@ -45,7 +45,7 @@ export class ProductEditComponent implements OnInit{
   onProductDelete():void  {
     this.showId = false;
     this.productService.deleteProduct(this.prod).subscribe(
-      (response) => this.onProductReset(),
+      () => this.onProductReset(),
       (error: any) => console.log(error),
       () => console.log('Done deleting product'),
     )
