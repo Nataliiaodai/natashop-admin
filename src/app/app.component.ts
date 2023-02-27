@@ -20,7 +20,8 @@ export class AppComponent  implements OnInit {
 
 
   ngOnInit() {
-    console.log(this.prod);
+    // console.log(this.prod);
+
   }
 
   onProductCreate():void  {

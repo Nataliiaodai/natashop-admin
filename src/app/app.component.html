@@ -84,6 +84,7 @@
             class="form-control"
             id="formGroupExampleInput6"
             placeholder="Type name here...">
+          <br>
           <p>uk:</p>
           <input
             ngModel
@@ -93,6 +94,7 @@
             class="form-control"
             id="formGroupExampleInput9"
             placeholder="Type name here...">
+          <br>
           <p>en:</p>
           <input
             ngModel
@@ -113,7 +115,7 @@
             type="number"
             class="form-control"
             id="formGroupExampleInput7"
-            placeholder="..." >
+            placeholder="...">
 
         </div>
 
@@ -130,6 +132,45 @@
         </div>
         <hr *ngIf="showId === false">
         <p *ngIf="showId === false">Product was Deleted!</p>
+        <br>
+
+        <h6>Description</h6>
+        <p>ru:</p>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="fullDescription"
+            [(ngModel)]="prod.fullDescription.ru"
+            class="form-control"
+            id="floatingTextarea3"
+            style="height: 80px"></textarea>
+          <label for="floatingTextarea2">Type to Describe...</label>
+        </div>
+        <br>
+        <p>uk:</p>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="fullDescription"
+            [(ngModel)]="prod.fullDescription.uk"
+            class="form-control"
+            id="floatingTextarea4"
+            style="height: 80px"></textarea>
+          <label for="floatingTextarea2">Type to Describe...</label>
+        </div>
+        <br>
+        <p>en:</p>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="fullDescription"
+            [(ngModel)]="prod.fullDescription.en"
+            class="form-control"
+            id="floatingTextarea5"
+            style="height: 80px"></textarea>
+          <label for="floatingTextarea2">Type to Describe...</label>
+        </div>
+
       </div>
 
 
@@ -163,7 +204,7 @@
           <option value="Los Angeles">
           <option value="none">
         </datalist>
-
+        <br>
         <div class="mb-3">
           <label for="formGroupExampleInput4" class="form-label">Discount</label>
           <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="...">
@@ -183,23 +224,26 @@
     <hr>
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-<!--      Send put request-->
+      <!--      Send put request-->
       <button
         class="btn btn-light me-md-2"
         type="button"
-        (click)="onProductUpdate()">Save</button>
-<!--      Send post request-->
+        (click)="onProductUpdate()">Save
+      </button>
+      <!--      Send post request-->
       <button class="btn btn-success me-md-2" type="submit">Create</button>
-<!--      Delete form field-->
+      <!--      Delete form field-->
       <button
         class="btn btn-warning"
         type="reset"
-        (click)="onProductReset()">Reset</button>
+        (click)="onProductReset()">Reset
+      </button>
       <!--      Delete product by id-->
       <button
         class="btn btn-danger"
         type="reset"
-        (click)="onProductDelete()">Delete</button>
+        (click)="onProductDelete()">Delete
+      </button>
     </div>
 
   </form>
