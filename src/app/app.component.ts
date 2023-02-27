@@ -1,32 +1,61 @@
-import {Component} from '@angular/core';
+import {Component, Injectable, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Product} from "./model/product";
+import {Product} from "./model/product.model";
+import {ProductService} from "./product.service";
 
 
+@Injectable()
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
+export class AppComponent  implements OnInit {
   title = 'natashop-admin';
   prod : Product = new Product();
+  showId = true;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+              private productService: ProductService) {}
+
+
+  ngOnInit() {
+    console.log(this.prod);
+  }
+
+  onProductCreate():void  {
+    this.showId = true;
+    this.productService.createProduct(this.prod).subscribe(
+      (response) => this.prod = response,
+      (error: any) => console.log(error),
+      () => console.log('Done creating product'),
+    )
   }
 
 
-  onProductCreate() {
-    this.http.post('http://localhost:3000/products', this.prod)
-      .subscribe((responseData) => {
-        // this.prod.price = responseData["price"];
-        // this.prod.note = responseData["note"];
-        // this.prod._id = responseData["_id"];
-        this.prod = responseData;
-        console.log(this.prod);
-
-      });
+  onProductUpdate():void  {
+    this.showId = true;
+    this.productService.updateProduct(this.prod).subscribe(
+      (response) => this.prod = response,
+      (error: any) => console.log(error),
+      () => console.log('Done updating product'),
+    )
   }
+
+  onProductReset() {
+    this.showId = true;
+    this.prod = new Product();
+  }
+
+  onProductDelete():void  {
+    this.showId = false;
+    this.productService.deleteProduct(this.prod).subscribe(
+      (response) => this.onProductReset(),
+      (error: any) => console.log(error),
+      () => console.log('Done deleting product'),
+    )
+  }
+
 
 }
 

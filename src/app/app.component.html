@@ -70,13 +70,38 @@
   <hr>
 
   <form (ngSubmit)="onProductCreate()">
-    <p>{{prod._id}}</p>
     <div class="row parent-border-block">
       <div class="col-md-5 border-block">
+        <p *ngIf="showId === true">{{prod._id}}</p>
         <div class="mb-3">
           <label for="formGroupExampleInput6" class="form-label"><h6>Product Name</h6></label>
-          <input type="text" class="form-control" id="formGroupExampleInput6"
-                 placeholder="Type name here...">
+          <p>ru:</p>
+          <input
+            ngModel
+            name="name"
+            [(ngModel)]="prod.name.ru"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput6"
+            placeholder="Type name here...">
+          <p>uk:</p>
+          <input
+            ngModel
+            name="name"
+            [(ngModel)]="prod.name.uk"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput9"
+            placeholder="Type name here...">
+          <p>en:</p>
+          <input
+            ngModel
+            name="name"
+            [(ngModel)]="prod.name.en"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput10"
+            placeholder="Type name here...">
         </div>
 
         <div class="mb-3">
@@ -85,7 +110,7 @@
             ngModel
             name="price"
             [(ngModel)]="prod.price"
-            type="text"
+            type="number"
             class="form-control"
             id="formGroupExampleInput7"
             placeholder="..." >
@@ -103,6 +128,8 @@
             style="height: 100px"></textarea>
           <label for="floatingTextarea2">Type Comments here...</label>
         </div>
+        <hr *ngIf="showId === false">
+        <p *ngIf="showId === false">Product was Deleted!</p>
       </div>
 
 
@@ -157,13 +184,22 @@
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
 <!--      Send put request-->
-      <button class="btn btn-light me-md-2" type="submit">Save</button>
+      <button
+        class="btn btn-light me-md-2"
+        type="button"
+        (click)="onProductUpdate()">Save</button>
 <!--      Send post request-->
       <button class="btn btn-success me-md-2" type="submit">Create</button>
 <!--      Delete form field-->
-      <button class="btn btn-warning" type="reset">Reset</button>
+      <button
+        class="btn btn-warning"
+        type="reset"
+        (click)="onProductReset()">Reset</button>
       <!--      Delete product by id-->
-      <button class="btn btn-danger" type="reset">Delete</button>
+      <button
+        class="btn btn-danger"
+        type="reset"
+        (click)="onProductDelete()">Delete</button>
     </div>
 
   </form>
