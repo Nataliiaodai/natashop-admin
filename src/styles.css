@@ -8,27 +8,28 @@
   box-shadow: 5px 2px 2px grey;
 }
 .parent-border-block {
-  /*background-color:yellow;*/
   margin-bottom: 25px;
   display: flex;
-  /*justify-content: space-around;*/
   justify-content: space-between;
 }
 .border-block {
   padding: 25px 50px;
-  /*border: 1px solid grey;*/
 }
 
-.button-flex {
+.flex-list {
   display: flex;
   justify-content: space-between;
 }
 
-.go-back-link {
+.base-link {
   text-decoration: none;
   color: black;
+  }
+
+.base-item {
+  text-decoration: none;
   display: flex;
   align-items: center;
-  }
+}
 
 

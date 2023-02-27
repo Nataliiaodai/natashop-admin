@@ -1,0 +1,190 @@
+<div class="row">
+
+  <hr>
+  <h3>
+    Creating new Product
+  </h3>
+  <hr>
+
+  <form (ngSubmit)="onProductCreate()">
+    <div class="row parent-border-block">
+      <div class="col-md-5 border-block">
+        <p *ngIf="showId === true">{{prod._id}}</p>
+        <div class="mb-3">
+          <label for="formGroupExampleInput6" class="form-label"><h6>Product Name</h6></label>
+          <p>ru:</p>
+          <input
+            ngModel
+            name="name"
+            [(ngModel)]="prod.name.ru"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput6"
+            placeholder="Type name here...">
+          <br>
+          <p>uk:</p>
+          <input
+            ngModel
+            name="name"
+            [(ngModel)]="prod.name.uk"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput9"
+            placeholder="Type name here...">
+          <br>
+          <p>en:</p>
+          <input
+            ngModel
+            name="name"
+            [(ngModel)]="prod.name.en"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput10"
+            placeholder="Type name here...">
+        </div>
+
+        <div class="mb-3">
+          <label for="formGroupExampleInput7" class="form-label">Product Price $</label>
+          <input
+            ngModel
+            name="price"
+            [(ngModel)]="prod.price"
+            type="number"
+            class="form-control"
+            id="formGroupExampleInput7"
+            placeholder="...">
+
+        </div>
+
+        <h6>Comments</h6>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="note"
+            [(ngModel)]="prod.note"
+            class="form-control"
+            id="floatingTextarea2"
+            style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Type Comments here...</label>
+        </div>
+        <hr *ngIf="showId === false">
+        <p *ngIf="showId === false">Product was Deleted!</p>
+        <br>
+
+        <h6>Description</h6>
+        <p>ru:</p>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="fullDescription"
+            [(ngModel)]="prod.fullDescription.ru"
+            class="form-control"
+            id="floatingTextarea3"
+            style="height: 80px"></textarea>
+          <label for="floatingTextarea2">Type to Describe...</label>
+        </div>
+        <br>
+        <p>uk:</p>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="fullDescription"
+            [(ngModel)]="prod.fullDescription.uk"
+            class="form-control"
+            id="floatingTextarea4"
+            style="height: 80px"></textarea>
+          <label for="floatingTextarea2">Type to Describe...</label>
+        </div>
+        <br>
+        <p>en:</p>
+        <div class="form-floating">
+          <textarea
+            ngModel
+            name="fullDescription"
+            [(ngModel)]="prod.fullDescription.en"
+            class="form-control"
+            id="floatingTextarea5"
+            style="height: 80px"></textarea>
+          <label for="floatingTextarea2">Type to Describe...</label>
+        </div>
+
+      </div>
+
+
+      <div class="col-md-5 border-block">
+        <div class="mb-3">
+          <label for="formGroupExampleInput8" class="form-label">Product Vendor Code</label>
+          <input type="text" class="form-control" id="formGroupExampleInput8" placeholder="...">
+        </div>
+
+        <label for="exampleDataList1" class="form-label">Select Provider</label>
+        <input class="form-control" list="datalistOptions1" id="exampleDataList1" placeholder="...">
+        <datalist id="datalistOptions1">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="none">
+        </datalist>
+        <br>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Quantity in Stock</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="...">
+        </div>
+
+        <label for="exampleDataList2" class="form-label">Select Сategories</label>
+        <input class="form-control" list="datalistOptions2" id="exampleDataList2" placeholder="...">
+        <datalist id="datalistOptions2">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="none">
+        </datalist>
+        <br>
+        <div class="mb-3">
+          <label for="formGroupExampleInput4" class="form-label">Discount</label>
+          <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="...">
+        </div>
+
+        <label for="exampleDataList3" class="form-label">Select Label</label>
+        <input class="form-control" list="datalistOptions3" id="exampleDataList3" placeholder="...">
+        <datalist id="datalistOptions3">
+          <option value="NEW">
+          <option value="TOP SALES">
+          <option value="DEAL">
+          <option value="none">
+        </datalist>
+      </div>
+
+    </div>
+    <hr>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <!--      Send put request-->
+      <button
+        class="btn btn-light me-md-2"
+        type="button"
+        (click)="onProductUpdate()">Save
+      </button>
+      <!--      Send post request-->
+      <button class="btn btn-success me-md-2" type="submit">Create</button>
+      <!--      Delete form field-->
+      <button
+        class="btn btn-warning"
+        type="reset"
+        (click)="onProductReset()">Reset
+      </button>
+      <!--      Delete product by id-->
+      <button
+        class="btn btn-danger"
+        type="reset"
+        (click)="onProductDelete()">Delete
+      </button>
+    </div>
+
+  </form>
+
+  <hr>
+    </div>
+

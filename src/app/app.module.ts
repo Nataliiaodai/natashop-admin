@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { ProductEditComponent } from './product/product-edit/product-edit.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductEditComponent,
+    NotFoundComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
