@@ -1,4 +1,4 @@
-import {MultiLangText} from "../multiLangText.model";
+import {MultiLangText} from "./multiLangText.model";
 
 
 export class Product {

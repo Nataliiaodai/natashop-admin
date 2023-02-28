@@ -1,20 +1,18 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import { ProductEditComponent } from './product/product-edit/product-edit.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { ProductsComponent } from './product/products.component';
+import {ProductEditComponent} from './product-edit/product-edit.component';
+import {ProductListComponent} from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductEditComponent,
-    NotFoundComponent,
-    ProductsComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,4 +23,5 @@ import { ProductsComponent } from './product/products.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

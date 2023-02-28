@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {Product} from "../product.model";
+import {Product} from "../shared-model/product.model";
 import {HttpClient} from "@angular/common/http";
-import {ProductService} from "../product.service";
+import {ProductService} from "./product.service";
 
 @Component({
-  selector: 'app-product-edit',
+  selector: 'app-shared-model-edit',
   templateUrl: './product-edit.component.html',
   styleUrls: ['./product-edit.component.css']
 })
@@ -23,7 +23,7 @@ export class ProductEditComponent implements OnInit{
     this.productService.createProduct(this.prod).subscribe(
       (response) => this.prod = response,
       (error: any) => console.log(error),
-      () => console.log('Done creating product'),
+      () => console.log('Done creating shared-model'),
     )
   }
 
@@ -33,7 +33,7 @@ export class ProductEditComponent implements OnInit{
     this.productService.updateProduct(this.prod).subscribe(
       (response) => this.prod = response,
       (error: any) => console.log(error),
-      () => console.log('Done updating product'),
+      () => console.log('Done updating shared-model'),
     )
   }
 
@@ -47,7 +47,7 @@ export class ProductEditComponent implements OnInit{
     this.productService.deleteProduct(this.prod).subscribe(
       () => this.onProductReset(),
       (error: any) => console.log(error),
-      () => console.log('Done deleting product'),
+      () => console.log('Done deleting shared-model'),
     )
   }
 
