@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../shared-model/product.model";
 import {HttpClient} from "@angular/common/http";
-import {ProductService} from "./product.service";
+import {ProductEditService} from "./product-edit.service";
 
 @Component({
   selector: 'app-shared-model-edit',
@@ -13,7 +13,7 @@ export class ProductEditComponent implements OnInit{
   showId = true;
 
   constructor(private http: HttpClient,
-              private productService: ProductService) {}
+              private productService: ProductEditService) {}
 
 
   ngOnInit() {}

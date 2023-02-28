@@ -8,7 +8,7 @@
   <title>Natashop-admin</title>
 </head>
 <body>
-<div class="container container-background">
+<div class="container container-background base-padding">
   <div class="row">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Clients</a>
+              <a class="nav-link" routerLink="/admin/products" routerLinkActive="active-link" >Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sales</a>
@@ -35,7 +35,7 @@
               <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Reviews</a>
+              <a class="nav-link" href="#">Reviews</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -65,19 +65,19 @@
             <path fill-rule="evenodd"
                   d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
           </svg>
-          <a class="base-link" routerLink="/admin/products" routerLinkActive="active">Go Back</a>
+          <a class="base-link" href="#">Go Back</a>
         </li>
       </ul>
 
       <ul class="d-grid gap-2 d-md-flex justify-content-md-end">
         <li class="base-item btn btn-light">
-          <a class="base-link" routerLink="/component" routerLinkActive="active">Preview on Website</a>
+          <a class="base-link" routerLink="/component">Preview on Website</a>
         </li>
         <li class="base-item btn btn-light">
-          <a class="base-link" routerLink="/component" routerLinkActive="active">Duplicate</a>
+          <a class="base-link" routerLink="/component">Duplicate</a>
         </li>
         <li class="base-item btn btn-light">
-          <a class="base-link" routerLink="/admin/product-edit/add" routerLinkActive="active">Create new Product</a>
+          <a class="base-link" routerLink="/admin/product/add">Create new Product</a>
         </li>
       </ul>
     </div>
