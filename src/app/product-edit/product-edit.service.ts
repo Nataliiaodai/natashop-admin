@@ -25,4 +25,8 @@ export class ProductEditService {
     return this.http.delete('http://localhost:3000/products/' + product._id);
   }
 
+  getProduct(idToGetProduct: number):Observable<any> {
+    return this.http.get('http://localhost:3000/products/'+ idToGetProduct);
+  }
+
 }
