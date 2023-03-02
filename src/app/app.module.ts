@@ -5,13 +5,13 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import {ProductEditComponent} from './product-edit/product-edit.component';
+import {ProductComponent} from './product/product.component';
 import {ProductListComponent} from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductEditComponent,
+    ProductComponent,
     ProductListComponent,
   ],
   imports: [

@@ -1,13 +1,13 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ProductEditComponent} from "./product-edit/product-edit.component";
+import {ProductComponent} from "./product/product.component";
 import {ProductListComponent} from "./product-list/product-list.component";
 
 
 const routes: Routes = [
   {path: 'admin/products', component: ProductListComponent},
-  {path: 'admin/product/add', component: ProductEditComponent},
-  {path: 'admin/product/edit/:productId', component: ProductEditComponent},
+  {path: 'admin/product/add', component: ProductComponent},
+  {path: 'admin/product/edit/:productId', component: ProductComponent},
 
 ];
 

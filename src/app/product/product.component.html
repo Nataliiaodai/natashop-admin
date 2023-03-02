@@ -5,7 +5,7 @@
     Creating new Product
   </h3>
   <hr>
-  <form  (ngSubmit)="onProductCreate()">
+  <form  (ngSubmit)="onProductSave()">
     <div class="row parent-border-block">
       <div class="col-md-5">
         <p *ngIf="showId === true">{{prod._id}}</p>
@@ -147,21 +147,7 @@
     </div>
 <!--    <hr>-->
     <div class="d-grid gap-2 d-md-flex justify-content-md-end base-bottoms-margin">
-      <!--      Send put request-->
-      <button
-        class="btn btn-light me-md-2"
-        type="button"
-        (click)="onProductUpdate()">Save
-      </button>
-      <!--      Send post request-->
-      <button class="btn btn-success me-md-2" type="submit">Create</button>
-      <!--      Delete form field-->
-      <button
-        class="btn btn-warning"
-        type="reset"
-        (click)="onProductReset()">Reset
-      </button>
-      <!--      Delete shared-model by id-->
+      <button class="btn btn-success me-md-2" type="submit">Save</button>
       <button
         class="btn btn-danger"
         type="reset"
