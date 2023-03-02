@@ -14,23 +14,34 @@ export class ProductEditComponent implements OnInit{
   showId = true;
   id: number;
 
-
-
   constructor(private http: HttpClient,
               private productEditService: ProductEditService,
               private router: Router,
               private route: ActivatedRoute) {
   }
 
-
-
   ngOnInit() {
-    // this.currentURL = this.router.url;
-    // console.log(this.currentURL);
-    // let idToGetProduct = this.route.snapshot.params ['id'];
-    // console.log('onInit ' + this.route.snapshot.params ['id']);
-    // this.productEditService.getProduct(idToGetProduct)
-    //   .subscribe((response) => this.prod = response);
+    console.log("ngOnInit. this.router.url=" + this.router.url);
+    const idToGetProduct = this.route.snapshot.params ['productId'];
+
+    if (idToGetProduct) {
+      console.log('ngOnInit. idToGetProduct=' + idToGetProduct);
+      this.productEditService.getProduct(idToGetProduct)
+        .subscribe((response) => {
+          console.log("Done productService.getProduct. old this.prod = " + JSON.stringify(this.prod));
+          console.log("Done productService.getProduct. response = " + JSON.stringify(response));
+          this.setProduct(response);
+          console.log("Done productService.getProduct. new this.prod = " + JSON.stringify(this.prod));
+
+        });
+    }
+
+    console.log("ngOnInit. Done.");
+  }
+
+  setProduct(updatedProduct: Product) {
+    console.log("Setting this.prod = " + JSON.stringify(updatedProduct));
+    this.prod = updatedProduct;
   }
 
 
@@ -38,10 +49,18 @@ export class ProductEditComponent implements OnInit{
     this.showId = true;
     this.productEditService.createProduct(this.prod).subscribe(
       (response) => {
+        console.log("Before navigate. response = " + JSON.stringify(response));
         this.router.navigate(['admin/product/edit', response._id])
-          .then(() => console.log(this.router));
-        this.prod = response;
-        console.log(response);
+          .then(() => {
+            // console.log(this.router);
+            // console.log("this.prod = " + JSON.stringify(this.prod))
+            console.log("Router navigate done. response = " + JSON.stringify(response));
+            // this.prod = response;
+            // console.log("this.prod = " + JSON.stringify(this.prod))
+          });
+        // this.prod = response;
+        console.log("After navigate. response = " + JSON.stringify(response));
+
       },
 
       (error: any) => console.log(error),
@@ -53,7 +72,10 @@ export class ProductEditComponent implements OnInit{
   onProductUpdate(): void {
     this.showId = true;
     this.productEditService.updateProduct(this.prod).subscribe(
-      (response) => this.prod = response,
+      (response) => {
+        console.log('productService.updateProduct = ' + JSON.stringify(response));
+        this.setProduct(response);
+      },
       (error: any) => console.log(error),
       () => console.log('Done updating product'),
     )
