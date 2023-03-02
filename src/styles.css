@@ -37,9 +37,9 @@ body {
   padding-right: 60px;
 }
 
-.base-bottoms-margin {
-  margin: 40px 0 40px 0;
-}
+/*.base-bottoms-margin {*/
+/*  margin: 40px 0 40px 0;*/
+/*}*/
 
 textarea:hover {
   background-color: aliceblue;
