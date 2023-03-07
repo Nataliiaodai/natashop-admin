@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: white;
-  margin: 40px 0 40px 0;
+  /*margin: 40px 0 40px 0;*/
 }
 
 
@@ -10,7 +10,6 @@ body {
   box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
 }
 .parent-border-block {
-
   display: flex;
   justify-content: space-between;
 }
@@ -19,6 +18,7 @@ body {
 .flex-list {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .base-link {
@@ -47,4 +47,9 @@ textarea:hover {
 
 input:hover {
   background-color: aliceblue;
+}
+
+.paging{
+  display: flex;
+  align-items: center;
 }

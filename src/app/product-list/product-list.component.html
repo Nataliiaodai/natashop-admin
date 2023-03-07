@@ -9,22 +9,64 @@
 </head>
 <body>
 <hr>
+<div class="flex-list">
+  <h3>
+    Products
+  </h3>
+  <div class="paging">
+    <button (click)="onGettingPreviousPage()" type="button" class="btn btn-link"><</button>
+     <div>Page<span><b> {{ page }} </b></span> of  <span><b>{{ pagesTotal }}</b></span></div>
+    <button (click)="onGettingNextPage()" type="button" class="btn btn-link">></button>
+  </div>
 
+<!--  name="itemsOnPage"-->
+<!--  [(ngModel)]="params.limit"-->
+
+<!--  <p>-->
+<!--    <b>{{productList.length}}</b> Items On Page-->
+<!--  </p>-->
+  <div ngModel name="limit"
+       [(ngModel)]="productListService.params.limit" class="dropdown">
+    <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      {{productListService.params.limit}}
+
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item">25</a></li>
+      <li><a class="dropdown-item">50</a></li>
+      <li><a class="dropdown-item">100</a></li>
+      <li><a class="dropdown-item">200</a></li>
+      <li><a class="dropdown-item">500</a></li>
+    </ul>
+  </div>
+  <p>
+    Total goods: <b>{{itemsTotal}}</b>;  Filtered: <b>{{itemsFiltered}}</b>;
+  </p>
+
+<!--  <button-->
+<!--    class="btn btn-danger"-->
+<!--    type="reset"-->
+<!--    (click)="onFitersReset()">Reset all Filters-->
+<!--  </button>-->
+</div>
+<hr>
     <table class="table">
       <thead>
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">Image</th>
         <th scope="col">ID</th>
         <th scope="col">Name</th>
-        <th scope="col">Price</th>
+        <th scope="col">Price $ </th>
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Momo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let productListItem of productList; let i = index">
+        <th scope="row">
+          <img style="height: 50px;width: 50px;" src="{{productListItem.medias[0].variantsUrls.small}}" alt="{{productListItem.medias[0].altText.uk}}">
+        </th>
+        <td>{{productListItem._id}}</td>
+        <td>{{productListItem.name.uk}}</td>
+        <td>{{productListItem.price}}</td>
       </tr>
       </tbody>
     </table>
