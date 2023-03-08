@@ -5,10 +5,4 @@ export class URLSearchParamsModel {
   sort?: string = '_id';
   direction?: string = 'asc';
 
-  // page?: number;
-  // limit?: number;
-  // searchString?: string;
-  // sort?: string;
-  // direction?: string;
-
 }

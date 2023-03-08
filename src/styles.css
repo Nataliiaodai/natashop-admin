@@ -19,6 +19,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+}
+
+.margin {
+  margin-right: 5px;
 }
 
 .base-link {

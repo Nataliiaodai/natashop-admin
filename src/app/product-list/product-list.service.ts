@@ -15,8 +15,14 @@ export class ProductListService {
   }
 
   fetchProductList():Observable<any> {
-    return this.http.get(`http://localhost:3000/products?${this.params}`);
-    // return this.http.get('http://localhost:3000/products?page=0&limit=25&searchString=поталь&sort=_id&direction=asc');
+      // return this.http.get(`http://localhost:3000/products?
+      // page=${this.params.page}
+      // &limit=${this.params.limit}
+      // &searchString=${this.params.searchString}
+      // &sort=${this.params.sort}
+      // &direction=${this.params.direction}`);
+
+      return this.http.get('http://localhost:3000/products?page=0&limit=25&searchString=поталь&sort=_id&direction=asc');
   }
 
   getNextPage() {
@@ -29,9 +35,21 @@ export class ProductListService {
     }
   }
 
-  filtersReset() {
-    console.log('All filters were reset');
+  sortByID() {
+    this.params.sort = '_id';
   }
+
+  sortByName() {
+    this.params.sort = 'name.uk';
+  }
+
+  sortByPrice() {
+    this.params.sort = 'price';
+  }
+
+  // filtersReset() {
+  //   console.log('All filters were reset');
+  // }
 
 
 
