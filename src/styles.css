@@ -9,6 +9,7 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
 }
+
 .parent-border-block {
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,7 @@ body {
 .base-link {
   text-decoration: none;
   color: black;
-  }
+}
 
 .base-item {
   text-decoration: none;
@@ -54,7 +55,7 @@ input:hover {
   background-color: aliceblue;
 }
 
-.paging{
+.paging {
   display: flex;
   align-items: center;
 }

@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {ProductListService} from "./product-list.service";
 import {ProductListItem} from "../shared-model/product-list-item.model";
+import {URLSearchParamsModel} from "../shared-model/URLSearchParams.model";
 
 
 @Component({
@@ -8,39 +9,53 @@ import {ProductListItem} from "../shared-model/product-list-item.model";
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent  implements OnInit{
-  productList: ProductListItem [] = [];
-  constructor(public productListService: ProductListService) {}
+export class ProductListComponent implements OnInit {
+  // productList: ProductListItem [] = [];
 
-  itemsTotal: number;
-  itemsFiltered: number;
-  page: number;
-  pagesTotal: number;
 
-  onGettingNextPage() {
-    this.productListService.getNextPage();
+  constructor(public productListService: ProductListService) {
   }
 
+  // itemsTotal: number;
+  // itemsFiltered: number;
+  // page: number;
+  // pagesTotal: number;
+
+  // ngOnChanges(changes: SimpleChanges) {
+  //   if ( !changes['params'].firstChange) {
+  //     this.fetchAndSaveResponseData();
+  //   }
+  //   console.log(changes['params'].currentValue);
+  //   // this.fetchAndSaveResponseData();
+  // }
+
+
+  // onItemsOnPageChange(eventData: Event) {
+  //   console.log((<HTMLInputElement>eventData.target).value);
+  //   this.fetchAndSaveResponseData();
+  // }
+
+  onGettingNextPage() {
+    if (this.productListService.params.page < this.productListService.pagesTotal) {
+      this.productListService.params.page += 1;
+      this.productListService.getNextPage();
+    }
+  }
+
+
   onGettingPreviousPage() {
-    this.productListService.getPreviousPage();
+    if (this.productListService.params.page > 1) {
+      this.productListService.params.page -= 1;
+      this.productListService.getPreviousPage();
+    }
   }
 
   fetchAndSaveResponseData() {
     this.productListService.fetchProductList()
-      .subscribe((response) => {
-        console.log(response);
-        this.itemsFiltered = response["itemsFiltered"];
-        this.itemsTotal = response["itemsTotal"];
-        this.page = response["page"];
-        this.pagesTotal = response["pagesTotal"];
-        console.log(this.itemsFiltered);
-        console.log(this.itemsTotal);
-        console.log(this.page);
-        console.log(this.pagesTotal);
-        this.productList = response["data"];
-        console.log(this.productList);
-        console.log(this.productListService.params);
-      })
+  }
+
+  onShow() {
+    this.fetchAndSaveResponseData();
   }
 
   ngOnInit() {
@@ -76,9 +91,10 @@ export class ProductListComponent  implements OnInit{
     }
     this.fetchAndSaveResponseData();
   }
-  // onFiltersReset() {
-  //   this.productListService.filtersReset()
-  // }
+
+  onFiltersReset() {
+    this.productListService.filtersReset();
+  }
 
 
 }
