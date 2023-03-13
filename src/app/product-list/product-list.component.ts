@@ -1,7 +1,6 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductListService} from "./product-list.service";
-import {ProductListItem} from "../shared-model/product-list-item.model";
-import {URLSearchParamsModel} from "../shared-model/URLSearchParams.model";
+
 
 
 @Component({
@@ -10,30 +9,11 @@ import {URLSearchParamsModel} from "../shared-model/URLSearchParams.model";
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  // productList: ProductListItem [] = [];
-
+  errorOccurs = false;
 
   constructor(public productListService: ProductListService) {
   }
 
-  // itemsTotal: number;
-  // itemsFiltered: number;
-  // page: number;
-  // pagesTotal: number;
-
-  // ngOnChanges(changes: SimpleChanges) {
-  //   if ( !changes['params'].firstChange) {
-  //     this.fetchAndSaveResponseData();
-  //   }
-  //   console.log(changes['params'].currentValue);
-  //   // this.fetchAndSaveResponseData();
-  // }
-
-
-  // onItemsOnPageChange(eventData: Event) {
-  //   console.log((<HTMLInputElement>eventData.target).value);
-  //   this.fetchAndSaveResponseData();
-  // }
 
   onGettingNextPage() {
     if (this.productListService.params.page < this.productListService.pagesTotal) {
@@ -54,9 +34,9 @@ export class ProductListComponent implements OnInit {
     this.productListService.fetchProductList()
   }
 
-  onShow() {
-    this.fetchAndSaveResponseData();
-  }
+  // onShow() {
+  //   this.fetchAndSaveResponseData();
+  // }
 
   ngOnInit() {
     this.fetchAndSaveResponseData();
@@ -97,4 +77,12 @@ export class ProductListComponent implements OnInit {
   }
 
 
+  onGetProductDetail(prodId) {
+    this.productListService.getProductDetail(prodId);
+  }
+
+
+  onImageError (event: any) {
+    this.productListService.handleImageError(event);
+  }
 }

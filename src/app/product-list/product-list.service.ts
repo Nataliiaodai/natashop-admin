@@ -1,8 +1,8 @@
-import {Injectable, Input, OnChanges, SimpleChanges} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
 import {URLSearchParamsModel} from "../shared-model/URLSearchParams.model";
 import {ProductListItem} from "../shared-model/product-list-item.model";
+import {ActivatedRoute, Router} from "@angular/router";
 
 
 @Injectable({
@@ -19,7 +19,9 @@ export class ProductListService {
   pagesTotal: number;
 
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+              private route: ActivatedRoute,
+              private router: Router) {
   }
 
 
@@ -39,7 +41,6 @@ export class ProductListService {
         console.log(this.productList);
         console.log(this.params);
       })
-    // return this.http.get('http://localhost:3000/products?page=0&limit=25&searchString=поталь&sort=_id&direction=asc');
   }
 
   getNextPage() {
@@ -64,8 +65,19 @@ export class ProductListService {
 
   filtersReset() {
     this.params = new URLSearchParamsModel();
+    this.fetchProductList();
     console.log('All filters were reset');
   }
 
+  getProductDetail(productId) {
+      console.log(productId);
+         this.router.navigate(['admin/product/edit/' + productId])
+          .then();
+      }
+
+
+  handleImageError(event:any) {
+        event.target.src = 'https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg';
+      }
 
 }

@@ -3,6 +3,7 @@ import {Product} from "../shared-model/product.model";
 import {HttpClient} from "@angular/common/http";
 import {ProductService} from "./product.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {ProductListService} from "../product-list/product-list.service";
 
 @Component({
   selector: 'app-shared-model-edit',
@@ -10,15 +11,19 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit{
-  prod: Product = new Product();
+  // prod: Product = new Product();
   showId = true;
   id: number;
   idToGetProduct: any;
+
+  currentURL: any = this.router.url;
+
   constructor(private http: HttpClient,
-              private productService: ProductService,
+              public productService: ProductService,
               private router: Router,
               private route: ActivatedRoute) {
   }
+
 
   ngOnInit() {
     console.log("ngOnInit. this.router.url=" + this.router.url);
@@ -28,10 +33,10 @@ export class ProductComponent implements OnInit{
       console.log('ngOnInit. idToGetProduct=' + this.idToGetProduct);
       this.productService.getProduct(this.idToGetProduct)
         .subscribe((response) => {
-          console.log("Done productService.getProduct. old this.prod = " + JSON.stringify(this.prod));
+          console.log("Done productService.getProduct. old this.prod = " + JSON.stringify(this.productService.prod));
           console.log("Done productService.getProduct. response = " + JSON.stringify(response));
           this.setProduct(response);
-          console.log("Done productService.getProduct. new this.prod = " + JSON.stringify(this.prod));
+          console.log("Done productService.getProduct. new this.prod = " + JSON.stringify(this.productService.prod));
 
         });
     }
@@ -41,7 +46,7 @@ export class ProductComponent implements OnInit{
 
   setProduct(updatedProduct: Product) {
     console.log("Setting this.prod = " + JSON.stringify(updatedProduct));
-    this.prod = updatedProduct;
+    this.productService.prod = updatedProduct;
   }
 
 
@@ -49,7 +54,7 @@ export class ProductComponent implements OnInit{
     this.showId = true;
     if(this. idToGetProduct) {
       this.showId = true;
-      this.productService.updateProduct(this.prod).subscribe(
+      this.productService.updateProduct(this.productService.prod).subscribe(
         (response) => {
           console.log('productService.updateProduct = ' + JSON.stringify(response));
           this.setProduct(response);
@@ -58,7 +63,7 @@ export class ProductComponent implements OnInit{
         () => console.log('Done updating product'),
       )
     } else {
-      this.productService.createProduct(this.prod).subscribe(
+      this.productService.createProduct(this.productService.prod).subscribe(
         (response) => {
           console.log("Before navigate. response = " + JSON.stringify(response));
           this.router.navigate(['admin/product/edit', response._id])
@@ -77,7 +82,7 @@ export class ProductComponent implements OnInit{
 
   onProductDelete(): void {
     this.showId = false;
-    this.productService.deleteProduct(this.prod).subscribe(
+    this.productService.deleteProduct(this.productService.prod).subscribe(
       () => {
         this.router.navigate(['admin/product/add'])
           .then();

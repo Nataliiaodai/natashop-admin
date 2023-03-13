@@ -17,6 +17,7 @@ body {
 
 
 .flex-list {
+  max-height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -58,4 +59,13 @@ input:hover {
 .paging {
   display: flex;
   align-items: center;
+}
+
+.visibilityHidden {
+  visibility:hidden;
+}
+
+.flex-image {
+  display: flex;
+  justify-content: space-around;
 }

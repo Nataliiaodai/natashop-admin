@@ -3,9 +3,12 @@
   <form (ngSubmit)="onProductSave()">
     <hr>
     <div class="flex-list ">
-    <h3>
+    <h3  *ngIf="currentURL ==='/admin/product/add'">
       Creating new Product
     </h3>
+      <h3 *ngIf="currentURL !=='/admin/product/add'">
+        Product Detail
+      </h3>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end base-bottoms-margin">
       <button class="btn btn-success me-md-2" type="submit">Save</button>
       <button
@@ -18,14 +21,14 @@
     <hr>
     <div class="row parent-border-block">
       <div class="col-md-5">
-        <p *ngIf="showId === true">{{prod._id}}</p>
+        <p *ngIf="showId === true">{{this.productService.prod._id}}</p>
         <div class="mb-3">
           <label for="nameUk" class="form-label">Product Name</label>
           <p>uk:</p>
           <input
             ngModel
             name="name2"
-            [(ngModel)]="prod.name.uk"
+            [(ngModel)]="this.productService.prod.name.uk"
             type="text"
             class="form-control"
             id="nameUk">
@@ -35,7 +38,7 @@
           <input
             ngModel
             name="name3"
-            [(ngModel)]="prod.name.en"
+            [(ngModel)]="this.productService.prod.name.en"
             type="text"
             class="form-control"
             id="nameEN">
@@ -46,7 +49,7 @@
           <input
             ngModel
             name="price"
-            [(ngModel)]="prod.price"
+            [(ngModel)]="this.productService.prod.price"
             type="number"
             class="form-control"
             id="price"
@@ -63,7 +66,7 @@
           <textarea
             ngModel
             name="fullDescription2"
-            [(ngModel)]="prod.fullDescription.uk"
+            [(ngModel)]="this.productService.prod.fullDescription.uk"
             class="form-control"
             id="descriptionUk"
             style="height: 80px"></textarea>
@@ -75,7 +78,7 @@
           <textarea
             ngModel
             name="fullDescription3"
-            [(ngModel)]="prod.fullDescription.en"
+            [(ngModel)]="this.productService.prod.fullDescription.en"
             class="form-control"
             id="descriptionEn"
             style="height: 80px"></textarea>
@@ -87,7 +90,7 @@
           <textarea
             ngModel
             name="note"
-            [(ngModel)]="prod.note"
+            [(ngModel)]="this.productService.prod.note"
             class="form-control"
             id="note"
             style="height:70px"></textarea>
@@ -95,6 +98,22 @@
         </div>
       </div>
     <hr>
+
+    <h3 style="text-align: center; margin-bottom: 15px">
+      Images
+    </h3>
+    <div class="flex-image" *ngIf="currentURL !=='/admin/product/add'">
+      <!--      <div *ngFor="let productListItem of this.productListService.productList;">-->
+      <!--        <img *ngFor="let imageList of productListItem.medias" style="height: 50px; width: 50px;" src="{{imageList?.variantsUrls.medium}}" alt="{{imageList.altText}}" (error)="this.productListService.handleImageError($event)">-->
+      <!--      </div>-->
+      <div *ngFor="let productImage of productService.prod.medias ">
+        <img class="flex-image" style="width: 140px; height: 105px;" src="{{productImage.variantsUrls.medium}}" alt="{{productImage.altText}}">
+      </div>
+    </div>
+
+    <hr>
+
   </form>
+
 </div>
 

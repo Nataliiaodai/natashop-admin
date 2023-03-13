@@ -16,12 +16,12 @@
     Products
   </h3>
   <div class="paging">
-    <button *ngIf="this.productListService.params.page > 1" (click)="onGettingPreviousPage()" type="button"
+    <button [ngClass]="{visibilityHidden: this.productListService.page === 1}" (click)="onGettingPreviousPage()" type="button"
             class="btn btn-link"><
     </button>
     <div>Page<span><b> {{ this.productListService.page }} </b></span> of
       <span><b>{{ this.productListService.pagesTotal }}</b></span></div>
-    <button *ngIf="this.productListService.params.page < this.productListService.pagesTotal"
+    <button [ngClass]="{visibilityHidden: this.productListService.page  >= this.productListService.pagesTotal}"
             (click)="onGettingNextPage()" type="button" class="btn btn-link">>
     </button>
   </div>
@@ -144,10 +144,9 @@
 
   <tbody>
 
-  <tr *ngFor="let productListItem of this.productListService.productList; let i = index">
-    <th scope="row">
-      <img style="height: 50px; width: 50px;" src="{{productListItem.medias[0].variantsUrls.small}}"
-           alt="{{productListItem.medias[0].altText.uk}}">
+  <tr (click)="onGetProductDetail(productListItem._id)" style="cursor: pointer;" *ngFor="let productListItem of this.productListService.productList;">
+    <th  scope="row">
+      <img style="height: 50px; width: 50px;" src="{{productListItem.medias[0]?.variantsUrls.small}}" alt="{{productListItem.medias[0]?.altText}}" (error)="onImageError($event)">
     </th>
     <td>{{productListItem._id}}
     </td>
