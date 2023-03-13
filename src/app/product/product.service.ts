@@ -30,4 +30,9 @@ export class ProductService {
     return this.http.get('http://localhost:3000/products/'+ idToGetProduct);
   }
 
+  deleteImage(imageIndex: number){
+    console.log(imageIndex);
+    this.prod.medias.splice(imageIndex,1);
+  }
+
 }

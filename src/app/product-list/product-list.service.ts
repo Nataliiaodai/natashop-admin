@@ -77,7 +77,8 @@ export class ProductListService {
 
 
   handleImageError(event:any) {
-        event.target.src = 'https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg';
+         event.target.src = 'https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg';
+        //event.target.src = '/Users/nataliiaodai/projects/natashop-admin/src/img/icon-image-not-found-free-vector.webp';
       }
 
 }

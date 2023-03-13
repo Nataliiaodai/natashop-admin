@@ -94,5 +94,9 @@ export class ProductComponent implements OnInit{
   }
 
 
+  onDeleteImage (imageIndex: number) {
+    this.productService.deleteImage(imageIndex);
+  }
+
 }
 
