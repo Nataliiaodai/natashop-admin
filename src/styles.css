@@ -65,7 +65,14 @@ input:hover {
   visibility:hidden;
 }
 
-.flex-image {
-  display: flex;
-  justify-content: space-around;
+/*.flex-image {*/
+/*  display: flex;*/
+/*  justify-content: space-around;*/
+/*}*/
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-column-gap: 10px;*/
+  grid-row-gap: 2em;
 }
