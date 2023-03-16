@@ -3,7 +3,7 @@ import {Product} from "../shared-model/product.model";
 import {HttpClient} from "@angular/common/http";
 import {ProductService} from "./product.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {ProductListService} from "../product-list/product-list.service";
+
 
 @Component({
   selector: 'app-shared-model-edit',
@@ -11,7 +11,8 @@ import {ProductListService} from "../product-list/product-list.service";
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit{
-  // prod: Product = new Product();
+   prod: Product = new Product();
+
   showId = true;
   id: number;
   idToGetProduct: any;
@@ -33,10 +34,10 @@ export class ProductComponent implements OnInit{
       console.log('ngOnInit. idToGetProduct=' + this.idToGetProduct);
       this.productService.getProduct(this.idToGetProduct)
         .subscribe((response) => {
-          console.log("Done productService.getProduct. old this.prod = " + JSON.stringify(this.productService.prod));
+          console.log("Done productService.getProduct. old this.prod = " + JSON.stringify(this.prod));
           console.log("Done productService.getProduct. response = " + JSON.stringify(response));
           this.setProduct(response);
-          console.log("Done productService.getProduct. new this.prod = " + JSON.stringify(this.productService.prod));
+          console.log("Done productService.getProduct. new this.prod = " + JSON.stringify(this.prod));
 
         });
     }
@@ -46,7 +47,7 @@ export class ProductComponent implements OnInit{
 
   setProduct(updatedProduct: Product) {
     console.log("Setting this.prod = " + JSON.stringify(updatedProduct));
-    this.productService.prod = updatedProduct;
+    this.prod = updatedProduct;
   }
 
 
@@ -54,7 +55,7 @@ export class ProductComponent implements OnInit{
     this.showId = true;
     if(this. idToGetProduct) {
       this.showId = true;
-      this.productService.updateProduct(this.productService.prod).subscribe(
+      this.productService.updateProduct(this.prod).subscribe(
         (response) => {
           console.log('productService.updateProduct = ' + JSON.stringify(response));
           this.setProduct(response);
@@ -63,7 +64,7 @@ export class ProductComponent implements OnInit{
         () => console.log('Done updating product'),
       )
     } else {
-      this.productService.createProduct(this.productService.prod).subscribe(
+      this.productService.createProduct(this.prod).subscribe(
         (response) => {
           console.log("Before navigate. response = " + JSON.stringify(response));
           this.router.navigate(['admin/product/edit', response._id])
@@ -82,7 +83,7 @@ export class ProductComponent implements OnInit{
 
   onProductDelete(): void {
     this.showId = false;
-    this.productService.deleteProduct(this.productService.prod).subscribe(
+    this.productService.deleteProduct(this.prod).subscribe(
       () => {
         this.router.navigate(['admin/product/add'])
           .then();
@@ -95,7 +96,32 @@ export class ProductComponent implements OnInit{
 
 
   onDeleteImage (imageIndex: number) {
-    this.productService.deleteImage(imageIndex);
+    console.log(imageIndex);
+    this.prod.medias.splice(imageIndex,1);
+  }
+
+  onFileSelected (event) {
+    console.log(event);
+    const selectedImageFile : File = event.target.files[0];
+    const formData = new FormData();
+    formData.append('image', selectedImageFile, selectedImageFile.name )
+    this.http.post('http://localhost:3000/products/media', formData)
+      .subscribe(response => {
+        console.log(response);
+        this.prod.medias.push(response);
+      });
+  }
+
+  onLeftMove(index: number) {
+    let imgToMove = this.prod.medias[index];
+    this.prod.medias[index] = this.prod.medias[index - 1];
+    this.prod.medias[index - 1] = imgToMove;
+  }
+
+  onRightMove(index: number) {
+    let imgToMove = this.prod.medias[index];
+    this.prod.medias[index] = this.prod.medias[index + 1];
+    this.prod.medias[index + 1] = imgToMove;
   }
 
 }

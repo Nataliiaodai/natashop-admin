@@ -7,7 +7,6 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class ProductService {
-  prod: Product = new Product();
 
   constructor(private http: HttpClient) { }
 
@@ -30,9 +29,5 @@ export class ProductService {
     return this.http.get('http://localhost:3000/products/'+ idToGetProduct);
   }
 
-  deleteImage(imageIndex: number){
-    console.log(imageIndex);
-    this.prod.medias.splice(imageIndex,1);
-  }
 
 }

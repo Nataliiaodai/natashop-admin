@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: white;
-  /*margin: 40px 0 40px 0;*/
 }
 
 
@@ -44,10 +43,6 @@ body {
   padding-right: 60px;
 }
 
-/*.base-bottoms-margin {*/
-/*  margin: 40px 0 40px 0;*/
-/*}*/
-
 textarea:hover {
   background-color: aliceblue;
 }
@@ -65,14 +60,79 @@ input:hover {
   visibility:hidden;
 }
 
-/*.flex-image {*/
-/*  display: flex;*/
-/*  justify-content: space-around;*/
-/*}*/
-
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /*grid-column-gap: 10px;*/
   grid-row-gap: 2em;
+}
+
+.image-container {
+  display: flex; justify-content: center;
+}
+
+.template-block {
+  width: 180px;
+  height: 145px;
+  display: flex;
+  border: solid grey 1px;
+}
+
+.upload-block {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img-block {
+  padding: 10px;
+}
+
+
+/*.on-hover-arrows {*/
+/*  display: none;*/
+/*}*/
+
+/*.on-hover-arrows:hover {*/
+/*  display: block;*/
+/*}*/
+
+/*.template-block:hover + .on-hover-arrows {*/
+/*  display: block;*/
+/*}*/
+.joinBtn {
+  width: 10em;
+  height: 5ex;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.joinBtnDel {
+  width: 10em;
+  height: 5ex;
+  background-image: linear-gradient(135deg, #cc351a 40%, #f1b828);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.joinBtn:active {
+  box-shadow: 2px 2px 5px #fc894d;
+}
+
+.move-arrows{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.move-arrows:hover{
+  background-color: #f1b828;
+}
+
+.move-arrows:active {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.57);
 }
