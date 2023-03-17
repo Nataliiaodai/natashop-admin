@@ -1,4 +1,4 @@
-import {Component, Injectable, OnInit} from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 
 @Injectable()
 @Component({
@@ -6,12 +6,8 @@ import {Component, Injectable, OnInit} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
+export class AppComponent {
+  title = 'natashop-admin';
 
 }
 

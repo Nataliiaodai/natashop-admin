@@ -8,7 +8,7 @@ export class ProductPage {
   pagesTotal: number;
   data: ProductListItem[];
 
-  constructor(itemsFiltered: number = 0, itemsTotal: number = 0, page: number = 0, pagesTotal: number = 0, data: ProductListItem[] = []) {
+  constructor(itemsFiltered = 0, itemsTotal = 0, page = 0, pagesTotal = 0, data: ProductListItem[] = []) {
     this.itemsFiltered = itemsFiltered;
     this.itemsTotal = itemsTotal;
     this.page = page;

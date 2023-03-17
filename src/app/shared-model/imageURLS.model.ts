@@ -5,7 +5,7 @@ export class ImageURLSModel {
   small: string;
   large_square: string;
 
-  constructor(original: string = '', large: string = '', medium: string = '', small: string = '', large_square: string = '') {
+  constructor(original = '', large = '', medium = '', small = '', large_square = '') {
     this.original = original;
     this.large = large;
     this.medium = medium;

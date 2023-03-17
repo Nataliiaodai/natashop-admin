@@ -1,85 +1,25 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {URLSearchParamsModel} from "../shared-model/URLSearchParams.model";
-import {ProductListItem} from "../shared-model/product-list-item.model";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ProductPage} from "../shared-model/product-page.model";
+import {Observable} from "rxjs";
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductListService {
-  params: URLSearchParamsModel = new URLSearchParamsModel();
-
-  productList: ProductListItem [] = [];
-
-  itemsTotal: number = 0;
-  itemsFiltered: number = 0;
-  page: number = 0;
-  pagesTotal: number = 0;
-
 
   constructor(private http: HttpClient,
               private route: ActivatedRoute,
-              private router: Router) {
+              public router: Router) {
   }
 
+  fetchProductPage(page: number, limit: number, searchString: string, sort: string, direction: string): Observable<ProductPage> {
+    return this.http.get<ProductPage>(
+      `http://localhost:3000/products?page=${page}&limit=${limit}&searchString=${searchString}&sort=${sort}&direction=${direction}`)
 
-  fetchProductList() {
-    this.http.get<ProductPage>(`http://localhost:3000/products?page=${this.params.page}&limit=${this.params.limit}&searchString=${this.params.searchString}&sort=${this.params.sort}&direction=${this.params.direction}`)
-      .subscribe((productPageResponse) => {
-        console.log(productPageResponse);
-        this.itemsFiltered = productPageResponse.itemsFiltered;
-        this.itemsTotal = productPageResponse["itemsTotal"];
-        this.page = productPageResponse["page"];
-        this.pagesTotal = productPageResponse["pagesTotal"];
-        console.log(this.itemsFiltered);
-        console.log(this.itemsTotal);
-        console.log(this.page);
-        console.log(this.pagesTotal);
-        this.productList = productPageResponse["data"];
-        console.log(this.productList);
-        console.log(this.params);
-      })
   }
-
-  getNextPage() {
-    this.fetchProductList();
-  }
-
-  getPreviousPage() {
-    this.fetchProductList();
-  }
-
-  sortByID() {
-    this.params.sort = '_id';
-  }
-
-  sortByName() {
-    this.params.sort = 'name.uk';
-  }
-
-  sortByPrice() {
-    this.params.sort = 'price';
-  }
-
-  filtersReset() {
-    this.params = new URLSearchParamsModel();
-    this.fetchProductList();
-    console.log('All filters were reset');
-  }
-
-  getProductDetail(productId: number) {
-      console.log(productId);
-         this.router.navigate(['admin/product/edit/' + productId])
-          .then();
-      }
-
-
-  handleImageError(event:any) {
-         event.target.src = 'https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg';
-        //event.target.src = '/Users/nataliiaodai/projects/natashop-admin/src/img/icon-image-not-found-free-vector.webp';
-      }
 
 }
+

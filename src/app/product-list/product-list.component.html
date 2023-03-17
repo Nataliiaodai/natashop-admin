@@ -10,18 +10,17 @@
 <body>
 <hr>
 
-<!--<button (click)="onShow()" type="button" class="btn btn-link">SHOW ME what I`ve done</button>-->
 <div class="flex-list">
   <h3>
     Products
   </h3>
   <div class="paging">
-    <button [ngClass]="{visibilityHidden: this.productListService.page === 1}" (click)="onGettingPreviousPage()" type="button"
+    <button [ngClass]="{visibilityHidden: this.page === 1}" (click)="onGettingPreviousPage()" type="button"
             class="btn btn-link"><
     </button>
-    <div>Page<span><b> {{ this.productListService.page }} </b></span> of
-      <span><b>{{ this.productListService.pagesTotal }}</b></span></div>
-    <button [ngClass]="{visibilityHidden: this.productListService.page  >= this.productListService.pagesTotal}"
+    <div>Page<span><b> {{ this.page }} </b></span> of
+      <span><b>{{ this.pagesTotal }}</b></span></div>
+    <button [ngClass]="{visibilityHidden: this.page  >= this.pagesTotal}"
             (click)="onGettingNextPage()" type="button" class="btn btn-link">>
     </button>
   </div>
@@ -31,11 +30,10 @@
     <p class="margin">Items on Page</p>
     <select (change)="fetchAndSaveResponseData()"
             ngModel name="limit"
-            [(ngModel)]="productListService.params.limit"
+            [(ngModel)]="this.limit"
             class="form-select form-control"
             aria-label="Default select example"
             style="width: 80px;">
-      <!--      <option selected>25</option>-->
       <option value="25">25</option>
       <option value="50">50</option>
       <option value="100">100</option>
@@ -44,8 +42,8 @@
     </select>
   </div>
 
-  <p>Total goods: <b>{{this.productListService.itemsTotal}}</b>;</p>
-  <p>Filtered: <b>{{this.productListService.itemsFiltered}}</b>;</p>
+  <p>Total goods: <b>{{this.itemsTotal}}</b>;</p>
+  <p>Filtered: <b>{{this.itemsFiltered}}</b>;</p>
 
 
   <button
@@ -66,13 +64,13 @@
     <th scope="col">
       <span (click)="onSortByID()" style="cursor: pointer"> ID
 
-     <svg *ngIf=" productListService.params.sort === '_id' && productListService.params.direction === 'desc'"
+     <svg *ngIf=" this.sort === '_id' && this.direction === 'desc'"
           xmlns="http://www.w3.org/2000/svg" width="16"
           height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
               d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
       </svg>
-      <svg *ngIf="productListService.params.sort === '_id' && productListService.params.direction === 'asc'"
+      <svg *ngIf="this.sort === '_id' && this.direction === 'asc'"
            xmlns="http://www.w3.org/2000/svg" width="16"
            height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
@@ -91,13 +89,13 @@
     <th scope="col">
       <span (click)="onSortByName()" style="cursor: pointer"> Name
 
-        <svg *ngIf="productListService.params.sort === 'name.uk' && productListService.params.direction === 'desc'"
+        <svg *ngIf="this.sort === 'name.uk' && this.direction === 'desc'"
              xmlns="http://www.w3.org/2000/svg" width="16"
              height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
               d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
       </svg>
-      <svg *ngIf="productListService.params.sort === 'name.uk' && productListService.params.direction === 'asc'"
+      <svg *ngIf="this.sort === 'name.uk' && this.direction === 'asc'"
            xmlns="http://www.w3.org/2000/svg" width="16"
            height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
@@ -109,7 +107,7 @@
       <div style="width: 150px">
         <label for="nameToSearch" class="form-label"></label>
         <input (input)="fetchAndSaveResponseData()" ngModel name="sortByName"
-               [(ngModel)]="productListService.params.searchString" class="form-control" id="nameToSearch">
+               [(ngModel)]="this.searchString" class="form-control" id="nameToSearch">
       </div>
     </th>
 
@@ -117,13 +115,13 @@
     <th scope="col">
       <span (click)="onSortByPrice()" style="cursor: pointer"> Price $
 
-        <svg *ngIf="productListService.params.sort === 'price' &&  productListService.params.direction === 'desc'"
+        <svg *ngIf="this.sort === 'price' &&  this.direction === 'desc'"
              xmlns="http://www.w3.org/2000/svg" width="16"
              height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
               d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
       </svg>
-      <svg *ngIf="productListService.params.sort === 'price' && productListService.params.direction === 'asc'"
+      <svg *ngIf="this.sort === 'price' && this.direction === 'asc'"
            xmlns="http://www.w3.org/2000/svg" width="16"
            height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
@@ -144,7 +142,7 @@
 
   <tbody>
 
-  <tr (click)="onGetProductDetail(productListItem._id)" style="cursor: pointer;" *ngFor="let productListItem of this.productListService.productList;">
+  <tr (click)="onGetProductDetail(productListItem._id)" style="cursor: pointer;" *ngFor="let productListItem of this.productList;">
     <th  scope="row">
       <img style="height: 50px; width: 50px;" src="{{productListItem.medias[0]?.variantsUrls?.small}}" alt="{{productListItem.medias[0]?.altText}}" (error)="onImageError($event)">
     </th>

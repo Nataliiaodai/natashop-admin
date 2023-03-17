@@ -11,9 +11,9 @@ export class Product {
   medias: MediasObjectModel [] = [];
 
   constructor(name: MultiLangText = new MultiLangText(),
-              price: number = 0,
-              note: string = '',
-              _id: number = 0,
+              price = 0,
+              note = '',
+              _id = 0,
               fullDescription: MultiLangText = new MultiLangText(),
               medias: MediasObjectModel [] = []) {
     this.name = name;

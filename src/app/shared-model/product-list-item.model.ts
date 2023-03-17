@@ -7,7 +7,7 @@ export class ProductListItem {
     price: number;
     medias: MediasObjectModel[] = [];
 
-    constructor(_id: number = 0, name: MultiLangText = new MultiLangText(), price: number = 0, medias: MediasObjectModel[] = []) {
+    constructor(_id = 0, name: MultiLangText = new MultiLangText(), price = 0, medias: MediasObjectModel[] = []) {
       this._id = _id;
       this.name = name;
       this.price = price;

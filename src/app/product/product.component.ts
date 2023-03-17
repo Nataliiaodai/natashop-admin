@@ -16,9 +16,9 @@ export class ProductComponent implements OnInit{
   prod: Product = new Product();
 
   showId = true;
-   id: number = 0;
+   id = 0;
 
-  idToGetProduct: any;
+  idToGetProduct = this.route.snapshot.params ['productId'];
 
   currentURL: any = this.router.url;
 
@@ -31,7 +31,7 @@ export class ProductComponent implements OnInit{
 
   ngOnInit() {
     console.log("ngOnInit. this.router.url=" + this.router.url);
-    this.idToGetProduct = this.route.snapshot.params ['productId'];
+    // this.idToGetProduct = this.route.snapshot.params ['productId'];
 
     if (this.idToGetProduct) {
       console.log('ngOnInit. idToGetProduct=' + this.idToGetProduct);
@@ -84,7 +84,7 @@ export class ProductComponent implements OnInit{
         () => console.log('Done creating product'),
       )
     }
-  };
+  }
 
 
   onProductDelete(): void {
@@ -119,13 +119,13 @@ export class ProductComponent implements OnInit{
   }
 
   onLeftMove(index: number) {
-    let imgToMove = this.prod.medias[index];
+    const imgToMove = this.prod.medias[index];
     this.prod.medias[index] = this.prod.medias[index - 1];
     this.prod.medias[index - 1] = imgToMove;
   }
 
   onRightMove(index: number) {
-    let imgToMove = this.prod.medias[index];
+    const imgToMove = this.prod.medias[index];
     this.prod.medias[index] = this.prod.medias[index + 1];
     this.prod.medias[index + 1] = imgToMove;
   }
