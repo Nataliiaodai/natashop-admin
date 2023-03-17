@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {ActivatedRoute, Router} from "@angular/router";
 import {ProductPage} from "../shared-model/product-page.model";
 import {Observable} from "rxjs";
 
@@ -10,15 +9,13 @@ import {Observable} from "rxjs";
 })
 export class ProductListService {
 
-  constructor(private http: HttpClient,
-              private route: ActivatedRoute,
-              public router: Router) {
+  constructor(private http: HttpClient) {
   }
 
-  fetchProductPage(page: number, limit: number, searchString: string, sort: string, direction: string): Observable<ProductPage> {
-    return this.http.get<ProductPage>(
-      `http://localhost:3000/products?page=${page}&limit=${limit}&searchString=${searchString}&sort=${sort}&direction=${direction}`)
-
+  public fetchProductPage(page: number, limit: number, searchString: string, sort: string, direction: string): Observable<ProductPage> {
+    let url = `http://localhost:3000/products?page=${page}&limit=${limit}&searchString=${searchString}&sort=${sort}&direction=${direction}`;
+    console.log("GET" + url)
+    return this.http.get<ProductPage>(url)
   }
 
 }
