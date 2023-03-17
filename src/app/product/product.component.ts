@@ -3,6 +3,8 @@ import {Product} from "../shared-model/product.model";
 import {HttpClient} from "@angular/common/http";
 import {ProductService} from "./product.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {MediasObjectModel} from "../shared-model/medias.obect.model";
+
 
 
 @Component({
@@ -11,10 +13,11 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit{
-   prod: Product = new Product();
+  prod: Product = new Product();
 
   showId = true;
-  id: number;
+   id: number = 0;
+
   idToGetProduct: any;
 
   currentURL: any = this.router.url;
@@ -44,6 +47,9 @@ export class ProductComponent implements OnInit{
 
     console.log("ngOnInit. Done.");
   }
+
+
+
 
   setProduct(updatedProduct: Product) {
     console.log("Setting this.prod = " + JSON.stringify(updatedProduct));
@@ -97,15 +103,15 @@ export class ProductComponent implements OnInit{
 
   onDeleteImage (imageIndex: number) {
     console.log(imageIndex);
-    this.prod.medias.splice(imageIndex,1);
+    this.prod.medias?.splice(imageIndex,1);
   }
 
-  onFileSelected (event) {
+  onFileSelected (event: any) {
     console.log(event);
     const selectedImageFile : File = event.target.files[0];
     const formData = new FormData();
     formData.append('image', selectedImageFile, selectedImageFile.name )
-    this.http.post('http://localhost:3000/products/media', formData)
+    this.http.post<MediasObjectModel>('http://localhost:3000/products/media', formData)
       .subscribe(response => {
         console.log(response);
         this.prod.medias.push(response);

@@ -12,17 +12,17 @@ export class ProductService {
 
 
   createProduct(product: Product):Observable<Product> {
-    return this.http.post('http://localhost:3000/products', product);
+    return this.http.post<Product>('http://localhost:3000/products', product);
   }
 
 
   updateProduct(product: Product):Observable<Product> {
-   return this.http.put('http://localhost:3000/products/'+ product._id, product );
+   return this.http.put<Product>('http://localhost:3000/products/'+ product._id, product );
   }
 
 
   deleteProduct(product: Product):Observable<Product> {
-    return this.http.delete('http://localhost:3000/products/' + product._id);
+    return this.http.delete<Product>('http://localhost:3000/products/' + product._id);
   }
 
   getProduct(idToGetProduct: number):Observable<any> {

@@ -1,5 +1,11 @@
 export class MultiLangText {
-  ru?: string;
-  uk?: string;
-  en?: string;
+  uk: string;
+  en: string;
+
+  constructor(uk: string = '', en: string = '') {
+    this.uk = uk;
+    this.en = en;
+  }
 }
+
+

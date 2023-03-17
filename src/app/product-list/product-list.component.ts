@@ -16,7 +16,10 @@ export class ProductListComponent implements OnInit {
 
 
   onGettingNextPage() {
-    if (this.productListService.params.page < this.productListService.pagesTotal) {
+    if (this.productListService.params?.page
+      && this.productListService.pagesTotal
+      && (this.productListService.params?.page < this.productListService.pagesTotal)
+    ) {
       this.productListService.params.page += 1;
       this.productListService.getNextPage();
     }
@@ -24,7 +27,7 @@ export class ProductListComponent implements OnInit {
 
 
   onGettingPreviousPage() {
-    if (this.productListService.params.page > 1) {
+    if (this.productListService.params.page && this.productListService.params.page > 1) {
       this.productListService.params.page -= 1;
       this.productListService.getPreviousPage();
     }
@@ -77,7 +80,7 @@ export class ProductListComponent implements OnInit {
   }
 
 
-  onGetProductDetail(prodId) {
+  onGetProductDetail(prodId: number) {
     this.productListService.getProductDetail(prodId);
   }
 

@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {URLSearchParamsModel} from "../shared-model/URLSearchParams.model";
 import {ProductListItem} from "../shared-model/product-list-item.model";
 import {ActivatedRoute, Router} from "@angular/router";
+import {ProductPage} from "../shared-model/product-page.model";
 
 
 @Injectable({
@@ -13,10 +14,10 @@ export class ProductListService {
 
   productList: ProductListItem [] = [];
 
-  itemsTotal: number;
-  itemsFiltered: number;
-  page: number;
-  pagesTotal: number;
+  itemsTotal: number = 0;
+  itemsFiltered: number = 0;
+  page: number = 0;
+  pagesTotal: number = 0;
 
 
   constructor(private http: HttpClient,
@@ -26,18 +27,18 @@ export class ProductListService {
 
 
   fetchProductList() {
-    this.http.get(`http://localhost:3000/products?page=${this.params.page}&limit=${this.params.limit}&searchString=${this.params.searchString}&sort=${this.params.sort}&direction=${this.params.direction}`)
-      .subscribe((response) => {
-        console.log(response);
-        this.itemsFiltered = response["itemsFiltered"];
-        this.itemsTotal = response["itemsTotal"];
-        this.page = response["page"];
-        this.pagesTotal = response["pagesTotal"];
+    this.http.get<ProductPage>(`http://localhost:3000/products?page=${this.params.page}&limit=${this.params.limit}&searchString=${this.params.searchString}&sort=${this.params.sort}&direction=${this.params.direction}`)
+      .subscribe((productPageResponse) => {
+        console.log(productPageResponse);
+        this.itemsFiltered = productPageResponse.itemsFiltered;
+        this.itemsTotal = productPageResponse["itemsTotal"];
+        this.page = productPageResponse["page"];
+        this.pagesTotal = productPageResponse["pagesTotal"];
         console.log(this.itemsFiltered);
         console.log(this.itemsTotal);
         console.log(this.page);
         console.log(this.pagesTotal);
-        this.productList = response["data"];
+        this.productList = productPageResponse["data"];
         console.log(this.productList);
         console.log(this.params);
       })
@@ -69,7 +70,7 @@ export class ProductListService {
     console.log('All filters were reset');
   }
 
-  getProductDetail(productId) {
+  getProductDetail(productId: number) {
       console.log(productId);
          this.router.navigate(['admin/product/edit/' + productId])
           .then();

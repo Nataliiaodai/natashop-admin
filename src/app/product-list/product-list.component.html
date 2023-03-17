@@ -146,7 +146,7 @@
 
   <tr (click)="onGetProductDetail(productListItem._id)" style="cursor: pointer;" *ngFor="let productListItem of this.productListService.productList;">
     <th  scope="row">
-      <img style="height: 50px; width: 50px;" src="{{productListItem.medias[0]?.variantsUrls.small}}" alt="{{productListItem.medias[0]?.altText}}" (error)="onImageError($event)">
+      <img style="height: 50px; width: 50px;" src="{{productListItem.medias[0]?.variantsUrls?.small}}" alt="{{productListItem.medias[0]?.altText}}" (error)="onImageError($event)">
     </th>
     <td>{{productListItem._id}}
     </td>
