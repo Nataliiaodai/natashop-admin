@@ -4,6 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {ProductService} from "./product.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {MediasObjectModel} from "../shared-model/medias.obect.model";
+import {GlobalVariables} from "../global-variables";
 
 
 
@@ -31,7 +32,6 @@ export class ProductComponent implements OnInit{
 
   ngOnInit() {
     console.log("ngOnInit. this.router.url=" + this.router.url);
-    // this.idToGetProduct = this.route.snapshot.params ['productId'];
 
     if (this.idToGetProduct) {
       console.log('ngOnInit. idToGetProduct=' + this.idToGetProduct);
@@ -111,7 +111,7 @@ export class ProductComponent implements OnInit{
     const selectedImageFile : File = event.target.files[0];
     const formData = new FormData();
     formData.append('image', selectedImageFile, selectedImageFile.name )
-    this.http.post<MediasObjectModel>('http://localhost:3000/products/media', formData)
+    this.http.post<MediasObjectModel>(GlobalVariables.baseURL + 'products/media' , formData)
       .subscribe(response => {
         console.log(response);
         this.prod.medias.push(response);

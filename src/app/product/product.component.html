@@ -55,6 +55,30 @@
             id="price"
             placeholder="...">
         </div>
+        <br>
+        <h6>Comments</h6>
+        <div class="form-floating">
+          <label for="note" class="form-label"></label>
+          <textarea
+            ngModel
+            name="note"
+            [(ngModel)]="this.prod.note"
+            class="form-control"
+            id="note"
+            style="height:70px"></textarea>
+        </div>
+        <br>
+        <h6>URL Address</h6>
+        <div class="form-floating">
+          <label for="note" class="form-label"></label>
+          <textarea
+            ngModel
+            name="slug"
+            [(ngModel)]="this.prod.slug"
+            class="form-control"
+            id="slug"
+            style="height:70px"></textarea>
+        </div>
       </div>
 
         <div class="col-md-5 border-block">
@@ -69,7 +93,7 @@
             [(ngModel)]="this.prod.fullDescription.uk"
             class="form-control"
             id="descriptionUk"
-            style="height: 80px"></textarea>
+            style="height: 260px"></textarea>
           </div>
           <br>
           <p>en:</p>
@@ -81,19 +105,7 @@
             [(ngModel)]="this.prod.fullDescription.en"
             class="form-control"
             id="descriptionEn"
-            style="height: 80px"></textarea>
-          </div>
-          <br>
-          <h6>Comments</h6>
-          <div class="form-floating">
-            <label for="note" class="form-label"></label>
-          <textarea
-            ngModel
-            name="note"
-            [(ngModel)]="this.prod.note"
-            class="form-control"
-            id="note"
-            style="height:70px"></textarea>
+            style="height: 260px"></textarea>
           </div>
         </div>
       </div>
