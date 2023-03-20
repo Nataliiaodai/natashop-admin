@@ -7,7 +7,6 @@ import {MediasObjectModel} from "../shared-model/medias.obect.model";
 import {GlobalVariables} from "../global-variables";
 
 
-
 @Component({
   selector: 'app-shared-model-edit',
   templateUrl: './product.component.html',
@@ -20,7 +19,6 @@ export class ProductComponent implements OnInit{
    id = 0;
 
   idToGetProduct = this.route.snapshot.params ['productId'];
-
   currentURL: any = this.router.url;
 
   constructor(private http: HttpClient,

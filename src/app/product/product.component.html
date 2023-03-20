@@ -1,22 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
 <div class="row">
-
   <form (ngSubmit)="onProductSave()">
     <hr>
     <div class="flex-list ">
-    <h3  *ngIf="currentURL ==='/admin/product/add'">
-      Creating new Product
-    </h3>
+      <h3 *ngIf="currentURL ==='/admin/product/add'">
+        Creating new Product
+      </h3>
       <h3 *ngIf="currentURL !=='/admin/product/add'">
         Product Detail
       </h3>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end base-bottoms-margin">
-      <button class="btn joinBtn" type="submit">Save</button>
-      <button
-        class="btn joinBtnDel"
-        type="reset"
-        (click)="onProductDelete()">Delete
-      </button>
-    </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end base-bottoms-margin">
+        <button class="btn joinBtn" type="submit">Save</button>
+        <button
+          class="btn joinBtnDel"
+          type="reset"
+          (click)="onProductDelete()">Delete
+        </button>
+      </div>
     </div>
     <hr>
     <div class="row parent-border-block">
@@ -81,83 +90,160 @@
         </div>
       </div>
 
-        <div class="col-md-5 border-block">
-          <h6>Product Description</h6>
-          <br>
-          <p>uk:</p>
-          <div class="form-floating">
-            <label for="descriptionUk" class="form-label"></label>
-          <textarea
-            ngModel
-            name="fullDescription2"
-            [(ngModel)]="this.prod.fullDescription.uk"
-            class="form-control"
-            id="descriptionUk"
-            style="height: 260px"></textarea>
-          </div>
-          <br>
-          <p>en:</p>
-          <div class="form-floating">
-            <label for="descriptionEn" class="form-label"></label>
-          <textarea
-            ngModel
-            name="fullDescription3"
-            [(ngModel)]="this.prod.fullDescription.en"
-            class="form-control"
-            id="descriptionEn"
-            style="height: 260px"></textarea>
-          </div>
-        </div>
+      <div class="col-md-5 border-block">
+<!--        <h6>Product Description</h6>-->
+<!--        <br>-->
+<!--        <p>uk:</p>-->
+<!--        <div class="form-floating">-->
+<!--          <label for="descriptionUk" class="form-label"></label>-->
+<!--          <textarea-->
+<!--            ngModel-->
+<!--            name="fullDescription2"-->
+<!--            [(ngModel)]="this.prod.fullDescription.uk"-->
+<!--            class="form-control"-->
+<!--            id="descriptionUk"-->
+<!--            style="height: 260px"></textarea>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <p>en:</p>-->
+<!--        <div class="form-floating">-->
+<!--          <label for="descriptionEn" class="form-label"></label>-->
+<!--          <textarea-->
+<!--            ngModel-->
+<!--            name="fullDescription3"-->
+<!--            [(ngModel)]="this.prod.fullDescription.en"-->
+<!--            class="form-control"-->
+<!--            id="descriptionEn"-->
+<!--            style="height: 260px">-->
+<!--          </textarea>-->
+<!--        </div>-->
       </div>
+    </div>
     <hr>
+    <div style="display:flex; justify-content: space-between; margin-bottom: 15px; ">
+            <div style="width: 50%">
+              <h4 style="text-align: center;">
+              Images
+            </h4>
+            </div>
 
-    <h3 style="text-align: center; margin-bottom: 15px">
-      Images
-    </h3>
+            <div style="width: 50%">
+              <h4 style="text-align: center;">
+                Description editor
+              </h4>
+            </div>
+    </div>
     <hr>
-    <div class="grid-wrapper" *ngIf="currentURL !=='/admin/product/add'">
-      <div *ngFor="let productImage of prod.medias; let i = index;">
-        <div>
+    <div style="display:flex; justify-content: space-between">
+
+      <div class="grid-wrapper" *ngIf="currentURL !=='/admin/product/add'">
+
+        <div *ngFor="let productImage of prod.medias; let i = index;">
           <div class="image-container" style="position: relative">
-            <img  class="template-block img-block"
+
+            <img class="template-block img-block"
                  src="{{productImage.variantsUrls.small}}"
                  alt="{{productImage.altText}}">
             <div style="position: absolute;">
-              <button *ngIf="i>0"  (click)="onLeftMove(i)" class="move-arrows" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
-                  <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+              <button *ngIf="i>0" (click)="onLeftMove(i)" class="move-arrows" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-caret-left" viewBox="0 0 16 16">
+                  <path
+                    d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
                 </svg>
               </button>
               <button *ngIf="i !== prod.medias.length-1" (click)="onRightMove(i)" class="move-arrows" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-                  <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path
+                    d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
                 </svg>
               </button>
             </div>
           </div>
 
-         <div class="image-container">
-           <svg (click)="onDeleteImage(i)"  style="cursor: pointer; margin-top: 5%" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-             <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
-           </svg>
-         </div>
-        </div>
+          <div class="image-container">
+            <svg (click)="onDeleteImage(i)" style="cursor: pointer; margin-top: 5%" xmlns="http://www.w3.org/2000/svg"
+                 width="16" height="16" fill="grey" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+              <path
+                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+            </svg>
+          </div>
 
+        </div>
+        <div class="image-container">
+          <label class="template-block upload-block" for="imageUpload">
+            <input style="display: none;" id="imageUpload" type="file" (change)="onFileSelected($event)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="grey"
+                 class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path
+                d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+              <path
+                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+            </svg>
+          </label>
+        </div>
       </div>
-      <div class="image-container">
-        <label class="template-block upload-block" for="imageUpload">
-          <input style="display: none;" id="imageUpload" type="file" (change)="onFileSelected($event)">
-           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="grey" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-            <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
-            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-          </svg>
-        </label>
+
+
+      <div style="width: 550px;">
+                <h6>
+                  Uk:
+                </h6>
+        <editor style=" border: solid gray 1px"
+          apiKey="wc69sxdifny51wbu6d3n53fuzeselpnsvmtttafn1yvu1nvl"
+                ngModel
+                name="fullDescription1"
+                [(ngModel)]="this.prod.fullDescription.uk"
+                class="form-control"
+                id="descriptionUk"
+          [init]="{
+              icons: 'material',
+              skin: 'borderless',
+              plugins: 'wordcount',
+              menubar: false,
+              min_height: 150
+            }"
+        ></editor>
+
+        <br>
+        <h6>
+          En:
+        </h6>
+        <editor style=" border: solid gray 1px"
+                apiKey="wc69sxdifny51wbu6d3n53fuzeselpnsvmtttafn1yvu1nvl"
+                ngModel
+                name="fullDescription2"
+                [(ngModel)]="this.prod.fullDescription.en"
+                class="form-control"
+                id="descriptionEn"
+                [init]="{
+              icons: 'material',
+              skin: 'borderless',
+              plugins: 'wordcount',
+              menubar: false,
+              min_height: 150
+            }"
+        ></editor>
+
+<!--        <div class="form-floating">-->
+<!--          <label for="descriptionUk" class="form-label"></label>-->
+<!--          <textarea-->
+<!--            ngModel-->
+<!--            name="fullDescription2"-->
+<!--            [(ngModel)]="this.prod.fullDescription.uk"-->
+<!--            class="form-control"-->
+<!--            id="descriptionUk"-->
+<!--            style="height: 260px"></textarea>-->
+<!--        </div>-->
+
       </div>
     </div>
-
     <hr>
-
   </form>
-
 </div>
+
+
+</body>
+</html>
 

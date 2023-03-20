@@ -62,13 +62,16 @@ input:hover {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   /*grid-column-gap: 10px;*/
+  width: 550px;
   grid-row-gap: 2em;
 }
 
 .image-container {
-  display: flex; justify-content: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .template-block {
