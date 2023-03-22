@@ -65,6 +65,7 @@ input:hover {
   grid-template-columns: repeat(2, 1fr);
   /*grid-column-gap: 10px;*/
   width: 550px;
+  height: fit-content;
   grid-row-gap: 2em;
 }
 
