@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {ProductComponent} from './product/product.component';
 import {ProductListComponent} from './product-list/product-list.component';
 import { EditorModule } from "@tinymce/tinymce-angular";
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { EditorModule } from "@tinymce/tinymce-angular";
     AppComponent,
     ProductComponent,
     ProductListComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,

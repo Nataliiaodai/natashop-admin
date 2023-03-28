@@ -73,6 +73,7 @@ export class ProductListComponent implements OnInit {
     this.onNewSortField("_id");
   }
 
+
   onSortByPrice() {
     this.onNewSortField("price");
   }

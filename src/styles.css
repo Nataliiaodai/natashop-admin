@@ -20,7 +20,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
 }
 
 .margin {
@@ -28,6 +27,7 @@ body {
 }
 
 .base-link {
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
@@ -92,18 +92,6 @@ input:hover {
   padding: 10px;
 }
 
-
-/*.on-hover-arrows {*/
-/*  display: none;*/
-/*}*/
-
-/*.on-hover-arrows:hover {*/
-/*  display: block;*/
-/*}*/
-
-/*.template-block:hover + .on-hover-arrows {*/
-/*  display: block;*/
-/*}*/
 .joinBtn {
   width: 10em;
   height: 5ex;
