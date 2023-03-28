@@ -6,6 +6,10 @@
   padding: 5%;
 }
 
+.box-header {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 544px) {
   .box {
     max-width: 440px;
