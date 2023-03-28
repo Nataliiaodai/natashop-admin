@@ -34,8 +34,30 @@ body {
 
 .base-item {
   text-decoration: none;
+  color: blue;
   display: flex;
   align-items: center;
+  transition: transform .2s ease;
+}
+
+
+.base-item:hover {
+  transform: scale(1.1);
+}
+
+.base-item-link {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.base-item-link:hover {
+  font-weight: bold;
+}
+
+.base-item-link:active {
+  font-weight: bold;
+  color: black;
 }
 
 .base-padding {

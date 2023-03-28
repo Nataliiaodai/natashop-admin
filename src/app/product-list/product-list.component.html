@@ -1,27 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Product List</title>
-</head>
-<body>
-<hr>
-
 <div class="flex-list">
   <h3>
     Products
   </h3>
   <div class="paging">
     <button [ngClass]="{visibilityHidden: this.page === 1}" (click)="onGettingPreviousPage()" type="button"
-            class="btn btn-link"><
+            class="btn btn-link" style="text-decoration: none;"><
     </button>
     <div>Page<span><b> {{ this.page }} </b></span> of
       <span><b>{{ this.pagesTotal }}</b></span></div>
     <button [ngClass]="{visibilityHidden: this.page  >= this.pagesTotal}"
-            (click)="onGettingNextPage()" type="button" class="btn btn-link">>
+            (click)="onGettingNextPage()" type="button" class="btn btn-link" style="text-decoration: none;">>
     </button>
   </div>
 
@@ -153,7 +141,3 @@
 
   </tbody>
 </table>
-
-
-</body>
-</html>

@@ -1,6 +1,5 @@
 <div class="row">
   <form (ngSubmit)="onProductSave()">
-    <hr>
     <div class="flex-list ">
       <h3 *ngIf="currentURL ==='/admin/product/add'">
         Creating new Product
@@ -20,7 +19,7 @@
     <hr>
     <div class="row parent-border-block">
       <div class="col-md-5">
-        <p *ngIf="showId === true">{{this.prod._id}}</p>
+        <p *ngIf="currentURL !=='/admin/product/add'">{{this.prod._id}}</p>
         <div class="mb-3">
           <label for="nameUk" class="form-label">Product Name</label>
           <p>uk:</p>

@@ -1,0 +1,3480 @@
+{
+  "data": [
+    {
+      "_id": 50,
+      "parentId": 0,
+      "name": {
+        "ru": "Бумага, блокноты, наборы, альбомы",
+        "uk": "Папір, блокноти, набір, альбоми",
+        "en": "Альбомы холсты бумага"
+      },
+      "slug": "albomi-holsti",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/albomi_1_1.jpeg",
+            "large": "/upload/category/albomi_1_1_large.jpeg",
+            "medium": "/upload/category/albomi_1_1_medium.jpeg",
+            "small": "/upload/category/albomi_1_1_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 59,
+          "parentId": 50,
+          "name": {
+            "ru": "Набор бумаги",
+            "uk": "Набір паперу",
+            "en": "Набор бумаги"
+          },
+          "slug": "nabor-bumagi",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/742618-large.jpeg",
+                "large": "/upload/category/742618-large_large.jpeg",
+                "medium": "/upload/category/742618-large_medium.jpeg",
+                "small": "/upload/category/742618-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 72,
+          "parentId": 50,
+          "name": {
+            "ru": "Альбомы",
+            "uk": "Альбоми",
+            "en": "Альбомы"
+          },
+          "slug": "albomu.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/742622-large.jpeg",
+                "large": "/upload/category/742622-large_large.jpeg",
+                "medium": "/upload/category/742622-large_medium.jpeg",
+                "small": "/upload/category/742622-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 181,
+          "parentId": 50,
+          "name": {
+            "ru": "Блокноты, скетчбуки",
+            "uk": "Блокноти, скетчбуки",
+            "en": ""
+          },
+          "slug": "bloknoty-sketchbook",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/d5373f0c84b8c3d1823c42bd6cbd7bff_1.jpg",
+                "large": "/upload/category/d5373f0c84b8c3d1823c42bd6cbd7bff_1_large.jpg",
+                "large_square": "/upload/category/d5373f0c84b8c3d1823c42bd6cbd7bff_1_large_square.jpg",
+                "medium": "/upload/category/d5373f0c84b8c3d1823c42bd6cbd7bff_1_medium.jpg",
+                "small": "/upload/category/d5373f0c84b8c3d1823c42bd6cbd7bff_1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 170,
+          "parentId": 50,
+          "name": {
+            "ru": "Акварел. бумага, альбомы",
+            "uk": "Акварел. папір, альбоми",
+            "en": ""
+          },
+          "slug": "clone-170",
+          "medias": [],
+          "children": []
+        },
+        {
+          "_id": 179,
+          "parentId": 50,
+          "name": {
+            "ru": "Калька",
+            "uk": "Калька",
+            "en": ""
+          },
+          "slug": "kalka",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/254974721.jpg",
+                "large": "/upload/category/254974721_large.jpg",
+                "large_square": "/upload/category/254974721_large_square.jpg",
+                "medium": "/upload/category/254974721_medium.jpg",
+                "small": "/upload/category/254974721_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 198,
+          "parentId": 50,
+          "name": {
+            "ru": "Для акрила и масл. красок",
+            "uk": "Для акрилу та олійних фарб",
+            "en": ""
+          },
+          "slug": "bumaga-dlya-akrila-i-masla",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/0110-379-blok-bumagi-dlya-akrila-i-masla-canson-graduate-oil-acrylic-290gr-a5-148kh21-sm_1_large1.jpg",
+                "large": "/upload/category/0110-379-blok-bumagi-dlya-akrila-i-masla-canson-graduate-oil-acrylic-290gr-a5-148kh21-sm_1_large1_large.jpg",
+                "large_square": "/upload/category/0110-379-blok-bumagi-dlya-akrila-i-masla-canson-graduate-oil-acrylic-290gr-a5-148kh21-sm_1_large1_large_square.jpg",
+                "medium": "/upload/category/0110-379-blok-bumagi-dlya-akrila-i-masla-canson-graduate-oil-acrylic-290gr-a5-148kh21-sm_1_large1_medium.jpg",
+                "small": "/upload/category/0110-379-blok-bumagi-dlya-akrila-i-masla-canson-graduate-oil-acrylic-290gr-a5-148kh21-sm_1_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 199,
+          "parentId": 50,
+          "name": {
+            "ru": "Картон для дизайна",
+            "uk": "Картон для дизайну",
+            "en": ""
+          },
+          "slug": "karton-dlya-dizaina",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/301005_fl_karton_golograficheskiy_holographic_card_230g_50_70_all_image1_large1.jpg",
+                "large": "/upload/category/301005_fl_karton_golograficheskiy_holographic_card_230g_50_70_all_image1_large1_large.jpg",
+                "large_square": "/upload/category/301005_fl_karton_golograficheskiy_holographic_card_230g_50_70_all_image1_large1_large_square.jpg",
+                "medium": "/upload/category/301005_fl_karton_golograficheskiy_holographic_card_230g_50_70_all_image1_large1_medium.jpg",
+                "small": "/upload/category/301005_fl_karton_golograficheskiy_holographic_card_230g_50_70_all_image1_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 213,
+          "parentId": 50,
+          "name": {
+            "ru": "Для маркеров бумага",
+            "uk": "Для маркерів папір",
+            "en": ""
+          },
+          "slug": "bumaga-dlya-markerov",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/0297-233-canson-bloknot-dlya-markerov-70-gr-100-l-0_large1.jpg",
+                "large": "/upload/category/0297-233-canson-bloknot-dlya-markerov-70-gr-100-l-0_large1_large.jpg",
+                "large_square": "/upload/category/0297-233-canson-bloknot-dlya-markerov-70-gr-100-l-0_large1_large_square.jpg",
+                "medium": "/upload/category/0297-233-canson-bloknot-dlya-markerov-70-gr-100-l-0_large1_medium.jpg",
+                "small": "/upload/category/0297-233-canson-bloknot-dlya-markerov-70-gr-100-l-0_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 214,
+          "parentId": 50,
+          "name": {
+            "ru": "Бумага для рисунка, графики, пастели",
+            "uk": "Папір для малюнку, графіки , пастелі",
+            "en": ""
+          },
+          "slug": "bumaga-dlya-risunka-grafiki-pasteli",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/vidy-bumag1.jpg",
+                "large": "/upload/category/vidy-bumag1_large.jpg",
+                "large_square": "/upload/category/vidy-bumag1_large_square.jpg",
+                "medium": "/upload/category/vidy-bumag1_medium.jpg",
+                "small": "/upload/category/vidy-bumag1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 4,
+      "parentId": 0,
+      "name": {
+        "ru": "Краски художественные",
+        "uk": "Фарби художні",
+        "en": "Краски, патины, воски"
+      },
+      "slug": "kraski.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/untitled-3.jpeg",
+            "large": "/upload/category/untitled-3_large.jpeg",
+            "medium": "/upload/category/untitled-3_medium.jpeg",
+            "small": "/upload/category/untitled-3_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 73,
+          "parentId": 4,
+          "name": {
+            "ru": "Акварельная живопись",
+            "uk": "Акварельний живопис",
+            "en": "Акварельные краски"
+          },
+          "slug": "akvarelnye-kraski",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/daniel-smith-watercolour.jpg",
+                "large": "/upload/category/daniel-smith-watercolour_large.jpg",
+                "large_square": "/upload/category/daniel-smith-watercolour_large_square.jpg",
+                "medium": "/upload/category/daniel-smith-watercolour_medium.jpg",
+                "small": "/upload/category/daniel-smith-watercolour_small.jpg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 78,
+              "parentId": 73,
+              "name": {
+                "ru": "Бумага альбомы",
+                "uk": "Папір альбоми",
+                "en": "Альбомы бумага для акварели"
+              },
+              "slug": "albomy-bumaga-dla-akvareli",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/albomi_1_2.jpeg",
+                    "large": "/upload/category/albomi_1_2_large.jpeg",
+                    "medium": "/upload/category/albomi_1_2_medium.jpeg",
+                    "small": "/upload/category/albomi_1_2_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 164,
+              "parentId": 73,
+              "name": {
+                "ru": "Белые ночи & Сонет",
+                "uk": "Білі ночі & Сонет",
+                "en": ""
+              },
+              "slug": "bili-nochi-akvarel",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/akvarel-belye-nochi-zkhk-metallik-kyuvety-2-5-ml-tsvet-na-vybor1.jpg",
+                    "large": "/upload/category/akvarel-belye-nochi-zkhk-metallik-kyuvety-2-5-ml-tsvet-na-vybor1_large.jpg",
+                    "large_square": "/upload/category/akvarel-belye-nochi-zkhk-metallik-kyuvety-2-5-ml-tsvet-na-vybor1_large_square.jpg",
+                    "medium": "/upload/category/akvarel-belye-nochi-zkhk-metallik-kyuvety-2-5-ml-tsvet-na-vybor1_medium.jpg",
+                    "small": "/upload/category/akvarel-belye-nochi-zkhk-metallik-kyuvety-2-5-ml-tsvet-na-vybor1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 165,
+              "parentId": 73,
+              "name": {
+                "ru": "Сонет акварель",
+                "uk": "Сонет акварель",
+                "en": ""
+              },
+              "slug": "sonet-akvarel",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/111359360-w640-h640-kraski-akvarelnye-sonet1.jpg",
+                    "large": "/upload/category/111359360-w640-h640-kraski-akvarelnye-sonet1_large.jpg",
+                    "large_square": "/upload/category/111359360-w640-h640-kraski-akvarelnye-sonet1_large_square.jpg",
+                    "medium": "/upload/category/111359360-w640-h640-kraski-akvarelnye-sonet1_medium.jpg",
+                    "small": "/upload/category/111359360-w640-h640-kraski-akvarelnye-sonet1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 76,
+              "parentId": 73,
+              "name": {
+                "ru": "Поштучно акварель",
+                "uk": "Поштучно акварель",
+                "en": "Акварель поштучно"
+              },
+              "slug": "akvarel-poshtuchno",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/winsor-akvarel-professionalnaya-1-2-kyuvety-cotman-half-pan-tsveta-v-assortimente1_large.jpg",
+                    "large": "/upload/category/winsor-akvarel-professionalnaya-1-2-kyuvety-cotman-half-pan-tsveta-v-assortimente1_large_large.jpg",
+                    "large_square": "/upload/category/winsor-akvarel-professionalnaya-1-2-kyuvety-cotman-half-pan-tsveta-v-assortimente1_large_large_square.jpg",
+                    "medium": "/upload/category/winsor-akvarel-professionalnaya-1-2-kyuvety-cotman-half-pan-tsveta-v-assortimente1_large_medium.jpg",
+                    "small": "/upload/category/winsor-akvarel-professionalnaya-1-2-kyuvety-cotman-half-pan-tsveta-v-assortimente1_large_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 79,
+              "parentId": 73,
+              "name": {
+                "ru": "Карандаши акварельные",
+                "uk": "Олівці акварельні",
+                "en": "Акварельные карандаши"
+              },
+              "slug": "akvarelnie-karandashi",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/karandashi-3.jpeg",
+                    "large": "/upload/category/karandashi-3_large.jpeg",
+                    "medium": "/upload/category/karandashi-3_medium.jpeg",
+                    "small": "/upload/category/karandashi-3_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 155,
+              "parentId": 73,
+              "name": {
+                "ru": "Кисти",
+                "uk": "Пензлі",
+                "en": ""
+              },
+              "slug": "clone-155",
+              "medias": [],
+              "children": []
+            },
+            {
+              "_id": 175,
+              "parentId": 73,
+              "name": {
+                "ru": "ROSA Gallery & Studio",
+                "uk": "ROSA Gallery & Studio",
+                "en": ""
+              },
+              "slug": "rosa-gallery-akvarel",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/a1c73f12-874b-11e7-920d-005056850c6d-de89051b-f6a8-11e7-921b-005056850c6d.resize11_large1.jpg",
+                    "large": "/upload/category/a1c73f12-874b-11e7-920d-005056850c6d-de89051b-f6a8-11e7-921b-005056850c6d.resize11_large1_large.jpg",
+                    "large_square": "/upload/category/a1c73f12-874b-11e7-920d-005056850c6d-de89051b-f6a8-11e7-921b-005056850c6d.resize11_large1_large_square.jpg",
+                    "medium": "/upload/category/a1c73f12-874b-11e7-920d-005056850c6d-de89051b-f6a8-11e7-921b-005056850c6d.resize11_large1_medium.jpg",
+                    "small": "/upload/category/a1c73f12-874b-11e7-920d-005056850c6d-de89051b-f6a8-11e7-921b-005056850c6d.resize11_large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 80,
+              "parentId": 73,
+              "name": {
+                "ru": "Вспомогательные материалы",
+                "uk": "Допоміжні матеріали",
+                "en": "Акварельные вспомогательные материалы"
+              },
+              "slug": "vspomogatelnie-materiali-dlya-akvareli",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/vpomogatlelnie-materiali-dlya-akvareli.jpeg",
+                    "large": "/upload/category/vpomogatlelnie-materiali-dlya-akvareli_large.jpeg",
+                    "medium": "/upload/category/vpomogatlelnie-materiali-dlya-akvareli_medium.jpeg",
+                    "small": "/upload/category/vpomogatlelnie-materiali-dlya-akvareli_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 77,
+              "parentId": 73,
+              "name": {
+                "ru": "Кисти для акварели",
+                "uk": "Пензлі для акварелі",
+                "en": "Кисти для акварели"
+              },
+              "slug": "kisti-dlya-akvareli",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/img18304-17200-big1.jpeg",
+                    "large": "/upload/category/img18304-17200-big1_large.jpeg",
+                    "medium": "/upload/category/img18304-17200-big1_medium.jpeg",
+                    "small": "/upload/category/img18304-17200-big1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 145,
+              "parentId": 73,
+              "name": {
+                "ru": "Тубы акварель",
+                "uk": "Туби акварель",
+                "en": ""
+              },
+              "slug": "akvarelnye-kraski-v-tubah",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/353165-1300x13001-1-large1.jpeg",
+                    "large": "/upload/category/353165-1300x13001-1-large1_large.jpeg",
+                    "medium": "/upload/category/353165-1300x13001-1-large1_medium.jpeg",
+                    "small": "/upload/category/353165-1300x13001-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 180,
+              "parentId": 73,
+              "name": {
+                "ru": "Daniel Smith",
+                "uk": "Daniel Smith",
+                "en": ""
+              },
+              "slug": "daniel-smith-akvarel",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/wdnspt_1-700x7001.jpg",
+                    "large": "/upload/category/wdnspt_1-700x7001_large.jpg",
+                    "large_square": "/upload/category/wdnspt_1-700x7001_large_square.jpg",
+                    "medium": "/upload/category/wdnspt_1-700x7001_medium.jpg",
+                    "small": "/upload/category/wdnspt_1-700x7001_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 75,
+              "parentId": 73,
+              "name": {
+                "ru": "Наборы акварели",
+                "uk": "Набори акварелі",
+                "en": "Акварель в наборах"
+              },
+              "slug": "akvarel-nabory",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/285610006in21_large.jpg",
+                    "large": "/upload/category/285610006in21_large_large.jpg",
+                    "large_square": "/upload/category/285610006in21_large_large_square.jpg",
+                    "medium": "/upload/category/285610006in21_large_medium.jpg",
+                    "small": "/upload/category/285610006in21_large_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 176,
+              "parentId": 73,
+              "name": {
+                "ru": "Van Gogh",
+                "uk": "Van Gogh",
+                "en": ""
+              },
+              "slug": "van-gogh-akvarel",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/16c9f0c1_cdae_11eb_924b_005056850c6d_5ac5e398_cf4b_11eb_924b_005056850c6d.resize11_medium1.jpg",
+                    "large": "/upload/category/16c9f0c1_cdae_11eb_924b_005056850c6d_5ac5e398_cf4b_11eb_924b_005056850c6d.resize11_medium1_large.jpg",
+                    "large_square": "/upload/category/16c9f0c1_cdae_11eb_924b_005056850c6d_5ac5e398_cf4b_11eb_924b_005056850c6d.resize11_medium1_large_square.jpg",
+                    "medium": "/upload/category/16c9f0c1_cdae_11eb_924b_005056850c6d_5ac5e398_cf4b_11eb_924b_005056850c6d.resize11_medium1_medium.jpg",
+                    "small": "/upload/category/16c9f0c1_cdae_11eb_924b_005056850c6d_5ac5e398_cf4b_11eb_924b_005056850c6d.resize11_medium1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 166,
+              "parentId": 73,
+              "name": {
+                "ru": "Winsor & Newton",
+                "uk": "Winsor & Newton",
+                "en": ""
+              },
+              "slug": "winsor-newton-akvarel",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/885761.jpg",
+                    "large": "/upload/category/885761_large.jpg",
+                    "large_square": "/upload/category/885761_large_square.jpg",
+                    "medium": "/upload/category/885761_medium.jpg",
+                    "small": "/upload/category/885761_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 146,
+              "parentId": 73,
+              "name": {
+                "ru": "Кюветы акварель",
+                "uk": "Кювети акварель",
+                "en": ""
+              },
+              "slug": "kuvety-akvarelnye-kraski-poshtuchno",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/rozo-h-large1_1.jpeg",
+                    "large": "/upload/category/rozo-h-large1_1_large.jpeg",
+                    "medium": "/upload/category/rozo-h-large1_1_medium.jpeg",
+                    "small": "/upload/category/rozo-h-large1_1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 200,
+              "parentId": 73,
+              "name": {
+                "ru": "Schmincke Horadam",
+                "uk": "Schmincke Horadam",
+                "en": ""
+              },
+              "slug": "horadam-schmincke-horadam",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/akvarelnye_kraski_schmincke_horadam_aq_14_tuba_5_ml_vybrat_tsvet1_large1.jpg",
+                    "large": "/upload/category/akvarelnye_kraski_schmincke_horadam_aq_14_tuba_5_ml_vybrat_tsvet1_large1_large.jpg",
+                    "large_square": "/upload/category/akvarelnye_kraski_schmincke_horadam_aq_14_tuba_5_ml_vybrat_tsvet1_large1_large_square.jpg",
+                    "medium": "/upload/category/akvarelnye_kraski_schmincke_horadam_aq_14_tuba_5_ml_vybrat_tsvet1_large1_medium.jpg",
+                    "small": "/upload/category/akvarelnye_kraski_schmincke_horadam_aq_14_tuba_5_ml_vybrat_tsvet1_large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": 19,
+          "parentId": 4,
+          "name": {
+            "ru": "Акриловые краски",
+            "uk": "Акрилові фарби",
+            "en": "Акриловые краски"
+          },
+          "slug": "akrilovye-kraski.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/akril-rosa-400.1180x1180w1_large.jpg",
+                "large": "/upload/category/akril-rosa-400.1180x1180w1_large_large.jpg",
+                "large_square": "/upload/category/akril-rosa-400.1180x1180w1_large_large_square.jpg",
+                "medium": "/upload/category/akril-rosa-400.1180x1180w1_large_medium.jpg",
+                "small": "/upload/category/akril-rosa-400.1180x1180w1_large_small.jpg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 135,
+              "parentId": 19,
+              "name": {
+                "ru": "Кисти, мастихини",
+                "uk": "Пензлі, мастихіни",
+                "en": "Кисти"
+              },
+              "slug": "clone-135",
+              "medias": [],
+              "children": []
+            },
+            {
+              "_id": 130,
+              "parentId": 19,
+              "name": {
+                "ru": "Наборы акриловых красок",
+                "uk": "Набори акрилових фарб",
+                "en": "Наборы акриловых красок"
+              },
+              "slug": "akrilovue-kraski-nabory",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/2256475699_w700_h500_nabor-akrilovyh-krasok1_large.jpg",
+                    "large": "/upload/category/2256475699_w700_h500_nabor-akrilovyh-krasok1_large_large.jpg",
+                    "large_square": "/upload/category/2256475699_w700_h500_nabor-akrilovyh-krasok1_large_large_square.jpg",
+                    "medium": "/upload/category/2256475699_w700_h500_nabor-akrilovyh-krasok1_large_medium.jpg",
+                    "small": "/upload/category/2256475699_w700_h500_nabor-akrilovyh-krasok1_large_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 131,
+              "parentId": 19,
+              "name": {
+                "ru": "Поштучно акриловые краски",
+                "uk": "Поштучно акрилові фарби",
+                "en": "Поштучно акриловые краски"
+              },
+              "slug": "akrilovue-kraski-poshtuchno",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/678354063896341_56_large.jpg",
+                    "large": "/upload/category/678354063896341_56_large_large.jpg",
+                    "large_square": "/upload/category/678354063896341_56_large_large_square.jpg",
+                    "medium": "/upload/category/678354063896341_56_large_medium.jpg",
+                    "small": "/upload/category/678354063896341_56_large_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 201,
+              "parentId": 19,
+              "name": {
+                "ru": "ArtCreation",
+                "uk": "ArtCreation",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-artcreation",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/553927_758x758x701.jpg",
+                    "large": "/upload/category/553927_758x758x701_large.jpg",
+                    "large_square": "/upload/category/553927_758x758x701_large_square.jpg",
+                    "medium": "/upload/category/553927_758x758x701_medium.jpg",
+                    "small": "/upload/category/553927_758x758x701_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 202,
+              "parentId": 19,
+              "name": {
+                "ru": "Decola",
+                "uk": "Decola",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-decola",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/0011.jpg",
+                    "large": "/upload/category/0011_large.jpg",
+                    "large_square": "/upload/category/0011_large_square.jpg",
+                    "medium": "/upload/category/0011_medium.jpg",
+                    "small": "/upload/category/0011_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 204,
+              "parentId": 19,
+              "name": {
+                "ru": "Сонет",
+                "uk": "Сонет",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-sonet",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/sonet-akril-75-ml.1180x1180w1.jpg",
+                    "large": "/upload/category/sonet-akril-75-ml.1180x1180w1_large.jpg",
+                    "large_square": "/upload/category/sonet-akril-75-ml.1180x1180w1_large_square.jpg",
+                    "medium": "/upload/category/sonet-akril-75-ml.1180x1180w1_medium.jpg",
+                    "small": "/upload/category/sonet-akril-75-ml.1180x1180w1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 205,
+              "parentId": 19,
+              "name": {
+                "ru": "Cadence",
+                "uk": "Cadence",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-cadence",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/cadence-akrilovaya-kraska-khameleon-hi-lite-magic-metallic-70-ml-tsveta-v-assortimente-1_large1.jpg",
+                    "large": "/upload/category/cadence-akrilovaya-kraska-khameleon-hi-lite-magic-metallic-70-ml-tsveta-v-assortimente-1_large1_large.jpg",
+                    "large_square": "/upload/category/cadence-akrilovaya-kraska-khameleon-hi-lite-magic-metallic-70-ml-tsveta-v-assortimente-1_large1_large_square.jpg",
+                    "medium": "/upload/category/cadence-akrilovaya-kraska-khameleon-hi-lite-magic-metallic-70-ml-tsveta-v-assortimente-1_large1_medium.jpg",
+                    "small": "/upload/category/cadence-akrilovaya-kraska-khameleon-hi-lite-magic-metallic-70-ml-tsveta-v-assortimente-1_large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 206,
+              "parentId": 19,
+              "name": {
+                "ru": "Ладога",
+                "uk": "Ладога",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-ladoga",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/yaya.800x600w1.jpg",
+                    "large": "/upload/category/yaya.800x600w1_large.jpg",
+                    "large_square": "/upload/category/yaya.800x600w1_large_square.jpg",
+                    "medium": "/upload/category/yaya.800x600w1_medium.jpg",
+                    "small": "/upload/category/yaya.800x600w1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 209,
+              "parentId": 19,
+              "name": {
+                "ru": "Мастер-Класс",
+                "uk": "Майстер-Клас",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-master-klass",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/1debb6fccfa5e6bc5433040b52f2ebf71.jpg",
+                    "large": "/upload/category/1debb6fccfa5e6bc5433040b52f2ebf71_large.jpg",
+                    "large_square": "/upload/category/1debb6fccfa5e6bc5433040b52f2ebf71_large_square.jpg",
+                    "medium": "/upload/category/1debb6fccfa5e6bc5433040b52f2ebf71_medium.jpg",
+                    "small": "/upload/category/1debb6fccfa5e6bc5433040b52f2ebf71_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 210,
+              "parentId": 19,
+              "name": {
+                "ru": "ROSA Gallery & Studio",
+                "uk": "ROSA Gallery & Studio",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-rosa-gallery",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/akril-rosa-400.1180x1180w1_large1.jpg",
+                    "large": "/upload/category/akril-rosa-400.1180x1180w1_large1_large.jpg",
+                    "large_square": "/upload/category/akril-rosa-400.1180x1180w1_large1_large_square.jpg",
+                    "medium": "/upload/category/akril-rosa-400.1180x1180w1_large1_medium.jpg",
+                    "small": "/upload/category/akril-rosa-400.1180x1180w1_large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 219,
+              "parentId": 19,
+              "name": {
+                "ru": "Холсты, подрамники",
+                "uk": "Полотна, підрамники",
+                "en": "Холст хлопковый"
+              },
+              "slug": "clone-219",
+              "medias": [],
+              "children": []
+            },
+            {
+              "_id": 220,
+              "parentId": 19,
+              "name": {
+                "ru": "Вспомогательные материалы",
+                "uk": "Допоміжні матеріали",
+                "en": ""
+              },
+              "slug": "akrilovye-kraski-vspomogatelnie-materiali",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/3842-tm_thickbox_default1_large1.jpg",
+                    "large": "/upload/category/3842-tm_thickbox_default1_large1_large.jpg",
+                    "large_square": "/upload/category/3842-tm_thickbox_default1_large1_large_square.jpg",
+                    "medium": "/upload/category/3842-tm_thickbox_default1_large1_medium.jpg",
+                    "small": "/upload/category/3842-tm_thickbox_default1_large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 221,
+              "parentId": 19,
+              "name": {
+                "ru": "Деколор \"TAIR\"",
+                "uk": "Деколор \"TAIR\"",
+                "en": ""
+              },
+              "slug": "dekolor-tair",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/tair-dekolor-dekorativnyiy1.jpg",
+                    "large": "/upload/category/tair-dekolor-dekorativnyiy1_large.jpg",
+                    "large_square": "/upload/category/tair-dekolor-dekorativnyiy1_large_square.jpg",
+                    "medium": "/upload/category/tair-dekolor-dekorativnyiy1_medium.jpg",
+                    "small": "/upload/category/tair-dekolor-dekorativnyiy1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": 49,
+          "parentId": 4,
+          "name": {
+            "ru": "Гуашь",
+            "uk": "Гуаш",
+            "en": "Гуашь"
+          },
+          "slug": "guash",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/843541-1-large.jpeg",
+                "large": "/upload/category/843541-1-large_large.jpeg",
+                "medium": "/upload/category/843541-1-large_medium.jpeg",
+                "small": "/upload/category/843541-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 115,
+          "parentId": 4,
+          "name": {
+            "ru": "Масляная живопись",
+            "uk": "Олійний живопис",
+            "en": "Масляные краски"
+          },
+          "slug": "maslyanye-kraski",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/234af98e_fccb_11e5_9e84_005056854f36_9a0ed7a1_8403_11e7_920d_5056906_large.jpg",
+                "large": "/upload/category/234af98e_fccb_11e5_9e84_005056854f36_9a0ed7a1_8403_11e7_920d_5056906_large_large.jpg",
+                "large_square": "/upload/category/234af98e_fccb_11e5_9e84_005056854f36_9a0ed7a1_8403_11e7_920d_5056906_large_large_square.jpg",
+                "medium": "/upload/category/234af98e_fccb_11e5_9e84_005056854f36_9a0ed7a1_8403_11e7_920d_5056906_large_medium.jpg",
+                "small": "/upload/category/234af98e_fccb_11e5_9e84_005056854f36_9a0ed7a1_8403_11e7_920d_5056906_large_small.jpg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 167,
+              "parentId": 115,
+              "name": {
+                "ru": "ROSA Studio",
+                "uk": "ROSA Studio",
+                "en": ""
+              },
+              "slug": "rosa-studio-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/e6ec9ec1afb2485486d8351fd1701d131.jpg",
+                    "large": "/upload/category/e6ec9ec1afb2485486d8351fd1701d131_large.jpg",
+                    "large_square": "/upload/category/e6ec9ec1afb2485486d8351fd1701d131_large_square.jpg",
+                    "medium": "/upload/category/e6ec9ec1afb2485486d8351fd1701d131_medium.jpg",
+                    "small": "/upload/category/e6ec9ec1afb2485486d8351fd1701d131_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 161,
+              "parentId": 115,
+              "name": {
+                "ru": "Lefranc Fine",
+                "uk": "Lefranc Fine",
+                "en": ""
+              },
+              "slug": "lefranc-fine-maslyanie-kraski",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/maslyanye-kraski-lefranc-fine-40-ml1.jpg",
+                    "large": "/upload/category/maslyanye-kraski-lefranc-fine-40-ml1_large.jpg",
+                    "large_square": "/upload/category/maslyanye-kraski-lefranc-fine-40-ml1_large_square.jpg",
+                    "medium": "/upload/category/maslyanye-kraski-lefranc-fine-40-ml1_medium.jpg",
+                    "small": "/upload/category/maslyanye-kraski-lefranc-fine-40-ml1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 158,
+              "parentId": 115,
+              "name": {
+                "ru": "Ладога",
+                "uk": "Ладога",
+                "en": ""
+              },
+              "slug": "ladoga-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/set-555171.jpg",
+                    "large": "/upload/category/set-555171_large.jpg",
+                    "large_square": "/upload/category/set-555171_large_square.jpg",
+                    "medium": "/upload/category/set-555171_medium.jpg",
+                    "small": "/upload/category/set-555171_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 168,
+              "parentId": 115,
+              "name": {
+                "ru": "ROSA Gallery",
+                "uk": "ROSA Gallery",
+                "en": ""
+              },
+              "slug": "rosa-gallery-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/0120131.jpg",
+                    "large": "/upload/category/0120131_large.jpg",
+                    "large_square": "/upload/category/0120131_large_square.jpg",
+                    "medium": "/upload/category/0120131_medium.jpg",
+                    "small": "/upload/category/0120131_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 177,
+              "parentId": 115,
+              "name": {
+                "ru": "Van Gogh",
+                "uk": "Van Gogh",
+                "en": ""
+              },
+              "slug": "van-gogh-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/tubo_acuarela_van_gogh_570_azul_ftalo1.jpg",
+                    "large": "/upload/category/tubo_acuarela_van_gogh_570_azul_ftalo1_large.jpg",
+                    "large_square": "/upload/category/tubo_acuarela_van_gogh_570_azul_ftalo1_large_square.jpg",
+                    "medium": "/upload/category/tubo_acuarela_van_gogh_570_azul_ftalo1_medium.jpg",
+                    "small": "/upload/category/tubo_acuarela_van_gogh_570_azul_ftalo1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 159,
+              "parentId": 115,
+              "name": {
+                "ru": "Мастер-Класс",
+                "uk": "Майстер-Клас",
+                "en": ""
+              },
+              "slug": "master-klas-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/v-assortimente.1180x1180w1.jpg",
+                    "large": "/upload/category/v-assortimente.1180x1180w1_large.jpg",
+                    "large_square": "/upload/category/v-assortimente.1180x1180w1_large_square.jpg",
+                    "medium": "/upload/category/v-assortimente.1180x1180w1_medium.jpg",
+                    "small": "/upload/category/v-assortimente.1180x1180w1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 178,
+              "parentId": 115,
+              "name": {
+                "ru": "Холсты, подрамники",
+                "uk": "Полотна, підрамники",
+                "en": "Холст хлопковый"
+              },
+              "slug": "clone-178",
+              "medias": [],
+              "children": []
+            },
+            {
+              "_id": 122,
+              "parentId": 115,
+              "name": {
+                "ru": "Кисти, мастихины",
+                "uk": "Пензлі, мастихіни",
+                "en": "Кисти"
+              },
+              "slug": "clone-122",
+              "medias": [],
+              "children": []
+            },
+            {
+              "_id": 117,
+              "parentId": 115,
+              "name": {
+                "ru": "Поштучно масляные",
+                "uk": "Поштучно олійні",
+                "en": "Поштучно масляные краски"
+              },
+              "slug": "maslyanue-kraski-poshtuchno",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/351648-1300x1300-1-large1.jpeg",
+                    "large": "/upload/category/351648-1300x1300-1-large1_large.jpeg",
+                    "medium": "/upload/category/351648-1300x1300-1-large1_medium.jpeg",
+                    "small": "/upload/category/351648-1300x1300-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 160,
+              "parentId": 115,
+              "name": {
+                "ru": "Академия",
+                "uk": "Академія",
+                "en": ""
+              },
+              "slug": "akademiya-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/11224346-183019748705094-4467269222716720392-o1.jpg",
+                    "large": "/upload/category/11224346-183019748705094-4467269222716720392-o1_large.jpg",
+                    "large_square": "/upload/category/11224346-183019748705094-4467269222716720392-o1_large_square.jpg",
+                    "medium": "/upload/category/11224346-183019748705094-4467269222716720392-o1_medium.jpg",
+                    "small": "/upload/category/11224346-183019748705094-4467269222716720392-o1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 163,
+              "parentId": 115,
+              "name": {
+                "ru": "Вспомагательные материалы",
+                "uk": "Допоміжні матеріали",
+                "en": ""
+              },
+              "slug": "dopomigni-materialy-dlya-oliinogo-zhivopysu",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/642401-1-large1.jpg",
+                    "large": "/upload/category/642401-1-large1_large.jpg",
+                    "large_square": "/upload/category/642401-1-large1_large_square.jpg",
+                    "medium": "/upload/category/642401-1-large1_medium.jpg",
+                    "small": "/upload/category/642401-1-large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 157,
+              "parentId": 115,
+              "name": {
+                "ru": "Сонет",
+                "uk": "Сонет",
+                "en": ""
+              },
+              "slug": "sonet-oliini-farby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/masljanye-kraski-sonet-46ml-011.jpg",
+                    "large": "/upload/category/masljanye-kraski-sonet-46ml-011_large.jpg",
+                    "large_square": "/upload/category/masljanye-kraski-sonet-46ml-011_large_square.jpg",
+                    "medium": "/upload/category/masljanye-kraski-sonet-46ml-011_medium.jpg",
+                    "small": "/upload/category/masljanye-kraski-sonet-46ml-011_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 116,
+              "parentId": 115,
+              "name": {
+                "ru": "Наборы масляные",
+                "uk": "Набори олійні",
+                "en": "Наборы масляных красок"
+              },
+              "slug": "maslyanue-kraski-nabory",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/oil_paint_nabor.jpg",
+                    "large": "/upload/category/oil_paint_nabor_large.jpg",
+                    "large_square": "/upload/category/oil_paint_nabor_large_square.jpg",
+                    "medium": "/upload/category/oil_paint_nabor_medium.jpg",
+                    "small": "/upload/category/oil_paint_nabor_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 162,
+              "parentId": 115,
+              "name": {
+                "ru": "Белила масляные",
+                "uk": "Білила олійні",
+                "en": ""
+              },
+              "slug": "bilyla-tsinkovi-titanovi-oliini",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/belila-dlya-risovaniya-foto-31.jpg",
+                    "large": "/upload/category/belila-dlya-risovaniya-foto-31_large.jpg",
+                    "large_square": "/upload/category/belila-dlya-risovaniya-foto-31_large_square.jpg",
+                    "medium": "/upload/category/belila-dlya-risovaniya-foto-31_medium.jpg",
+                    "small": "/upload/category/belila-dlya-risovaniya-foto-31_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": 53,
+      "parentId": 0,
+      "name": {
+        "ru": "Холсты, подрамники",
+        "uk": "Полотна, підрамники",
+        "en": "Холст хлопковый"
+      },
+      "slug": "holsty-i-podramniki",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/132069751_NaN.jpg",
+            "large": "/upload/category/132069751_NaN_large.jpg",
+            "large_square": "/upload/category/132069751_NaN_large_square.jpg",
+            "medium": "/upload/category/132069751_NaN_medium.jpg",
+            "small": "/upload/category/132069751_NaN_small.jpg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 185,
+          "parentId": 53,
+          "name": {
+            "ru": "Холсты на картоне",
+            "uk": "Полотна на картоні",
+            "en": ""
+          },
+          "slug": "holsty-na-kartone",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/holst-na-kartone1.jpg",
+                "large": "/upload/category/holst-na-kartone1_large.jpg",
+                "large_square": "/upload/category/holst-na-kartone1_large_square.jpg",
+                "medium": "/upload/category/holst-na-kartone1_medium.jpg",
+                "small": "/upload/category/holst-na-kartone1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 187,
+          "parentId": 53,
+          "name": {
+            "ru": "Холсты на подрамнике",
+            "uk": "Полотна на підрамнику",
+            "en": ""
+          },
+          "slug": "holsty-na-podramnike",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/1785172521_large1_large1_1.jpg",
+                "large": "/upload/category/1785172521_large1_large1_1_large.jpg",
+                "large_square": "/upload/category/1785172521_large1_large1_1_large_square.jpg",
+                "medium": "/upload/category/1785172521_large1_large1_1_medium.jpg",
+                "small": "/upload/category/1785172521_large1_large1_1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 188,
+          "parentId": 53,
+          "name": {
+            "ru": "Мелкое зерно",
+            "uk": "Дрібне зерно",
+            "en": ""
+          },
+          "slug": "holsty-na-podramnike-melkoe-zerno",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/1613622061_5_large1.jpg",
+                "large": "/upload/category/1613622061_5_large1_large.jpg",
+                "large_square": "/upload/category/1613622061_5_large1_large_square.jpg",
+                "medium": "/upload/category/1613622061_5_large1_medium.jpg",
+                "small": "/upload/category/1613622061_5_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 189,
+          "parentId": 53,
+          "name": {
+            "ru": "Среднее зерно",
+            "uk": "Середнє зерно",
+            "en": ""
+          },
+          "slug": "holsty-na-podramnike-srednee-zerno",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/1613622061_5_large1_1.jpg",
+                "large": "/upload/category/1613622061_5_large1_1_large.jpg",
+                "large_square": "/upload/category/1613622061_5_large1_1_large_square.jpg",
+                "medium": "/upload/category/1613622061_5_large1_1_medium.jpg",
+                "small": "/upload/category/1613622061_5_large1_1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 191,
+          "parentId": 53,
+          "name": {
+            "ru": "Хлопок",
+            "uk": "Бавовна",
+            "en": ""
+          },
+          "slug": "hlopok",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/1613622061_5_large1_2.jpg",
+                "large": "/upload/category/1613622061_5_large1_2_large.jpg",
+                "large_square": "/upload/category/1613622061_5_large1_2_large_square.jpg",
+                "medium": "/upload/category/1613622061_5_large1_2_medium.jpg",
+                "small": "/upload/category/1613622061_5_large1_2_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 192,
+          "parentId": 53,
+          "name": {
+            "ru": "Лён",
+            "uk": "Льон",
+            "en": ""
+          },
+          "slug": "lyon",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/1613622061_8_large1.jpg",
+                "large": "/upload/category/1613622061_8_large1_large.jpg",
+                "large_square": "/upload/category/1613622061_8_large1_large_square.jpg",
+                "medium": "/upload/category/1613622061_8_large1_medium.jpg",
+                "small": "/upload/category/1613622061_8_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 193,
+          "parentId": 53,
+          "name": {
+            "ru": "Итальянский хлопок",
+            "uk": "Італійська бавовна",
+            "en": ""
+          },
+          "slug": "italyanskii-hlopok",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/e6b3e82184293ed5b8df6cdb0a0658681_3_large1_1.jpg",
+                "large": "/upload/category/e6b3e82184293ed5b8df6cdb0a0658681_3_large1_1_large.jpg",
+                "large_square": "/upload/category/e6b3e82184293ed5b8df6cdb0a0658681_3_large1_1_large_square.jpg",
+                "medium": "/upload/category/e6b3e82184293ed5b8df6cdb0a0658681_3_large1_1_medium.jpg",
+                "small": "/upload/category/e6b3e82184293ed5b8df6cdb0a0658681_3_large1_1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 225,
+          "parentId": 53,
+          "name": {
+            "ru": "Набор холстов на подрамнике",
+            "uk": "Набір полотен на підрамнику",
+            "en": ""
+          },
+          "slug": "nabor-holstov-na-podramnike",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/448646991_16_large1.jpg",
+                "large": "/upload/category/448646991_16_large1_large.jpg",
+                "large_square": "/upload/category/448646991_16_large1_large_square.jpg",
+                "medium": "/upload/category/448646991_16_large1_medium.jpg",
+                "small": "/upload/category/448646991_16_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 6,
+      "parentId": 0,
+      "name": {
+        "ru": "Лаки, разбавители, грунты",
+        "uk": "Лаки, розчинники, грунти",
+        "en": "Лаки"
+      },
+      "slug": "laki.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/manitti-lak-shellak-100-ml-1-large.jpeg",
+            "large": "/upload/category/manitti-lak-shellak-100-ml-1-large_large.jpeg",
+            "medium": "/upload/category/manitti-lak-shellak-100-ml-1-large_medium.jpeg",
+            "small": "/upload/category/manitti-lak-shellak-100-ml-1-large_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 43,
+          "parentId": 6,
+          "name": {
+            "ru": "Разбавители",
+            "uk": "Розбавники",
+            "en": "Разбавители"
+          },
+          "slug": "razbaviteli",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/647691-1-large.jpeg",
+                "large": "/upload/category/647691-1-large_large.jpeg",
+                "medium": "/upload/category/647691-1-large_medium.jpeg",
+                "small": "/upload/category/647691-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 28,
+          "parentId": 6,
+          "name": {
+            "ru": "Акриловые лаки",
+            "uk": "Акрилові лаки",
+            "en": "Акриловые лаки"
+          },
+          "slug": "akrilovye-laki",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kadence-lak-vodniy-glyanzeviy-120-ml.jpeg",
+                "large": "/upload/category/kadence-lak-vodniy-glyanzeviy-120-ml_large.jpeg",
+                "medium": "/upload/category/kadence-lak-vodniy-glyanzeviy-120-ml_medium.jpeg",
+                "small": "/upload/category/kadence-lak-vodniy-glyanzeviy-120-ml_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 42,
+          "parentId": 6,
+          "name": {
+            "ru": "Кракелюр",
+            "uk": "Кракелюр",
+            "en": "Кракелюр"
+          },
+          "slug": "krakelur",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/lak-krakelyur-352153-2-1-large.jpeg",
+                "large": "/upload/category/lak-krakelyur-352153-2-1-large_large.jpeg",
+                "medium": "/upload/category/lak-krakelyur-352153-2-1-large_medium.jpeg",
+                "small": "/upload/category/lak-krakelyur-352153-2-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 29,
+          "parentId": 6,
+          "name": {
+            "ru": "Масляные лаки",
+            "uk": "Олійні лаки",
+            "en": "Масляные лаки"
+          },
+          "slug": "maslyanye-laki.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/cadence-lak-yahtniy-glyanzeviy-100.jpeg",
+                "large": "/upload/category/cadence-lak-yahtniy-glyanzeviy-100_large.jpeg",
+                "medium": "/upload/category/cadence-lak-yahtniy-glyanzeviy-100_medium.jpeg",
+                "small": "/upload/category/cadence-lak-yahtniy-glyanzeviy-100_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 35,
+          "parentId": 6,
+          "name": {
+            "ru": "На растворителях",
+            "uk": "На розчинниках",
+            "en": "На растворителях"
+          },
+          "slug": "laki-na-rastvoritelyah.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/642341-1-large.jpeg",
+                "large": "/upload/category/642341-1-large_large.jpeg",
+                "medium": "/upload/category/642341-1-large_medium.jpeg",
+                "small": "/upload/category/642341-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 39,
+          "parentId": 6,
+          "name": {
+            "ru": "Грунты",
+            "uk": "Грунти",
+            "en": "Грунты"
+          },
+          "slug": "grunty.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/3518961-large.jpeg",
+                "large": "/upload/category/3518961-large_large.jpeg",
+                "medium": "/upload/category/3518961-large_medium.jpeg",
+                "small": "/upload/category/3518961-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 31,
+          "parentId": 6,
+          "name": {
+            "ru": "Спиртовые лаки",
+            "uk": "Спиртові лаки",
+            "en": "Спиртовые лаки"
+          },
+          "slug": "spirtovye-laki.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/ferrario-lak-shellak-250-ml.jpeg",
+                "large": "/upload/category/ferrario-lak-shellak-250-ml_large.jpeg",
+                "medium": "/upload/category/ferrario-lak-shellak-250-ml_medium.jpeg",
+                "small": "/upload/category/ferrario-lak-shellak-250-ml_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 129,
+          "parentId": 6,
+          "name": {
+            "ru": "Лаки для позолоты",
+            "uk": "Лаки для позолоти",
+            "en": "Лаки для позолоты"
+          },
+          "slug": "clone-129",
+          "medias": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 3,
+      "parentId": 0,
+      "name": {
+        "ru": "Золочение",
+        "uk": "Золочення",
+        "en": "Золочение"
+      },
+      "slug": "zolochenie.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/potal.jpeg",
+            "large": "/upload/category/potal_large.jpeg",
+            "medium": "/upload/category/potal_medium.jpeg",
+            "small": "/upload/category/potal_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 14,
+          "parentId": 3,
+          "name": {
+            "ru": "Лаки для позолоты",
+            "uk": "Лаки для позолоти",
+            "en": "Лаки для позолоты"
+          },
+          "slug": "laki-dlya-potali-i-susalnogo-zolota-shellac.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/manetty-lak-shellak-250-ml-1-1-large1.jpeg",
+                "large": "/upload/category/manetty-lak-shellak-250-ml-1-1-large1_large.jpeg",
+                "medium": "/upload/category/manetty-lak-shellak-250-ml-1-1-large1_medium.jpeg",
+                "small": "/upload/category/manetty-lak-shellak-250-ml-1-1-large1_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 17,
+          "parentId": 3,
+          "name": {
+            "ru": "Пигменты вата хлопья",
+            "uk": "Пігменти вата пластівці",
+            "en": "Пигменты вата хлопья"
+          },
+          "slug": "metallicheskie-pigmenty-vata-hlopya.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/pigmenti1.jpg",
+                "large": "/upload/category/pigmenti1_large.jpg",
+                "large_square": "/upload/category/pigmenti1_large_square.jpg",
+                "medium": "/upload/category/pigmenti1_medium.jpg",
+                "small": "/upload/category/pigmenti1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 15,
+          "parentId": 3,
+          "name": {
+            "ru": "Жидкая поталь",
+            "uk": "Рідка поталь",
+            "en": "Жидкая поталь"
+          },
+          "slug": "zhidkaya-potal.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/ghidkaya-potal-kroyl-baroch-20-ml.jpeg",
+                "large": "/upload/category/ghidkaya-potal-kroyl-baroch-20-ml_large.jpeg",
+                "medium": "/upload/category/ghidkaya-potal-kroyl-baroch-20-ml_medium.jpeg",
+                "small": "/upload/category/ghidkaya-potal-kroyl-baroch-20-ml_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 12,
+          "parentId": 3,
+          "name": {
+            "ru": "Зеркальная поталь",
+            "uk": "Дзеркальна поталь",
+            "en": "Зеркальная поталь"
+          },
+          "slug": "zerkalnaya-potal.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/zerkalnaya-potal-2-5-superpotal-standartnaya-zolotaya-1-large1.jpeg",
+                "large": "/upload/category/zerkalnaya-potal-2-5-superpotal-standartnaya-zolotaya-1-large1_large.jpeg",
+                "medium": "/upload/category/zerkalnaya-potal-2-5-superpotal-standartnaya-zolotaya-1-large1_medium.jpeg",
+                "small": "/upload/category/zerkalnaya-potal-2-5-superpotal-standartnaya-zolotaya-1-large1_small.jpeg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 222,
+              "parentId": 12,
+              "name": {
+                "ru": "Листовая",
+                "uk": "Листова",
+                "en": ""
+              },
+              "slug": "listovaya-zerkalnaya-potal",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/zerkalnaya_potal_2_5_super_potal.jpg",
+                    "large": "/upload/category/zerkalnaya_potal_2_5_super_potal_large.jpg",
+                    "large_square": "/upload/category/zerkalnaya_potal_2_5_super_potal_large_square.jpg",
+                    "medium": "/upload/category/zerkalnaya_potal_2_5_super_potal_medium.jpg",
+                    "small": "/upload/category/zerkalnaya_potal_2_5_super_potal_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 223,
+              "parentId": 12,
+              "name": {
+                "ru": "Трансферная",
+                "uk": "Трансферна",
+                "en": ""
+              },
+              "slug": "transfernaya-zerkalnaya-potal",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/transfernaja_zerkalnaya_potal_zolochenie_pozolota_zoloto1.jpg",
+                    "large": "/upload/category/transfernaja_zerkalnaya_potal_zolochenie_pozolota_zoloto1_large.jpg",
+                    "large_square": "/upload/category/transfernaja_zerkalnaya_potal_zolochenie_pozolota_zoloto1_large_square.jpg",
+                    "medium": "/upload/category/transfernaja_zerkalnaya_potal_zolochenie_pozolota_zoloto1_medium.jpg",
+                    "small": "/upload/category/transfernaja_zerkalnaya_potal_zolochenie_pozolota_zoloto1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 224,
+              "parentId": 12,
+              "name": {
+                "ru": "Вата",
+                "uk": "Вата",
+                "en": ""
+              },
+              "slug": "vata-zerkalnaya-potal",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/vata23_medium1.jpg",
+                    "large": "/upload/category/vata23_medium1_large.jpg",
+                    "large_square": "/upload/category/vata23_medium1_large_square.jpg",
+                    "medium": "/upload/category/vata23_medium1_medium.jpg",
+                    "small": "/upload/category/vata23_medium1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": 13,
+          "parentId": 3,
+          "name": {
+            "ru": "Клеи для позолоты",
+            "uk": "Клеї для позолоти",
+            "en": "Клеи для позолоты"
+          },
+          "slug": "klei-dlya-potali-i-susalnogo-zolota-mordan-mixion.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1.jpeg",
+                "large": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_large.jpeg",
+                "medium": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_medium.jpeg",
+                "small": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_small.jpeg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 82,
+              "parentId": 13,
+              "name": {
+                "ru": "Масляный мордан",
+                "uk": "Олійний мордан",
+                "en": "Масляный мордан"
+              },
+              "slug": "maslyanyj-mordan",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/ferrario-kley-3-h-1-large1.jpeg",
+                    "large": "/upload/category/ferrario-kley-3-h-1-large1_large.jpeg",
+                    "medium": "/upload/category/ferrario-kley-3-h-1-large1_medium.jpeg",
+                    "small": "/upload/category/ferrario-kley-3-h-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 85,
+              "parentId": 13,
+              "name": {
+                "ru": "Гранулы Асол капсулы нитро",
+                "uk": "Гранули Асол капсули нітро",
+                "en": "Гранулы Асол капсулы нитро"
+              },
+              "slug": "asol-kapsuly-nitro-granuly-drugie-klei-dlya-potali",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/mezdrovyj-krolichiy-kley-renesans-500-gramm-1-large1.jpeg",
+                    "large": "/upload/category/mezdrovyj-krolichiy-kley-renesans-500-gramm-1-large1_large.jpeg",
+                    "medium": "/upload/category/mezdrovyj-krolichiy-kley-renesans-500-gramm-1-large1_medium.jpeg",
+                    "small": "/upload/category/mezdrovyj-krolichiy-kley-renesans-500-gramm-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 83,
+              "parentId": 13,
+              "name": {
+                "ru": "Водный мордан",
+                "uk": "Водний мордан",
+                "en": "Водный мордан"
+              },
+              "slug": "vodnyj-mordan",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/ferrario-vodniy-250-steklo-2-1-large1.jpeg",
+                    "large": "/upload/category/ferrario-vodniy-250-steklo-2-1-large1_large.jpeg",
+                    "medium": "/upload/category/ferrario-vodniy-250-steklo-2-1-large1_medium.jpeg",
+                    "small": "/upload/category/ferrario-vodniy-250-steklo-2-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 81,
+              "parentId": 13,
+              "name": {
+                "ru": "Полимент",
+                "uk": "Полімент",
+                "en": "Полимент"
+              },
+              "slug": "poliment",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/glina-dlya-zolocheniya-i-restavracii-poliment-charbonnel-krasnaya-b1000ml-1-1-1-1-large1.jpeg",
+                    "large": "/upload/category/glina-dlya-zolocheniya-i-restavracii-poliment-charbonnel-krasnaya-b1000ml-1-1-1-1-large1_large.jpeg",
+                    "medium": "/upload/category/glina-dlya-zolocheniya-i-restavracii-poliment-charbonnel-krasnaya-b1000ml-1-1-1-1-large1_medium.jpeg",
+                    "small": "/upload/category/glina-dlya-zolocheniya-i-restavracii-poliment-charbonnel-krasnaya-b1000ml-1-1-1-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 84,
+              "parentId": 13,
+              "name": {
+                "ru": "Спиртовой мордан",
+                "uk": "Спиртовий мордан",
+                "en": "Спиртовой мордан"
+              },
+              "slug": "spirtovoy-mordan",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_1.jpeg",
+                    "large": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_1_large.jpeg",
+                    "medium": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_1_medium.jpeg",
+                    "small": "/upload/category/ferrario-kley-spirtovoy-steklo-250-ml-1-large1_1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 226,
+              "parentId": 13,
+              "name": {
+                "ru": "Инстакол/Пермакол",
+                "uk": "Інстакол/Пермакол",
+                "en": ""
+              },
+              "slug": "permakol-insyakol",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/rapid-glue-for-stone1_1_large1.jpg",
+                    "large": "/upload/category/rapid-glue-for-stone1_1_large1_large.jpg",
+                    "large_square": "/upload/category/rapid-glue-for-stone1_1_large1_large_square.jpg",
+                    "medium": "/upload/category/rapid-glue-for-stone1_1_large1_medium.jpg",
+                    "small": "/upload/category/rapid-glue-for-stone1_1_large1_small.jpg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": 18,
+          "parentId": 3,
+          "name": {
+            "ru": "Состаривание позолоты",
+            "uk": "Зістарювання позолоти",
+            "en": "Состаривание позолоты"
+          },
+          "slug": "sostarivanie-pozoloty.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/bitum-ferrario-lak-250-ml-1-large1.jpeg",
+                "large": "/upload/category/bitum-ferrario-lak-250-ml-1-large1_large.jpeg",
+                "medium": "/upload/category/bitum-ferrario-lak-250-ml-1-large1_medium.jpeg",
+                "small": "/upload/category/bitum-ferrario-lak-250-ml-1-large1_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 36,
+          "parentId": 3,
+          "name": {
+            "ru": "Сусаль",
+            "uk": "Сусаль",
+            "en": "Сусаль"
+          },
+          "slug": "susalnoe-zoloto.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/man-sus-zol-2375.jpeg",
+                "large": "/upload/category/man-sus-zol-2375_large.jpeg",
+                "medium": "/upload/category/man-sus-zol-2375_medium.jpeg",
+                "small": "/upload/category/man-sus-zol-2375_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 16,
+          "parentId": 3,
+          "name": {
+            "ru": "Инструменты для позолоты и икон",
+            "uk": "Інструменти для позолоти та ікон",
+            "en": "Инструменты для позолоты и икон"
+          },
+          "slug": "instrumenty-pozolotchika.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/lampenzel_1.jpeg",
+                "large": "/upload/category/lampenzel_1_large.jpeg",
+                "medium": "/upload/category/lampenzel_1_medium.jpeg",
+                "small": "/upload/category/lampenzel_1_small.jpeg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 70,
+              "parentId": 16,
+              "name": {
+                "ru": "Агатовые зубки",
+                "uk": "Агатові зубки",
+                "en": "Агатовые зубки"
+              },
+              "slug": "agatovie-zubki.html",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/agatoviy-zubok_1_1.jpeg",
+                    "large": "/upload/category/agatoviy-zubok_1_1_large.jpeg",
+                    "medium": "/upload/category/agatoviy-zubok_1_1_medium.jpeg",
+                    "small": "/upload/category/agatoviy-zubok_1_1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 99,
+              "parentId": 16,
+              "name": {
+                "ru": "Чеканы",
+                "uk": "Карбівки",
+                "en": "Чеканы"
+              },
+              "slug": "chekany-dlya-chekanki-levkasa",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/img-20180814-153326-large1.jpeg",
+                    "large": "/upload/category/img-20180814-153326-large1_large.jpeg",
+                    "medium": "/upload/category/img-20180814-153326-large1_medium.jpeg",
+                    "small": "/upload/category/img-20180814-153326-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 101,
+              "parentId": 16,
+              "name": {
+                "ru": "Ножи позолотчика",
+                "uk": "Ножі позолотника",
+                "en": "Ножи позолотчика"
+              },
+              "slug": "nozhi-pozolotchika",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/nogh-pozolotchika-bolshoj-pg-1-1-large1.jpeg",
+                    "large": "/upload/category/nogh-pozolotchika-bolshoj-pg-1-1-large1_large.jpeg",
+                    "medium": "/upload/category/nogh-pozolotchika-bolshoj-pg-1-1-large1_medium.jpeg",
+                    "small": "/upload/category/nogh-pozolotchika-bolshoj-pg-1-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 100,
+              "parentId": 16,
+              "name": {
+                "ru": "Цировки (графьи) для левкаса",
+                "uk": "Цировки (граф'ї) для левкасу",
+                "en": "Цировки (графьи) для левкаса"
+              },
+              "slug": "cirovki-glya-levkasa-grafyi",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/img-20180814-154657-1-large1.jpeg",
+                    "large": "/upload/category/img-20180814-154657-1-large1_large.jpeg",
+                    "medium": "/upload/category/img-20180814-154657-1-large1_medium.jpeg",
+                    "small": "/upload/category/img-20180814-154657-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 98,
+              "parentId": 16,
+              "name": {
+                "ru": "Пуансоны",
+                "uk": "Пуансони",
+                "en": "Пуансоны"
+              },
+              "slug": "puansony-figurnye-dlya-zolotoy-rezby",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/puanson-1-agat-zub-2-large1.jpeg",
+                    "large": "/upload/category/puanson-1-agat-zub-2-large1_large.jpeg",
+                    "medium": "/upload/category/puanson-1-agat-zub-2-large1_medium.jpeg",
+                    "small": "/upload/category/puanson-1-agat-zub-2-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 102,
+              "parentId": 16,
+              "name": {
+                "ru": "Лампензели",
+                "uk": "Лампензель",
+                "en": "Лампензели"
+              },
+              "slug": "lampenzeli",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/lampenzel.jpeg",
+                    "large": "/upload/category/lampenzel_large.jpeg",
+                    "medium": "/upload/category/lampenzel_medium.jpeg",
+                    "small": "/upload/category/lampenzel_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 96,
+              "parentId": 16,
+              "name": {
+                "ru": "Подушки позолотчика",
+                "uk": "Подушки позолотника",
+                "en": "Подушки позолотчика"
+              },
+              "slug": "podushki-pozolotchika",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/podushka-pozolotchika-pg-bambolo-15-15-1-large1.jpeg",
+                    "large": "/upload/category/podushka-pozolotchika-pg-bambolo-15-15-1-large1_large.jpeg",
+                    "medium": "/upload/category/podushka-pozolotchika-pg-bambolo-15-15-1-large1_medium.jpeg",
+                    "small": "/upload/category/podushka-pozolotchika-pg-bambolo-15-15-1-large1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 113,
+              "parentId": 16,
+              "name": {
+                "ru": "Перчатки хлопковые белые",
+                "uk": "Рукавички бавовняні білі",
+                "en": "Перчатки хлопковые белые"
+              },
+              "slug": "perchatki",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/-586670ce6da3d-680x4501.jpeg",
+                    "large": "/upload/category/-586670ce6da3d-680x4501_large.jpeg",
+                    "medium": "/upload/category/-586670ce6da3d-680x4501_medium.jpeg",
+                    "small": "/upload/category/-586670ce6da3d-680x4501_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 132,
+              "parentId": 16,
+              "name": {
+                "ru": "Иконные доски",
+                "uk": "Іконні дошки",
+                "en": "Иконные доски"
+              },
+              "slug": "clone-132",
+              "medias": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": 11,
+          "parentId": 3,
+          "name": {
+            "ru": "Поталь",
+            "uk": "Поталь",
+            "en": "Поталь"
+          },
+          "slug": "potal.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/potal_1.jpeg",
+                "large": "/upload/category/potal_1_large.jpeg",
+                "medium": "/upload/category/potal_1_medium.jpeg",
+                "small": "/upload/category/potal_1_small.jpeg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 110,
+              "parentId": 11,
+              "name": {
+                "ru": "Разноцветная поталь",
+                "uk": "Різнокольорова поталь",
+                "en": "Оксиды потали"
+              },
+              "slug": "oksidi-potali",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/oksid-potali-02-oranghevie-krugi-na-zolotom-fone-s-malinovimi-progilkami-14-14-sm-5-listov.jpeg",
+                    "large": "/upload/category/oksid-potali-02-oranghevie-krugi-na-zolotom-fone-s-malinovimi-progilkami-14-14-sm-5-listov_large.jpeg",
+                    "medium": "/upload/category/oksid-potali-02-oranghevie-krugi-na-zolotom-fone-s-malinovimi-progilkami-14-14-sm-5-listov_medium.jpeg",
+                    "small": "/upload/category/oksid-potali-02-oranghevie-krugi-na-zolotom-fone-s-malinovimi-progilkami-14-14-sm-5-listov_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 112,
+              "parentId": 11,
+              "name": {
+                "ru": "Поталь твореная",
+                "uk": "Поталь творена",
+                "en": "Поталь твореная"
+              },
+              "slug": "potal-tvorenaya",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/koliro-tvorenaya-potal-1.jpeg",
+                    "large": "/upload/category/koliro-tvorenaya-potal-1_large.jpeg",
+                    "medium": "/upload/category/koliro-tvorenaya-potal-1_medium.jpeg",
+                    "small": "/upload/category/koliro-tvorenaya-potal-1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 107,
+              "parentId": 11,
+              "name": {
+                "ru": "Поталь в рулонах",
+                "uk": "Поталь в рулонах",
+                "en": "Поталь в рулонах"
+              },
+              "slug": "potal-v-rulonah",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/transfernaya-potal-15-mm-zoloto-1.jpeg",
+                    "large": "/upload/category/transfernaya-potal-15-mm-zoloto-1_large.jpeg",
+                    "medium": "/upload/category/transfernaya-potal-15-mm-zoloto-1_medium.jpeg",
+                    "small": "/upload/category/transfernaya-potal-15-mm-zoloto-1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 111,
+              "parentId": 11,
+              "name": {
+                "ru": "Трансферная поталь",
+                "uk": "Трансферна поталь",
+                "en": "Трансферная поталь"
+              },
+              "slug": "transfernaya-potal",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/potal-transfernaya.jpeg",
+                    "large": "/upload/category/potal-transfernaya_large.jpeg",
+                    "medium": "/upload/category/potal-transfernaya_medium.jpeg",
+                    "small": "/upload/category/potal-transfernaya_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 109,
+              "parentId": 11,
+              "name": {
+                "ru": "Хлопья потали",
+                "uk": "Пластівці поталі",
+                "en": "Хлопья потали"
+              },
+              "slug": "hlopya-potali",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/kelner-1-g-blue-1.jpeg",
+                    "large": "/upload/category/kelner-1-g-blue-1_large.jpeg",
+                    "medium": "/upload/category/kelner-1-g-blue-1_medium.jpeg",
+                    "small": "/upload/category/kelner-1-g-blue-1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 106,
+              "parentId": 11,
+              "name": {
+                "ru": "Поталь в книге",
+                "uk": "Поталь в книзі",
+                "en": "Поталь в книге"
+              },
+              "slug": "potal-v-knige",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/manetti-kniga-zoloto-2-5_1.jpeg",
+                    "large": "/upload/category/manetti-kniga-zoloto-2-5_1_large.jpeg",
+                    "medium": "/upload/category/manetti-kniga-zoloto-2-5_1_medium.jpeg",
+                    "small": "/upload/category/manetti-kniga-zoloto-2-5_1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 105,
+              "parentId": 11,
+              "name": {
+                "ru": "Поталь в конверте",
+                "uk": "Поталь в конверті",
+                "en": "Поталь в конверте"
+              },
+              "slug": "potal-v-konverte",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/potal-v-konverte-1.jpeg",
+                    "large": "/upload/category/potal-v-konverte-1_large.jpeg",
+                    "medium": "/upload/category/potal-v-konverte-1_medium.jpeg",
+                    "small": "/upload/category/potal-v-konverte-1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 108,
+              "parentId": 11,
+              "name": {
+                "ru": "Поталь с проложкой",
+                "uk": "Поталь з проложкою",
+                "en": "Поталь с проложкой"
+              },
+              "slug": "potal-s-prolozhkoi",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/potal-prolozhka.jpeg",
+                    "large": "/upload/category/potal-prolozhka_large.jpeg",
+                    "medium": "/upload/category/potal-prolozhka_medium.jpeg",
+                    "small": "/upload/category/potal-prolozhka_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": 21,
+          "parentId": 3,
+          "name": {
+            "ru": "Металл. краски и пигменты",
+            "uk": "Метал. фарби та пігменти",
+            "en": "Металлизированные краски и пигменты"
+          },
+          "slug": "metallizirovannye-kraski.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/pigment-3-o-1-1-large1.jpeg",
+                "large": "/upload/category/pigment-3-o-1-1-large1_large.jpeg",
+                "medium": "/upload/category/pigment-3-o-1-1-large1_medium.jpeg",
+                "small": "/upload/category/pigment-3-o-1-1-large1_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 103,
+          "parentId": 3,
+          "name": {
+            "ru": "Иконные доски",
+            "uk": "Іконні дошки",
+            "en": "Иконные доски"
+          },
+          "slug": "ikonnie-doski",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/ikonnie-doski.jpeg",
+                "large": "/upload/category/ikonnie-doski_large.jpeg",
+                "medium": "/upload/category/ikonnie-doski_medium.jpeg",
+                "small": "/upload/category/ikonnie-doski_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 40,
+      "parentId": 0,
+      "name": {
+        "ru": "-50% Картины по номерам РАСПРОДАЖА",
+        "uk": "-50% Картини за номерами РОЗПРОДАЖ",
+        "en": "Картины по номерам"
+      },
+      "slug": "kartiny-po-nomeram.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/-4568-1-large1.jpeg",
+            "large": "/upload/category/-4568-1-large1_large.jpeg",
+            "medium": "/upload/category/-4568-1-large1_medium.jpeg",
+            "small": "/upload/category/-4568-1-large1_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 89,
+          "parentId": 40,
+          "name": {
+            "ru": "Город",
+            "uk": "Місто",
+            "en": "Город"
+          },
+          "slug": "gorod",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/2556-1-large-large.jpeg",
+                "large": "/upload/category/2556-1-large-large_large.jpeg",
+                "medium": "/upload/category/2556-1-large-large_medium.jpeg",
+                "small": "/upload/category/2556-1-large-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 95,
+          "parentId": 40,
+          "name": {
+            "ru": "Буквы",
+            "uk": "Букви",
+            "en": "Буквы"
+          },
+          "slug": "bukvi",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/125-1-large.jpeg",
+                "large": "/upload/category/125-1-large_large.jpeg",
+                "medium": "/upload/category/125-1-large_medium.jpeg",
+                "small": "/upload/category/125-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 151,
+          "parentId": 40,
+          "name": {
+            "ru": "Алмазы + Краски",
+            "uk": "Алмази + Фарби",
+            "en": ""
+          },
+          "slug": "almaznye-kartiny-raskraski",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/71c0bf54e65d824401b8dc3471585315146e9ff11_1_large1.jpg",
+                "large": "/upload/category/71c0bf54e65d824401b8dc3471585315146e9ff11_1_large1_large.jpg",
+                "large_square": "/upload/category/71c0bf54e65d824401b8dc3471585315146e9ff11_1_large1_large_square.jpg",
+                "medium": "/upload/category/71c0bf54e65d824401b8dc3471585315146e9ff11_1_large1_medium.jpg",
+                "small": "/upload/category/71c0bf54e65d824401b8dc3471585315146e9ff11_1_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 94,
+          "parentId": 40,
+          "name": {
+            "ru": "Игрушки",
+            "uk": "Іграшки",
+            "en": "Игрушки"
+          },
+          "slug": "igrushki",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/-4126-1-large.jpeg",
+                "large": "/upload/category/-4126-1-large_large.jpeg",
+                "medium": "/upload/category/-4126-1-large_medium.jpeg",
+                "small": "/upload/category/-4126-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 88,
+          "parentId": 40,
+          "name": {
+            "ru": "Деревья",
+            "uk": "Дерева",
+            "en": "Деревья"
+          },
+          "slug": "derevjya",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/882-1-large.jpeg",
+                "large": "/upload/category/882-1-large_large.jpeg",
+                "medium": "/upload/category/882-1-large_medium.jpeg",
+                "small": "/upload/category/882-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 91,
+          "parentId": 40,
+          "name": {
+            "ru": "Животные",
+            "uk": "Тварини",
+            "en": "Животные"
+          },
+          "slug": "ghivotnie",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kn-4183-700x700-1-large.jpeg",
+                "large": "/upload/category/kn-4183-700x700-1-large_large.jpeg",
+                "medium": "/upload/category/kn-4183-700x700-1-large_medium.jpeg",
+                "small": "/upload/category/kn-4183-700x700-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 92,
+          "parentId": 40,
+          "name": {
+            "ru": "Вода",
+            "uk": "Вода",
+            "en": "Вода"
+          },
+          "slug": "voda",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/2253-1-large.jpeg",
+                "large": "/upload/category/2253-1-large_large.jpeg",
+                "medium": "/upload/category/2253-1-large_medium.jpeg",
+                "small": "/upload/category/2253-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 152,
+          "parentId": 40,
+          "name": {
+            "ru": "KIDS",
+            "uk": "KIDS",
+            "en": ""
+          },
+          "slug": "detskie-kartiny-po-nomeram",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/mex70971.jpeg",
+                "large": "/upload/category/mex70971_large.jpeg",
+                "medium": "/upload/category/mex70971_medium.jpeg",
+                "small": "/upload/category/mex70971_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 87,
+          "parentId": 40,
+          "name": {
+            "ru": "Люди",
+            "uk": "Люди",
+            "en": "Люди"
+          },
+          "slug": "lyudi",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kn-4667-700x700-1-large.jpeg",
+                "large": "/upload/category/kn-4667-700x700-1-large_large.jpeg",
+                "medium": "/upload/category/kn-4667-700x700-1-large_medium.jpeg",
+                "small": "/upload/category/kn-4667-700x700-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 93,
+          "parentId": 40,
+          "name": {
+            "ru": "Натюрморт",
+            "uk": "Натюрморт",
+            "en": "Натюрморт"
+          },
+          "slug": "natyurmort",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kn-5587-700x700-1-large.jpeg",
+                "large": "/upload/category/kn-5587-700x700-1-large_large.jpeg",
+                "medium": "/upload/category/kn-5587-700x700-1-large_medium.jpeg",
+                "small": "/upload/category/kn-5587-700x700-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 137,
+          "parentId": 40,
+          "name": {
+            "ru": "Машины",
+            "uk": "Машини",
+            "en": "Машины"
+          },
+          "slug": "mashinu",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kn-3521-700x700.jpeg",
+                "large": "/upload/category/kn-3521-700x700_large.jpeg",
+                "medium": "/upload/category/kn-3521-700x700_medium.jpeg",
+                "small": "/upload/category/kn-3521-700x700_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 86,
+          "parentId": 40,
+          "name": {
+            "ru": "Цветы",
+            "uk": "Квіти",
+            "en": "Цветы"
+          },
+          "slug": "zveti",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/1267-1-large.jpeg",
+                "large": "/upload/category/1267-1-large_large.jpeg",
+                "medium": "/upload/category/1267-1-large_medium.jpeg",
+                "small": "/upload/category/1267-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 153,
+          "parentId": 40,
+          "name": {
+            "ru": "Религия",
+            "uk": "Релігія",
+            "en": ""
+          },
+          "slug": "religiya",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/medium-996.jpeg",
+                "large": "/upload/category/medium-996_large.jpeg",
+                "medium": "/upload/category/medium-996_medium.jpeg",
+                "small": "/upload/category/medium-996_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 90,
+          "parentId": 40,
+          "name": {
+            "ru": "Пейзаж",
+            "uk": "Пейзаж",
+            "en": "Пейзаж"
+          },
+          "slug": "ptyzag",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/163-1-large.jpeg",
+                "large": "/upload/category/163-1-large_large.jpeg",
+                "medium": "/upload/category/163-1-large_medium.jpeg",
+                "small": "/upload/category/163-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 150,
+          "parentId": 40,
+          "name": {
+            "ru": "Алмазная мозаика",
+            "uk": "Алмазна мозаїка",
+            "en": ""
+          },
+          "slug": "almaznaya-mozaika",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/981c2211cd2a15ac5789ed5b1eddae94e36250c21_1_2_large1.jpg",
+                "large": "/upload/category/981c2211cd2a15ac5789ed5b1eddae94e36250c21_1_2_large1_large.jpg",
+                "large_square": "/upload/category/981c2211cd2a15ac5789ed5b1eddae94e36250c21_1_2_large1_large_square.jpg",
+                "medium": "/upload/category/981c2211cd2a15ac5789ed5b1eddae94e36250c21_1_2_large1_medium.jpg",
+                "small": "/upload/category/981c2211cd2a15ac5789ed5b1eddae94e36250c21_1_2_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 227,
+          "parentId": 40,
+          "name": {
+            "ru": "Картины РАСПРОДАЖА 50% СКИДКА",
+            "uk": "Картини РОЗПРОДАЖ 50% ЗНИЖКА",
+            "en": ""
+          },
+          "slug": "kartini-rasprodazha-50-skidka",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kn-4200-475x475_large1.jpg",
+                "large": "/upload/category/kn-4200-475x475_large1_large.jpg",
+                "large_square": "/upload/category/kn-4200-475x475_large1_large_square.jpg",
+                "medium": "/upload/category/kn-4200-475x475_large1_medium.jpg",
+                "small": "/upload/category/kn-4200-475x475_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 5,
+      "parentId": 0,
+      "name": {
+        "ru": "Кисти, мастихины",
+        "uk": "Пензлі, мастихіни",
+        "en": "Кисти"
+      },
+      "slug": "kisti.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/ea302a0fadb2383038c43937fd9f934e.jpeg",
+            "large": "/upload/category/ea302a0fadb2383038c43937fd9f934e_large.jpeg",
+            "medium": "/upload/category/ea302a0fadb2383038c43937fd9f934e_medium.jpeg",
+            "small": "/upload/category/ea302a0fadb2383038c43937fd9f934e_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 27,
+          "parentId": 5,
+          "name": {
+            "ru": "Лампензели",
+            "uk": "Лампензлі",
+            "en": "Лампензели"
+          },
+          "slug": "lampenzeli.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/rublev-35-mm-belka.jpeg",
+                "large": "/upload/category/rublev-35-mm-belka_large.jpeg",
+                "medium": "/upload/category/rublev-35-mm-belka_medium.jpeg",
+                "small": "/upload/category/rublev-35-mm-belka_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 25,
+          "parentId": 5,
+          "name": {
+            "ru": "Овальные кисти",
+            "uk": "Овальні пензлі",
+            "en": "Овальные кисти"
+          },
+          "slug": "ovalnye-kisti.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/renessans-24-sintetika-.jpeg",
+                "large": "/upload/category/renessans-24-sintetika-_large.jpeg",
+                "medium": "/upload/category/renessans-24-sintetika-_medium.jpeg",
+                "small": "/upload/category/renessans-24-sintetika-_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 61,
+          "parentId": 5,
+          "name": {
+            "ru": "Угловые кисти",
+            "uk": "Кутові пензлі",
+            "en": "Угловые кисти"
+          },
+          "slug": "uglovie-kisti.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/131098-1300x1300.jpeg",
+                "large": "/upload/category/131098-1300x1300_large.jpeg",
+                "medium": "/upload/category/131098-1300x1300_medium.jpeg",
+                "small": "/upload/category/131098-1300x1300_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 64,
+          "parentId": 5,
+          "name": {
+            "ru": "Лайнер",
+            "uk": "Лайнер",
+            "en": "Лайнер"
+          },
+          "slug": "layner.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/131236-1300x1300.jpeg",
+                "large": "/upload/category/131236-1300x1300_large.jpeg",
+                "medium": "/upload/category/131236-1300x1300_medium.jpeg",
+                "small": "/upload/category/131236-1300x1300_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 30,
+          "parentId": 5,
+          "name": {
+            "ru": "Плоские кисти",
+            "uk": "Пласкі пензлі",
+            "en": "Плоские кисти"
+          },
+          "slug": "ploskie-kisti.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/rublev-ploskaya-belka-1422.jpeg",
+                "large": "/upload/category/rublev-ploskaya-belka-1422_large.jpeg",
+                "medium": "/upload/category/rublev-ploskaya-belka-1422_medium.jpeg",
+                "small": "/upload/category/rublev-ploskaya-belka-1422_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 24,
+          "parentId": 5,
+          "name": {
+            "ru": "Круглые кисти",
+            "uk": "Круглі пензлі",
+            "en": "Круглые кисти"
+          },
+          "slug": "kruglye-kisti.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kist-kruglaya-belka-1412-6-1.jpeg",
+                "large": "/upload/category/kist-kruglaya-belka-1412-6-1_large.jpeg",
+                "medium": "/upload/category/kist-kruglaya-belka-1412-6-1_medium.jpeg",
+                "small": "/upload/category/kist-kruglaya-belka-1412-6-1_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 26,
+          "parentId": 5,
+          "name": {
+            "ru": "Флейцы",
+            "uk": "Флейці",
+            "en": "Флейцы"
+          },
+          "slug": "flejcy.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/rublev-flyez-mangust-5f2p-50-.jpeg",
+                "large": "/upload/category/rublev-flyez-mangust-5f2p-50-_large.jpeg",
+                "medium": "/upload/category/rublev-flyez-mangust-5f2p-50-_medium.jpeg",
+                "small": "/upload/category/rublev-flyez-mangust-5f2p-50-_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 23,
+          "parentId": 5,
+          "name": {
+            "ru": "Веерные кисти",
+            "uk": "Віялові пензлі",
+            "en": "Веерные кисти"
+          },
+          "slug": "veernye-kisti.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/masterkisti-veernaya-kisty-belka-6-.jpeg",
+                "large": "/upload/category/masterkisti-veernaya-kisty-belka-6-_large.jpeg",
+                "medium": "/upload/category/masterkisti-veernaya-kisty-belka-6-_medium.jpeg",
+                "small": "/upload/category/masterkisti-veernaya-kisty-belka-6-_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 104,
+          "parentId": 5,
+          "name": {
+            "ru": "Наборы кистей",
+            "uk": "Набори пензлів",
+            "en": "Наборы кистей"
+          },
+          "slug": "nabory-kistey.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/310834-1-1300x1300.jpeg",
+                "large": "/upload/category/310834-1-1300x1300_large.jpeg",
+                "medium": "/upload/category/310834-1-1300x1300_medium.jpeg",
+                "small": "/upload/category/310834-1-1300x1300_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 118,
+          "parentId": 5,
+          "name": {
+            "ru": "Мастихины",
+            "uk": "Мастихіни",
+            "en": "Мастихины"
+          },
+          "slug": "mastihiny",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/542c04ebca0f1-xl1.jpeg",
+                "large": "/upload/category/542c04ebca0f1-xl1_large.jpeg",
+                "medium": "/upload/category/542c04ebca0f1-xl1_medium.jpeg",
+                "small": "/upload/category/542c04ebca0f1-xl1_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 124,
+          "parentId": 5,
+          "name": {
+            "ru": "Кисти для акварели",
+            "uk": "Пензлі для акварелі",
+            "en": "Кисти для акварели"
+          },
+          "slug": "clone-124",
+          "medias": [],
+          "children": []
+        },
+        {
+          "_id": 182,
+          "parentId": 5,
+          "name": {
+            "ru": "Кисти поштучно",
+            "uk": "Пензли поштучно",
+            "en": ""
+          },
+          "slug": "kisti-poshtuchno",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kisti_dlya_akvareli_belka_kruglye_seriya_profi_ruchka_dlinnaya_v_assortimente1.jpg",
+                "large": "/upload/category/kisti_dlya_akvareli_belka_kruglye_seriya_profi_ruchka_dlinnaya_v_assortimente1_large.jpg",
+                "large_square": "/upload/category/kisti_dlya_akvareli_belka_kruglye_seriya_profi_ruchka_dlinnaya_v_assortimente1_large_square.jpg",
+                "medium": "/upload/category/kisti_dlya_akvareli_belka_kruglye_seriya_profi_ruchka_dlinnaya_v_assortimente1_medium.jpg",
+                "small": "/upload/category/kisti_dlya_akvareli_belka_kruglye_seriya_profi_ruchka_dlinnaya_v_assortimente1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 216,
+          "parentId": 5,
+          "name": {
+            "ru": "Белка",
+            "uk": "Білка",
+            "en": ""
+          },
+          "slug": "bilichi-penzli",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/51112226-01_5_large1.jpg",
+                "large": "/upload/category/51112226-01_5_large1_large.jpg",
+                "large_square": "/upload/category/51112226-01_5_large1_large_square.jpg",
+                "medium": "/upload/category/51112226-01_5_large1_medium.jpg",
+                "small": "/upload/category/51112226-01_5_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 217,
+          "parentId": 5,
+          "name": {
+            "ru": "Колонок и соболь",
+            "uk": "Колонок та соболь",
+            "en": ""
+          },
+          "slug": "kolonok-i-sobol",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/penzli-kolonok-sobol.jpg",
+                "large": "/upload/category/penzli-kolonok-sobol_large.jpg",
+                "large_square": "/upload/category/penzli-kolonok-sobol_large_square.jpg",
+                "medium": "/upload/category/penzli-kolonok-sobol_medium.jpg",
+                "small": "/upload/category/penzli-kolonok-sobol_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 218,
+          "parentId": 5,
+          "name": {
+            "ru": "Щетина",
+            "uk": "Щетина",
+            "en": ""
+          },
+          "slug": "penzli-hudozhni-schetyna",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/penzli-hudozhni-schetyna.jpg",
+                "large": "/upload/category/penzli-hudozhni-schetyna_large.jpg",
+                "large_square": "/upload/category/penzli-hudozhni-schetyna_large_square.jpg",
+                "medium": "/upload/category/penzli-hudozhni-schetyna_medium.jpg",
+                "small": "/upload/category/penzli-hudozhni-schetyna_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 7,
+      "parentId": 0,
+      "name": {
+        "ru": "Патини, воски и др",
+        "uk": "Патини, воски та ін",
+        "en": "Состаривание"
+      },
+      "slug": "sostarivanie.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/sostarivanie-1.jpeg",
+            "large": "/upload/category/sostarivanie-1_large.jpeg",
+            "medium": "/upload/category/sostarivanie-1_medium.jpeg",
+            "small": "/upload/category/sostarivanie-1_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 9,
+          "parentId": 7,
+          "name": {
+            "ru": "Патины",
+            "uk": "Патини",
+            "en": "Патины"
+          },
+          "slug": "patiny.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/rusty-patina-cadence-02-1-1-large.jpeg",
+                "large": "/upload/category/rusty-patina-cadence-02-1-1-large_large.jpeg",
+                "medium": "/upload/category/rusty-patina-cadence-02-1-1-large_medium.jpeg",
+                "small": "/upload/category/rusty-patina-cadence-02-1-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 22,
+          "parentId": 7,
+          "name": {
+            "ru": "Воски",
+            "uk": "Воски",
+            "en": "Воски"
+          },
+          "slug": "voski.html",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/kadens-finger-wax-906-copper-medy-1-1-large.jpeg",
+                "large": "/upload/category/kadens-finger-wax-906-copper-medy-1-1-large_large.jpeg",
+                "medium": "/upload/category/kadens-finger-wax-906-copper-medy-1-1-large_medium.jpeg",
+                "small": "/upload/category/kadens-finger-wax-906-copper-medy-1-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 173,
+          "parentId": 7,
+          "name": {
+            "ru": "Патина битумная",
+            "uk": "Патина бітумна",
+            "en": ""
+          },
+          "slug": "patina-bitumnaya",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/bitum-ferrario-lak-250-ml_1_large1.jpg",
+                "large": "/upload/category/bitum-ferrario-lak-250-ml_1_large1_large.jpg",
+                "large_square": "/upload/category/bitum-ferrario-lak-250-ml_1_large1_large_square.jpg",
+                "medium": "/upload/category/bitum-ferrario-lak-250-ml_1_large1_medium.jpg",
+                "small": "/upload/category/bitum-ferrario-lak-250-ml_1_large1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 171,
+          "parentId": 7,
+          "name": {
+            "ru": "Химическая патина",
+            "uk": "Хімічна патина",
+            "en": ""
+          },
+          "slug": "himicheskaya-patina",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/s112_2.jpg",
+                "large": "/upload/category/s112_2_large.jpg",
+                "large_square": "/upload/category/s112_2_large_square.jpg",
+                "medium": "/upload/category/s112_2_medium.jpg",
+                "small": "/upload/category/s112_2_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 172,
+          "parentId": 7,
+          "name": {
+            "ru": "Акриловая патина",
+            "uk": "Акрилова патина",
+            "en": ""
+          },
+          "slug": "akrilovaya-patina",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/akril_patina.jpg",
+                "large": "/upload/category/akril_patina_large.jpg",
+                "large_square": "/upload/category/akril_patina_large_square.jpg",
+                "medium": "/upload/category/akril_patina_medium.jpg",
+                "small": "/upload/category/akril_patina_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 215,
+          "parentId": 7,
+          "name": {
+            "ru": "Металл. краски и пигменты",
+            "uk": "Метал. фарби та пігменти",
+            "en": "Металлизированные краски и пигменты"
+          },
+          "slug": "clone-215",
+          "medias": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 34,
+      "parentId": 0,
+      "name": {
+        "ru": "Инструменты и аксессуары",
+        "uk": "Інструменти та аксесуари",
+        "en": "Инструменты и аксессуары"
+      },
+      "slug": "aksessuary.html",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/agatoviy-zubok.jpeg",
+            "large": "/upload/category/agatoviy-zubok_large.jpeg",
+            "medium": "/upload/category/agatoviy-zubok_medium.jpeg",
+            "small": "/upload/category/agatoviy-zubok_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 123,
+          "parentId": 34,
+          "name": {
+            "ru": "Мастихины",
+            "uk": "Мастихіни",
+            "en": "Мастихины"
+          },
+          "slug": "clone-123",
+          "medias": [],
+          "children": []
+        },
+        {
+          "_id": 169,
+          "parentId": 34,
+          "name": {
+            "ru": "Палитры",
+            "uk": "Палітри",
+            "en": ""
+          },
+          "slug": "palitra",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/depositphotos_27928761-stock-photo-artists-palette-with-brushes1.jpg",
+                "large": "/upload/category/depositphotos_27928761-stock-photo-artists-palette-with-brushes1_large.jpg",
+                "large_square": "/upload/category/depositphotos_27928761-stock-photo-artists-palette-with-brushes1_large_square.jpg",
+                "medium": "/upload/category/depositphotos_27928761-stock-photo-artists-palette-with-brushes1_medium.jpg",
+                "small": "/upload/category/depositphotos_27928761-stock-photo-artists-palette-with-brushes1_small.jpg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 127,
+          "parentId": 34,
+          "name": {
+            "ru": "Инструменты для позолоты и икон",
+            "uk": "Інструменти для позолоти та ікон",
+            "en": "Инструменты для позолоты и икон"
+          },
+          "slug": "clone-127",
+          "medias": [],
+          "children": []
+        },
+        {
+          "_id": 149,
+          "parentId": 34,
+          "name": {
+            "ru": "Мольберты",
+            "uk": "Мольберти",
+            "en": ""
+          },
+          "slug": "molbert",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/28117747-2.jpeg",
+                "large": "/upload/category/28117747-2_large.jpeg",
+                "medium": "/upload/category/28117747-2_medium.jpeg",
+                "small": "/upload/category/28117747-2_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 133,
+          "parentId": 34,
+          "name": {
+            "ru": "Иконные доски",
+            "uk": "Іконні дошки",
+            "en": "Иконные доски"
+          },
+          "slug": "clone-133",
+          "medias": [],
+          "children": []
+        },
+        {
+          "_id": 128,
+          "parentId": 34,
+          "name": {
+            "ru": "Перчатки хлопковые белые",
+            "uk": "Рукавички бавовняні білі",
+            "en": "Перчатки хлопковые белые"
+          },
+          "slug": "clone-128",
+          "medias": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "_id": 154,
+      "parentId": 0,
+      "name": {
+        "ru": "Графика",
+        "uk": "Графіка",
+        "en": ""
+      },
+      "slug": "grafika-markery",
+      "medias": [
+        {
+          "variantsUrls": {
+            "original": "/upload/category/742387-21-1-large-large1.jpeg",
+            "large": "/upload/category/742387-21-1-large-large1_large.jpeg",
+            "medium": "/upload/category/742387-21-1-large-large1_medium.jpeg",
+            "small": "/upload/category/742387-21-1-large-large1_small.jpeg"
+          }
+        }
+      ],
+      "children": [
+        {
+          "_id": 48,
+          "parentId": 154,
+          "name": {
+            "ru": "Карандаши, сангина",
+            "uk": "Олівці, сангіна",
+            "en": "Карандаши, сангина"
+          },
+          "slug": "karandashi-sangina-ugol",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/742387-21-1-large.jpeg",
+                "large": "/upload/category/742387-21-1-large_large.jpeg",
+                "medium": "/upload/category/742387-21-1-large_medium.jpeg",
+                "small": "/upload/category/742387-21-1-large_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 143,
+          "parentId": 154,
+          "name": {
+            "ru": "Маркеры, линеры",
+            "uk": "Маркери, лінери",
+            "en": ""
+          },
+          "slug": "sketch-markery",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/2296311985-w640-h640-22963119851-1-large1.jpeg",
+                "large": "/upload/category/2296311985-w640-h640-22963119851-1-large1_large.jpeg",
+                "medium": "/upload/category/2296311985-w640-h640-22963119851-1-large1_medium.jpeg",
+                "small": "/upload/category/2296311985-w640-h640-22963119851-1-large1_small.jpeg"
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "_id": 139,
+          "parentId": 154,
+          "name": {
+            "ru": "Пастель",
+            "uk": "Пастель",
+            "en": ""
+          },
+          "slug": "pastel",
+          "medias": [
+            {
+              "variantsUrls": {
+                "original": "/upload/category/136267-1300x1300.jpeg",
+                "large": "/upload/category/136267-1300x1300_large.jpeg",
+                "medium": "/upload/category/136267-1300x1300_medium.jpeg",
+                "small": "/upload/category/136267-1300x1300_small.jpeg"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_id": 141,
+              "parentId": 139,
+              "name": {
+                "ru": "Пастель масляная",
+                "uk": "Пастель олійна",
+                "en": ""
+              },
+              "slug": "pastel-maslyanay",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/bez-nazvaniya-1_1_1.jpeg",
+                    "large": "/upload/category/bez-nazvaniya-1_1_1_large.jpeg",
+                    "medium": "/upload/category/bez-nazvaniya-1_1_1_medium.jpeg",
+                    "small": "/upload/category/bez-nazvaniya-1_1_1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "_id": 142,
+              "parentId": 139,
+              "name": {
+                "ru": "Пастель сухая",
+                "uk": "Пастель суха",
+                "en": ""
+              },
+              "slug": "pastel-suhay",
+              "medias": [
+                {
+                  "variantsUrls": {
+                    "original": "/upload/category/images-1.jpeg",
+                    "large": "/upload/category/images-1_large.jpeg",
+                    "medium": "/upload/category/images-1_medium.jpeg",
+                    "small": "/upload/category/images-1_small.jpeg"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": 147,
+      "parentId": 0,
+      "name": {
+        "ru": "Наборы для творчества",
+        "uk": "Набори для творчості",
+        "en": ""
+      },
+      "slug": "nabory-dlya-tvorchestva",
+      "medias": [],
+      "children": []
+    }
+  ]
+}
