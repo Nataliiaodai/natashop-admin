@@ -1,18 +1,22 @@
 <div class="box">
   <h4 class="box-header">Category List</h4>
-  <ul class="directory-list" *ngFor="let child of this.categoryList.data">
-    <li> rr
+  <ul class="directory-list" *ngFor="let mainCategory of this.categoryTree.data">
+    <li>
+      <span class="interactive">{{mainCategory.name.uk}}</span>
       <ul>
-            <li >eee
-            <ul>
-              <li>
-
-              </li>
-            </ul>
+        <li *ngFor="let child of mainCategory.children">
+          <span class="interactive">{{child.name.uk}} </span>
+          <ul>
+            <li *ngFor="let grandChild of  child.children">
+              <span class="interactive">{{grandChild.name.uk}}</span>
             </li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </div>
+
+
 
 <hr>

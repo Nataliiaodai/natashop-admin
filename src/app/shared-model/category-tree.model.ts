@@ -1,7 +1,7 @@
 import {CategoryItemModel} from "./category-item.model";
 
 
-export class CategoryListModel {
+export class CategoryTreeModel {
   data: CategoryItemModel [] = [];
 
   constructor(data: CategoryItemModel [] = []) {

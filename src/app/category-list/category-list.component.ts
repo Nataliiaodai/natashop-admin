@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {CategoryListService} from "./category-list-service";
-import {CategoryListModel} from "../shared-model/category-list.model";
+import {CategoryService} from "./category-service";
+import { CategoryTreeModel} from "../shared-model/category-tree.model";
 
 @Component({
   selector: 'app-category-list',
@@ -9,10 +9,10 @@ import {CategoryListModel} from "../shared-model/category-list.model";
 })
 export class CategoryListComponent implements OnInit {
 
-  constructor(private categoryListService: CategoryListService) {
+  constructor(private categoryService: CategoryService) {
   }
 
-  categoryList = new CategoryListModel();
+  categoryTree = new CategoryTreeModel();
 
   ngOnInit() {
     this.fetchAndSaveCategoryList();
@@ -20,14 +20,14 @@ export class CategoryListComponent implements OnInit {
 
 
   fetchAndSaveCategoryList() {
-    this.categoryListService.fetchCategoryList()
-      .subscribe((categoryListResponse) => {
-        console.log(categoryListResponse);
-        // console.log(categoryListResponse.data[0]);
-        // console.log(categoryListResponse.data[0].name.uk);
-        // console.log(categoryListResponse.data[0].children);
+    this.categoryService.fetchCategoryList()
+      .subscribe((categoryTreeResponse) => {
+        console.log(categoryTreeResponse);
+        console.log(categoryTreeResponse.data[0]);
+        console.log(categoryTreeResponse.data[0].name.uk);
+        console.log(categoryTreeResponse.data[0].children);
 
-        this.categoryList = categoryListResponse;
+        this.categoryTree = categoryTreeResponse;
       })
   }
 

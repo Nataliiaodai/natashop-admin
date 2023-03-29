@@ -12,7 +12,7 @@
 
 @media (min-width: 544px) {
   .box {
-    max-width: 440px;
+    max-width: 495px;
   }
 }
 
@@ -38,6 +38,14 @@
 .directory-list a:hover {
   border-color: #eee;
   color: #000;
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.interactive:hover {
+  color: blue;
 }
 
 .directory-list .folder,
