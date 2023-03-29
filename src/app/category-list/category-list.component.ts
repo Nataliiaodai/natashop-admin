@@ -18,10 +18,15 @@ export class CategoryListComponent implements OnInit {
     this.fetchAndSaveCategoryList();
   }
 
+
   fetchAndSaveCategoryList() {
     this.categoryListService.fetchCategoryList()
       .subscribe((categoryListResponse) => {
         console.log(categoryListResponse);
+        // console.log(categoryListResponse.data[0]);
+        // console.log(categoryListResponse.data[0].name.uk);
+        // console.log(categoryListResponse.data[0].children);
+
         this.categoryList = categoryListResponse;
       })
   }

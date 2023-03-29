@@ -1,10 +1,10 @@
-import {CategoryDataModel} from "./category-data.model";
+import {CategoryItemModel} from "./category-item.model";
 
 
 export class CategoryListModel {
-  data: CategoryDataModel [] = [];
+  data: CategoryItemModel [] = [];
 
-  constructor(data: CategoryDataModel [] = []) {
+  constructor(data: CategoryItemModel [] = []) {
     this.data = data;
   }
 
