@@ -10,7 +10,8 @@ const routes: Routes = [
   {path: 'admin/product/add', component: ProductComponent},
   {path: 'admin/product/edit/:productId', component: ProductComponent},
   {path: 'admin/category', component: CategoryListComponent},
-
+  {path: 'admin/category/edit/:categoryId', component: CategoryListComponent},
+  {path: 'admin/category/add', component: CategoryListComponent},
 ];
 
 @NgModule({

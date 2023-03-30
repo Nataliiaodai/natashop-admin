@@ -2,19 +2,30 @@
   background: #fff;
   border-radius: 2px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  margin: 30px 5%;
-  padding: 5%;
+  margin: 20px 2%;
+  padding: 2%;
+  width: 40%;
+}
+
+.category-detail {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  margin: 20px 2%;
+  padding: 2%;
+  height: fit-content;
+  width: 60%;
 }
 
 .box-header {
   margin-bottom: 20px;
 }
 
-@media (min-width: 544px) {
-  .box {
-    max-width: 495px;
-  }
-}
+/*@media (min-width: 544px) {*/
+/*  .box {*/
+/*    max-width: 495px;*/
+/*  }*/
+/*}*/
 
 .directory-list ul {
   margin-left: 10px;
@@ -45,6 +56,10 @@
 }
 
 .interactive:hover {
+  color: blue;
+}
+
+.interactive[tabindex]:focus {
   color: blue;
 }
 

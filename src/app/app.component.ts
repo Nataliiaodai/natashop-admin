@@ -1,4 +1,5 @@
 import {Component, Injectable} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Injectable()
 @Component({
@@ -8,6 +9,9 @@ import {Component, Injectable} from '@angular/core';
 })
 export class AppComponent {
   title = 'natashop-admin';
+  currentURL: string = this.router.url;
+
+  constructor(public router: Router) {}
 
 }
 
