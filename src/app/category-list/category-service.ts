@@ -17,21 +17,21 @@ export class CategoryService {
 
   public fetchCategoryList(): Observable<CategoryTreeModel> {
     let url = `${GlobalVariables.baseURL}categories/tree`;
-    console.log("GET" + url)
+    console.log("GET " + url)
     return this.http.get<CategoryTreeModel>(url);
   };
 
   public fetchCategory(id: number): Observable<CategoryModel> {
     let url = `${GlobalVariables.baseURL}categories/` + id;
-    console.log("GET" + url)
+    console.log("GET " + url)
     return this.http.get<CategoryModel>(url);
 
   };
 
 
 
-  createCategory(category: CategoryTreeItemModel):Observable<CategoryTreeItemModel> {
-    return this.http.post<CategoryTreeItemModel>(GlobalVariables.baseURL + 'categories/', category);
+  createCategory(category: CategoryModel):Observable<CategoryModel> {
+    return this.http.post<CategoryModel>(GlobalVariables.baseURL + 'categories/', category);
   }
 
 

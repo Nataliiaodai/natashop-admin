@@ -1,16 +1,38 @@
+<div class="col-md-12 flex-list">
+  <ul class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <li class="base-item">
+      <svg  style="margin-right: 5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+           class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      </svg>
+      <a onclick="history.back()" class="base-item-link" >Go Back</a>
+    </li>
+  </ul>
+
+  <ul class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <li class="base-item btn btn-light">
+      <a class="base-link" routerLink="/admin/category/add">Create new Category</a>
+    </li>
+  </ul>
+
+</div>
+
+<hr>
+
 <div style="width: 100%; display: flex; justify-content: space-between">
 
   <div class="box">
     <h4 class="box-header">Category List</h4>
     <ul class="directory-list" *ngFor="let mainCategory of this.categoryTree.data">
       <li>
-        <span (click)="fetchAndSaveCategory(mainCategory._id)" class="interactive" tabindex="1">{{mainCategory.name.uk}}</span>
+        <span (click)="onGetCategoryDetail(mainCategory._id)" class="interactive" tabindex="1">{{mainCategory.name.uk}}</span>
         <ul>
           <li *ngFor="let child of mainCategory.children">
-            <span (click)="fetchAndSaveCategory(child._id)" class="interactive" tabindex="1">{{child.name.uk}} </span>
+            <span  (click)="onGetCategoryDetail(child._id)" class="interactive" tabindex="1">{{child.name.uk}} </span>
             <ul>
               <li *ngFor="let grandChild of  child.children">
-                <span (click)="fetchAndSaveCategory(grandChild._id)" class="interactive" tabindex="1">{{grandChild.name.uk}}</span>
+                <span (click)="onGetCategoryDetail(grandChild._id)" class="interactive" tabindex="1">{{grandChild.name.uk}}</span>
               </li>
             </ul>
           </li>
@@ -20,7 +42,8 @@
   </div>
 
 
-  <div class="category-detail">
+  <div *ngIf="currentURL !== '/admin/category'" class="category-detail">
+ <!-- <div *ngIf="currentURL === '/admin/category/add' &&  '/admin/category/edit/:categoryId'" class="category-detail"> -->
 
   <div class="row">
     <form (ngSubmit)="onCategorySave()">
@@ -130,13 +153,7 @@
         </div>
       </div>
 
-
-
-
       <hr>
-
-
-
 
       <div  style="display:flex; justify-content: space-between; margin-bottom: 15px; ">
         <div style="width: 50%">
@@ -158,8 +175,8 @@
 
         <div class="grid-wrapper">
           <div *ngFor="let imageMedia of category.medias; let i = index;">
-            <div class="image-container" style="position: relative">
 
+            <div class="image-container" style="position: relative">
               <img class="template-block img-block"
                    src="{{imageMedia.variantsUrls.small}}"
                    alt="{{imageMedia.altText}}">
@@ -203,17 +220,18 @@
               </svg>
             </label>
           </div>
+
         </div>
-
-
       </div>
-
       <hr>
     </form>
   </div>
-
-
 </div>
+
+
+
+
+
 </div>
 
 <hr>

@@ -18,7 +18,7 @@ export class ProductComponent implements OnInit{
   showId = true;
    id = 0;
 
-  idToGetProduct = this.route.snapshot.params ['productId'];
+  idToGetProduct = this.route.snapshot.params['productId'];
   currentURL: any = this.router.url;
 
   constructor(private http: HttpClient,
