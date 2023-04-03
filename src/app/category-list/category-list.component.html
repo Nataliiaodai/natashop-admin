@@ -10,11 +10,24 @@
     </li>
   </ul>
 
-  <ul class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <li class="base-item btn btn-light">
-      <a class="base-link" routerLink="/admin/category/add">Create new Category</a>
-    </li>
-  </ul>
+  <div style="display: flex">
+
+    <ul class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <li class="base-item btn btn-Sub">
+        <a class="base-link"
+           [routerLink]="['/admin/category/add/parent/', category._id ]"
+          >Create Subcategory</a>
+      </li>
+    </ul>
+
+    <ul class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <li class="base-item btn btn-Root">
+        <a class="base-link"
+           routerLink="/admin/category/add"
+        >Create root Category</a>
+      </li>
+    </ul>
+  </div>
 
 </div>
 

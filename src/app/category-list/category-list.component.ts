@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "./category-service";
-import { CategoryTreeModel} from "../shared-model/category-tree.model";
+import {CategoryTreeModel} from "../shared-model/category-tree.model";
 import {ActivatedRoute, Router} from "@angular/router";
 import {MediasObjectModel} from "../shared-model/medias.obect.model";
 import {GlobalVariables} from "../global-variables";
@@ -17,21 +17,23 @@ export class CategoryListComponent implements OnInit {
   constructor(private categoryService: CategoryService,
               public router: Router,
               private route: ActivatedRoute,
-              private http: HttpClient) {}
+              private http: HttpClient) {
+  }
 
   categoryTree = new CategoryTreeModel();
   category = new CategoryModel();
   currentURL: any = this.router.url;
 
+
   ngOnInit() {
     console.log("ngOnInit start");
     this.fetchCategoryTree();
-    
+
     let idToGetCategory = this.route.snapshot.params['categoryId'];
     if (idToGetCategory) {
       this.fetchCategory(idToGetCategory);
     }
-    console.log("ngOnInit end this.currentURL="  + this.router.url);
+    console.log("ngOnInit end this.currentURL=" + this.router.url);
   }
 
   fetchCategoryTree() {
@@ -60,7 +62,7 @@ export class CategoryListComponent implements OnInit {
       });
   }
 
-  onCategoryDelete() : void {
+  onCategoryDelete(): void {
     this.categoryService.deleteCategory(this.category).subscribe(
       () => {
         this.router.navigate(['admin/category/add'])
@@ -78,46 +80,62 @@ export class CategoryListComponent implements OnInit {
 
   onCategorySave(): void {
     let idToGetCategory = this.route.snapshot.params ['categoryId'];
-    if(idToGetCategory) {
-      this.categoryService.updateCategory(this.category).subscribe(
-        (response) => {
-          console.log('categoryService.updateCategory = ' + JSON.stringify(response));
-          this.setCategory(response);
-          this.fetchCategoryTree();
-        },
-        (error: any) => console.log(error),
-        () => console.log('Done updating category'),
-      )
+    if (idToGetCategory) {
+      this.updateCategory();
     } else {
-      this.categoryService.createCategory(this.category).subscribe(
-        (response) => {
-          console.log("Before navigate. response = " + JSON.stringify(response));
-          this.router.navigate(['admin/category/edit', response._id])
-            .then(() => {
-              console.log("Router navigate done. response = " + JSON.stringify(response));
-            });
-            this.setCategory(response);
-            this.fetchCategoryTree();
-        },
+      let parentID = this.route.snapshot.params ['parentId'];
+      console.log(' onCategorySave --- PARENT Id: ' + parentID);
+      if (parentID !== 0) {
+        this.category.parentId = parentID;
+      }
 
-        (error: any) => console.log(error),
-        () => console.log('Done creating category'),
-      )
+      this.createCategory();
     }
+
+
     this.fetchCategoryTree();
   }
 
-  onDeleteImage (imageIndex: number) {
-    console.log(imageIndex);
-    this.category.medias?.splice(imageIndex,1);
+  private createCategory() {
+    this.categoryService.createCategory(this.category).subscribe(
+      (response) => {
+        console.log("Before navigate. response = " + JSON.stringify(response));
+        this.router.navigate(['admin/category/edit', response._id])
+          .then(() => {
+            console.log("Router navigate done. response = " + JSON.stringify(response));
+          });
+        this.setCategory(response);
+        this.fetchCategoryTree();
+      },
+
+      (error: any) => console.log(error),
+      () => console.log('Done creating category'),
+    )
   }
 
-  onFileSelected (event: any) {
+  private updateCategory() {
+    this.categoryService.updateCategory(this.category).subscribe(
+      (response) => {
+        console.log('categoryService.updateCategory = ' + JSON.stringify(response));
+        this.setCategory(response);
+        this.fetchCategoryTree();
+      },
+      (error: any) => console.log(error),
+      () => console.log('Done updating category'),
+    )
+  }
+
+  onDeleteImage(imageIndex: number) {
+    console.log(imageIndex);
+    this.category.medias?.splice(imageIndex, 1);
+  }
+
+  onFileSelected(event: any) {
     console.log(event);
-    const selectedImageFile : File = event.target.files[0];
+    const selectedImageFile: File = event.target.files[0];
     const formData = new FormData();
-    formData.append('image', selectedImageFile, selectedImageFile.name )
-    this.http.post<MediasObjectModel>(GlobalVariables.baseURL + 'categories/media' , formData)
+    formData.append('image', selectedImageFile, selectedImageFile.name)
+    this.http.post<MediasObjectModel>(GlobalVariables.baseURL + 'categories/media', formData)
       .subscribe(response => {
         console.log(response);
         this.category.medias.push(response);
@@ -135,5 +153,6 @@ export class CategoryListComponent implements OnInit {
     this.category.medias[index] = this.category.medias[index + 1];
     this.category.medias[index + 1] = imgToMove;
   }
+
 
 }
