@@ -81,7 +81,7 @@
 
       <div class="row parent-border-block">
         <div class="col-md-5">
-          <p *ngIf="currentURL !=='/admin/category/add' && currentURL !=='/admin/category'">{{this.category._id}}</p>
+          <p *ngIf="this.category._id !== 0">ID: {{this.category._id}}</p>
           <div class="mb-3">
             <label for="categoryNameUk" class="form-label">Category Name</label>
             <p>uk:</p>
