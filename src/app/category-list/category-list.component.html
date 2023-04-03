@@ -40,7 +40,9 @@
           </button>
         </div>
       </div>
+
       <hr>
+
       <div class="row parent-border-block">
         <div class="col-md-5">
           <p *ngIf="currentURL !=='/admin/category/add' && currentURL !=='/admin/category'">{{this.category._id}}</p>
@@ -75,10 +77,10 @@
             <editor style=" border: solid gray 1px"
                     apiKey="wc69sxdifny51wbu6d3n53fuzeselpnsvmtttafn1yvu1nvl"
                     ngModel
-                    name="categoryDescriptionUk"
+                    name="descriptionCategory1"
                     [(ngModel)]="this.category.description.uk"
                     class="form-control"
-                    id="categoryDescriptionUk"
+                    id="descrUk"
                     [init]="{
               icons: 'material',
               skin: 'borderless',
@@ -95,10 +97,10 @@
             <editor style=" border: solid gray 1px"
                     apiKey="wc69sxdifny51wbu6d3n53fuzeselpnsvmtttafn1yvu1nvl"
                     ngModel
-                    name="categoryDescriptionEn"
+                    name="descriptionCategory2"
                     [(ngModel)]="this.category.description.en"
                     class="form-control"
-                    id="categoryDescriptionEn"
+                    id="descrEn"
                     [init]="{
               icons: 'material',
               skin: 'borderless',
@@ -128,7 +130,13 @@
         </div>
       </div>
 
+
+
+
       <hr>
+
+
+
 
       <div  style="display:flex; justify-content: space-between; margin-bottom: 15px; ">
         <div style="width: 50%">

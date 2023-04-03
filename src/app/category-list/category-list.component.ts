@@ -24,11 +24,16 @@ export class CategoryListComponent implements OnInit {
   categoryTreeItem = new CategoryTreeItemModel();
   category = new CategoryModel();
 
+
   currentURL: any = this.router.url;
-  idToGetCategory = this.route.snapshot.params ['productId'];
+  idToGetCategory = this.route.snapshot.params ['categoryId'];
 
   ngOnInit() {
+    console.log("ngOnInit=" + this.idToGetCategory);
     this.fetchAndSaveCategoryList();
+    // if (this.idToGetCategory) {
+    //   this.fetchAndSaveCategory(this.idToGetCategory);
+    // }
   }
 
 
@@ -36,10 +41,6 @@ export class CategoryListComponent implements OnInit {
     this.categoryService.fetchCategoryList()
       .subscribe((categoryTreeResponse) => {
         console.log(categoryTreeResponse);
-        console.log(categoryTreeResponse.data[0]);
-        console.log(categoryTreeResponse.data[0].name.uk);
-        console.log(categoryTreeResponse.data[0].children);
-
         this.categoryTree = categoryTreeResponse;
       })
   };
@@ -49,23 +50,22 @@ export class CategoryListComponent implements OnInit {
     this.categoryService.fetchCategory(id)
       .subscribe((categoryResponse) => {
         console.log(categoryResponse);
-        for (let imageMedia of categoryResponse.medias){
-            console.log(imageMedia.variantsUrls.small);
-            console.log(imageMedia.altText)
-        }
-
-        this.category = categoryResponse;
+        console.log(id);
+         this.category = categoryResponse;
+        console.log(id)
+        // this.router.navigate(['admin/category/edit/' + id])
+        //   .then();
       });
-
-    this.onGetCategoryDetail(id);
   };
 
 
-  onGetCategoryDetail(id: number) {
-    console.log(id);
-    this.router.navigate(['admin/category/edit/' + id])
-      .then();
-  }
+  // onGetCategoryDetail(id: number) {
+  //   console.log("onGetCategoryDetail=" + id);
+  //   this.router.navigate(['admin/category/edit/' + id])
+  //     .then(() => {
+  //       this.fetchAndSaveCategory(id);
+  //     });
+  // }
 
 
 
@@ -85,6 +85,7 @@ export class CategoryListComponent implements OnInit {
   setCategory(updatedCategory: CategoryModel) {
     console.log("Setting this.prod = " + JSON.stringify(updatedCategory));
     this.category = updatedCategory;
+    this.fetchAndSaveCategoryList();
   }
 
 
@@ -113,6 +114,7 @@ export class CategoryListComponent implements OnInit {
         () => console.log('Done creating category'),
       )
     }
+    this.fetchAndSaveCategoryList();
   }
 
 
