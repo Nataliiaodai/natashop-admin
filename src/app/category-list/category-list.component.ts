@@ -20,8 +20,8 @@ export class CategoryListComponent implements OnInit {
               private http: HttpClient) {
   }
 
-  categoryTree = new CategoryTreeModel();
-  category = new CategoryModel();
+  categoryTree: CategoryTreeModel = new CategoryTreeModel();
+  category: CategoryModel = new CategoryModel();
   currentURL: any = this.router.url;
 
 
@@ -56,7 +56,7 @@ export class CategoryListComponent implements OnInit {
     console.log("onGetCategoryDetail=" + id);
     this.router.navigate(['admin/category/edit/' + id])
       .then(() => {
-        const idToGetCategory = this.route.snapshot.params['categoryId'];
+        // const idToGetCategory = this.route.snapshot.params['categoryId'];
         console.log("onGetCategoryDetail this.router.navigate success id=" + id);
         this.fetchCategory(id);
       });
@@ -153,6 +153,7 @@ export class CategoryListComponent implements OnInit {
     this.category.medias[index] = this.category.medias[index + 1];
     this.category.medias[index + 1] = imgToMove;
   }
+
 
 
 }

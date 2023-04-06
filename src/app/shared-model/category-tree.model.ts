@@ -1,6 +1,5 @@
 import {CategoryTreeItemModel} from "./category-tree-item.model";
 
-
 export class CategoryTreeModel {
   data: CategoryTreeItemModel [] = [];
 

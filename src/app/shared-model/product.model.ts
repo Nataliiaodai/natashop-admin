@@ -1,5 +1,6 @@
 import {MultiLangText} from "./multiLangText.model";
 import {MediasObjectModel} from "./medias.obect.model";
+import {CategoriesIdentifyModel} from "./categories-identify.model";
 
 
 export class Product {
@@ -10,6 +11,7 @@ export class Product {
   fullDescription: MultiLangText;
   slug: string;
   medias: MediasObjectModel [] = [];
+  categories: CategoriesIdentifyModel [] = [];
 
   constructor(name: MultiLangText = new MultiLangText(),
               price = 0,
@@ -17,7 +19,10 @@ export class Product {
               _id = 0,
               fullDescription: MultiLangText = new MultiLangText(),
               slug: string = '',
-              medias: MediasObjectModel [] = []) {
+              medias: MediasObjectModel [] = [],
+              categories: CategoriesIdentifyModel [] = [])
+
+  {
     this.name = name;
     this.price = price;
     this.note = note;
@@ -25,6 +30,7 @@ export class Product {
     this.fullDescription = fullDescription;
     this.slug = slug;
     this.medias = medias;
+    this.categories = categories;
   }
 }
 

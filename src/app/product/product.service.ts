@@ -3,6 +3,7 @@ import {Product} from "../shared-model/product.model";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {GlobalVariables} from "../global-variables";
+import {CategoryTreeModel} from "../shared-model/category-tree.model";
 
 @Injectable({
   providedIn: 'root'
@@ -30,5 +31,10 @@ export class ProductService {
     return this.http.get<Product>(GlobalVariables.baseURL + 'products/' + idToGetProduct);
   }
 
+  public fetchCategoryList(): Observable<CategoryTreeModel> {
+    let url = `${GlobalVariables.baseURL}categories/tree`;
+    console.log("GET " + url)
+    return this.http.get<CategoryTreeModel>(url);
+  };
 
 }
