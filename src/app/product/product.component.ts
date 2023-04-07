@@ -28,6 +28,12 @@ export class ProductComponent implements OnInit {
   ) {
   }
 
+  logFunc(id: number) {
+    console.log('wowww');
+    return console.log('I logged my function from Html Wow! Its id: ' + id);
+  }
+
+
   isChecked(categoryId: number) {
     for (let prodCategory of this.prod.categories) {
       if (categoryId === prodCategory.id) {

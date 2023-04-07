@@ -12,6 +12,7 @@ import { CategoryListComponent } from './category-list/category-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule} from "@angular/material/select";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import {TransCategIdToNamePipe} from "./pipes/transCategIdToName.pipe";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     ProductComponent,
     ProductListComponent,
     CategoryListComponent,
+    TransCategIdToNamePipe
   ],
   imports: [
     BrowserModule,
