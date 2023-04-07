@@ -85,10 +85,9 @@
   border: 1px rgba(128, 128, 128, 0.52) solid;
   background-color: white;
   color: black;
-  border-radius:  0.375rem;
+  border-radius: 0.375rem;
   margin-bottom: 5px;
 }
-
 
 
 .dropdown-content {
@@ -105,7 +104,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
   border: rgba(128, 128, 128, 0.2) solid 1px;
-  border-radius:  0.375rem;
+  border-radius: 0.375rem;
 }
 
 .dropdown-category-list {
@@ -129,7 +128,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 6px;
+}
 
+.input-checkbox-category {
+ cursor: pointer;
+}
+
+.category-tree-item:hover {
+background-color: rgba(136, 136, 136, 0.18);
 }
 
 

@@ -20,9 +20,7 @@ export class Product {
               fullDescription: MultiLangText = new MultiLangText(),
               slug: string = '',
               medias: MediasObjectModel [] = [],
-              categories: CategoriesIdentifyModel [] = [])
-
-  {
+              categories: CategoriesIdentifyModel [] = []) {
     this.name = name;
     this.price = price;
     this.note = note;

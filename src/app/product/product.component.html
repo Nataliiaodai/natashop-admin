@@ -109,39 +109,53 @@
           <div class="dropbtn">
             <ul class="dropdown-category-list">
               <li class="dropdown-category-list-item"
-                ngModel name="categoryID"
-                *ngFor=" let prodCategoryItem of prod.categories"
-                [(ngModel)]="prodCategoryItem.id">
+                  ngModel name="categoryID"
+                  *ngFor=" let prodCategoryItem of prod.categories"
+                  [(ngModel)]="prodCategoryItem.id">
                <span>
                {{prodCategoryItem.id}}
                </span>
-                <svg (click)="onDeleteCategory({id:prodCategoryItem.id})" style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x"
+                <svg (click)="onDeleteCategory(prodCategoryItem.id)" style="cursor: pointer"
+                     xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x"
                      viewBox="0 0 16 16">
                   <path
                     d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
               </li>
             </ul>
-
-
+            <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+          </div>
           </div>
 
           <div class=" dropdown-content">
             <ul class="directory-list" *ngFor="let category of this.categoryTree.data">
               <li>
-                <input (click)="onAddCategory({id: category._id})"  class="input-checkbox-category" type="checkbox" checked [id]="category._id">{{category.name.uk}}<label [for]="1">
+                <span class="category-tree-item">
+                <input (click)="onCategoryTreeClick(category._id)" class="input-checkbox-category" type="checkbox"
+                       [checked]="isChecked(category._id)" [id]="category._id">
+              {{category.name.uk}}
+                </span>
 
-              </label>
                 <ul>
                   <li *ngFor="let child of category.children">
-                    <input (click)="onAddCategory({id: child._id})" class="input-checkbox-category" type="checkbox" checked [id]="child._id">{{child.name.uk}}<label [for]="2">
+                    <span class="category-tree-item">
+                    <input (click)="onCategoryTreeClick(child._id)" class="input-checkbox-category" type="checkbox"
+                           [checked]="isChecked(child._id)" [id]="child._id">
+                    {{child.name.uk}}
+                    </span>
 
-                  </label>
                     <ul>
                       <li *ngFor="let grandChild of  child.children">
-                        <input (click)="onAddCategory({id: grandChild._id})" class="input-checkbox-category" type="checkbox" checked [id]="grandChild._id"> {{grandChild.name.uk}}<label [for]="3">
+                        <span class="category-tree-item">
+                        <input (click)="onCategoryTreeClick(grandChild._id)" class="input-checkbox-category"
+                               type="checkbox" [checked]="isChecked(grandChild._id)"
+                               [id]="grandChild._id">
+                       {{grandChild.name.uk}}
+                        </span>
 
-                      </label>
                       </li>
                     </ul>
                   </li>
