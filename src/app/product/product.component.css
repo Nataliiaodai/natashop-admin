@@ -96,38 +96,43 @@
   padding: 10px;
   /*position: absolute;*/
   min-width: 160px;
-  height: 255px;
+  height: 320px;
   overflow-y: auto;
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  border: rgba(128, 128, 128, 0.2) solid 1px;
+  border: 1px rgba(128, 128, 128, 0.52) solid;
   border-radius: 0.375rem;
 }
 
 .dropdown-category-list {
-  padding: 0;
+  padding: 15px;
   margin-bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-column-gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+
+  /*display: grid;*/
+  /*grid-template-columns: repeat(2, 1fr);*/
+  /* grid-column-gap: 10px;*/
   width: 100%;
   height: fit-content;
-  grid-row-gap: 1em;
+  /*grid-row-gap: 1em;*/
 }
 
 .dropdown-category-list-item {
   background-color: rgba(128, 128, 128, 0.16);
-  width: 100px;
-  /*width: fit-content;*/
+  /*width: 100px;*/
+  width: fit-content;
   border-radius: 5%;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .input-checkbox-category {
